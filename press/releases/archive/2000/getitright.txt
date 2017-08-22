@@ -1,0 +1,112 @@
+For Immediate Release
+
+More information:
+
+
+George Olsen                                     mailto:golsen@2lm.com         
+Design Director/Web Architect                       http://www.2lm.com
+2-Lane Media                                   tel: 310/473-3706 x2225
+
+
+WEB STANDARDS PROJECT CALLS ON PUBLIC TO PRESSURE MICROSOFT TO
+FULLY SUPPORT WEB STANDARDS IN THEIR BROWSER
+
+The Web Standards Project (WSP) today asked the public to join
+its efforts in calling on Microsoft to fully support key Web
+standards in its next release of Internet Explorer.
+
+"The dispute between AOL and Microsoft over instant messaging
+shows how incompatible standards hurt the public," said WSP
+Project Leader George Olsen. "For browsers, there ARE common
+standards but Microsoft appears to be noncommittal about
+finishing off implementing them in Internet Explorer, saying
+there isn't public demand for them."
+
+"Unfortunately, implementing most of these standards but not
+finishing key areas is like building a car but forgetting to
+install the steering wheel," Olsen said. "Technically, it's
+almost done, but it's not usable."
+
+WSP is encouraging Web site owners, builders and visitors to
+voice their support for standards implementation by writing to
+<mailto:standardsnow@webstandards.org>, where their comments will
+be forwarded to Microsoft.
+
+WSP's Steering Committee kicked off this public lobbying campaign
+by sending the following statement to Microsoft:
+
+AN OPEN LETTER TO MICROSOFT: IT'S TIME TO GET IT RIGHT
+
+As a member of the Web Standards Project and a working developer
+building Web sites, I am writing to ask that Microsoft take the
+next logical step in its support for W3C standards, and deliver
+full (100%) support for Cascading Style Sheets Level-1, HTML 4.0,
+DOM 1.0 and XML 1.0 in the next version of Internet Explorer.
+
+Full support of these standards will enable developers and
+designers to finally embrace this technology, which Microsoft
+helped create, and which Microsoft was the first to begin
+supporting. In its dispute with AOL over instant messaging,
+Microsoft has made compelling arguments about the value of
+commonly supported standards and I believe those arguments apply
+just as strongly to browsers as well.
+
+Less than full support in Internet Explorer would be a bad
+marketing decision when its largest competitor delivers the
+goods. Microsoft's support for these standards has been far
+superior to Netscape's, but that will change when Netscape
+releases Navigator 5.0, which appears headed toward fulfilling
+its promise of 100% support for these standards, according to
+independent reports.
+
+For the good of your browser and the advancement of the Web as a
+great medium for communications, commerce, and art, I urge you to
+go the distance and make full support for these standards a
+priority for your Internet Explorer development team.
+
+If you cannot commit to that time frame, I'd like to know when
+Microsoft DOES plan to deliver full support for these standards.
+If the answer is "never," I'd like to know that, too, so I can
+let my clients and site visitors know that standards-compliant
+sites may not work properly on Internet Explorer.
+
+Sincerely,
+
+The Web Standards Project Steering Committee
+George Olsen, Project Leader
+Jeff Zeldman, Site Design
+Tim Bray
+Steve Champeon
+Rachel Cox
+B.K. DeLong
+Martin Diekhoff
+Chris Kaminski
+Dan Shafer
+Dori Smith
+Jeffrey Veen
+
+
+Today WSP also presented Microsoft with a Web standards petition
+signed by more than 1,000 Web developers from Fortune 500
+companies and major educational and government institutions. (See
+related press release: "Web Standards Project calls on Microsoft
+to fully support Web standards in their next version of their
+Internet Explorer browser.")
+
+
+ABOUT THE WEB STANDARDS PROJECT WSP <http://www.webstandards.org>
+is an international coalition of Web developers and Web experts
+who are urging browser makers to fully support HTML 4.0,
+Cascading Style Sheet Level 1 (CSS-1), the Document Object Model
+(DOM) and XML in their browsers. Its effort to bring attention to
+the existing and potential problems involved with browser
+incompatibility does not mean that WSP is opposed to innovations 
+by browser makers. The coalition merely urges browser makers to
+use open standards for enhancements and support existing ones
+before adding new features.
+
+
+
+
+
+

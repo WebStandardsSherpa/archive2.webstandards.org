@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/may2005.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:57 GMT -->
+<head> 
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : May 2005</title> 
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+ 
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+ 
+
+<style type="text/css">
+	blockquote p, blockquote pre {
+		padding: 10px;
+	}
+	
+	.note {
+		background-color: yellow;
+	}
+	
+	.strike {
+		text-decoration: line-through;
+	}
+</style>
+
+</head>
+<body> 
+<div id="Header"> 
+<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+ 
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText"> <div class="padder">
+
+<h1>WaSP Asks the W3C</h1>
+
+<h2 class="sub">Adding Multimedia in Web Documents (part 2)</h2>
+
+
+<p>In the <a href="jun2004.html">first part</a> of this article, we reviewed the history of the multimedia inclusion in hypertext documents. Let us now explore in more detail how we can use the most current and recommended method to accomplish this task: the <code>object</code> element.</p>
+
+<h3 id="versatile">A versatile and complete inclusion mechanism</h3>
+
+<p>The <code>object</code> element is a good solution to the early problems of inserting multimedia in (X)HTML:</p>
+
+<ul>
+	<li>It can be used for <a href="http://www.w3.org/QA/2004/02/object/object-example-01.html">any type of content</a></li>
+	<li>It comes with a powerful cascading mechanism for alternate content</li>
+	<li>It can pass variables to executable content (such as an applet) <a href="http://www.w3.org/QA/2004/02/object/object-example-02.html" title="A java applet example">using its <code>param</code> attribute</a></li>
+
+	<li>It can specify the exact content-type of the included object. For example, you can show the source of a script within a page <a href="http://www.w3.org/QA/2004/02/object/object-example-03.html">by serving it as <code>text/plain</code></a>. (Note, however, the particular object's content-type has been specifically set on the server, the server's declaration (over HTTP) takes precedence, just as it does for <code>&lt;meta name="http-equiv" ... </code>)</li>
+	<li>It can be used to <a href="http://www.w3.org/QA/2004/02/object/object-example-04.html">include the object directly</a> instead of referring to it by using <code>data</code> attributes</li>
+</ul>
+
+<p>The <code>object</code> element is a generic mechanism that gives us more flexibility than any previous elements that have been designed to perform multimedia inclusion. </p>
+
+
+<h3 id="usage">Usage of the object element</h3>
+
+<p>Back to the question for this <cite>WasP asks the W3C</cite> issue: How do we insert multimedia objects into Web documents in a backwards-compatible way?</p>
+
+<p>The term "backwards-compatible" as used here is vague and could be misleading. Backwards-compatibility is not a matter of how a document is authored. A technology can be backwards-compatible if a new version of the technology completely includes the functionality of its predecessor.</p>
+
+<p>Questions that have been asked about including multimedia in web documents:</p>
+
+
+<ul>
+    <li><strong>Can a feature that has been deprecated after a given version (e.g. <code>applet</code>) be used in more recent versions of the same technology?</strong> No, it is not recommended. If you need this feature, it is possible to use an older version of the technology where it is legitimately included. This may not be a good idea; after all there are certainly good reasons the feature was deprecated. You may not want to stick with an old version of a technology, but this is nonetheless perfectly allowed.</li>
+
+    <li><strong>Is an element added in a recent version of a technology usable in an earlier version?</strong> Unless you have a time travel machine, of course not! This means you can only use the <code>object</code> element in HTML 4.01 and more recent versions of (X)HTML.</li>
+
+    <li><strong>What about <code>embed</code>?</strong> Good or bad, <code>embed</code> was never included in <strong>any</strong> version of HTML. Again, it is not a question of "backwards-compatibility".</li>
+</ul>
+
+
+<p>The question we ought to be asking is: <em>How do we include multimedia in (X)HTML documents in a way that will work with every existing browser?</em></p>
+
+
+<h3 id="conclusion">Conclusion</h3>
+
+
+<p>As we have just seen, backwards-compatibility is not truly relevant to the issue of multimedia inclusion. What we need to know is how well the different techniques attached to the different versions of (X)HTML are supported by the browsers, and based on that knowledge, which DTDs and associated techniques should be chosen.</p>
+
+
+<p>There is no a single best option, but we recommend:</p>
+
+<ol>
+
+	<li> Choose a DTD, strict if possible. Strict DTDs are supported by browsers, authoring tools, and devices.</li>
+
+	
+    <li> When the DTD is chosen, use the available tags and avoid items which are deprecated</li>
+
+<li>If the web content is to be changed in the future or delivered in a different way (such as generating RSS feeds) using older deprecated tags or unsupported methods and not using well-formed/strict DOCTYPEs may or will cause that web content to break. Also, if the document will need a transformation, if it is in strict format and well-formed then transformation to other DOCTYPEs or formats will be easier to accomplish or automate.</li>
+
+
+</ol>
+
+
+<p>The <a href="object-tests.html#test-report">test results</a> show that the implementation of <code>object</code> element in modern browsers has been improved but is not yet perfect. The <code>object</code> element is part of XHTML 2.0 Working Draft specification. 
+
+Specifications are now created according to stricter rules than in the past, and this will no doubt benefit future implementations of the <code>object</code> element.</p>
+
+<p>Please <a href="http://www.webstandards.org/learn/askw3c/object-tests.html">run these tests</a> with your platform of choice and send a quick report to the <a href="mailto:www-archive@w3.org?Subject=[object] Test Report - ([User Agent Name] and [version])">mailing-list</a>. This way, we will be better armed to request more solid implementations of the <code>object</code> element from user agent vendors.</p>
+
+
+
+<h3>Discussion</h3>
+
+<p>For clarification and discussion on this topic, please address your
+comments and questions to the W3C Web Standards Education list.</p>
+
+<p>To subscribe to the list, send an email to <a title="subscribe to
+the public evangelist list"
+href="mailto:public-evangelist-request@w3.org">public-evangelist-
+request@w3.org</a> with &#8220;Subject: subscribe&#8221;.  You can read
+archived posts at <a title="read list archives"
+href="http://lists.w3.org/Archives/Public/public-evangelist/">http://
+lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+
+</div>
+
+<div class="padder" id="footer"> 
+<a href="../../legal/index.html">Legal</a>
+ 
+</div> 
+
+</div>
+
+<div id="SubNav"> 
+<div class="padder"> 
+ 
+</div> 
+</div>
+</body> 
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/may2005.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:57 GMT -->
+</html> 
+

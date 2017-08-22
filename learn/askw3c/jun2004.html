@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/jun2004.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:57 GMT -->
+<head> 
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : June 2004</title> 
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+ 
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+ 
+
+<style type="text/css">
+	blockquote p, blockquote pre {
+		padding: 10px;
+	}
+</style>
+
+</head>
+<body> 
+<div id="Header"> 
+<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+ 
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText"> <div class="padder">
+
+<h1>WaSP Asks the W3C</h1>
+
+<h2 class="sub">Adding Multimedia in Web Documents (part 1)</h2>
+
+<p>Web browsers and devices that access the Web have evolved
+greatly over the years. Items for document inclusion have reached far
+beyond text and images to a variety of objects, including rich media file
+types such as sound, videos and animation. Often,
+developers and designers pose questions about the correct way
+to include a variety of such items in their standards-conformant documents.
+At the same time, many may wonder how well these formats are supported across
+browsers and their versions.</p>
+
+<p>
+In this two-part issue, we ask the W3C to give us some insight into the inclusion of multimedia into our familiar (X)HTML documents.
+</p>
+
+<h2>WaSP Asks</h2>
+
+<p>How do we insert multimedia objects into Web documents in a
+backwards-compatible way?</p>
+
+<h2>The W3C responds</h2>
+
+<p> We decided to address this issue in a two-part article: </p>
+
+<ol> 
+	<li>The history of the birth of multimedia in HTML: the
+	<code>img</code> tag, limitations, and a brief introduction of the
+	<code>object</code> tag</li> 
+	<li>What <code>object</code> is, examples
+	of how it can be used, test cases and user agent support</li> 
+</ol>
+
+<h3>Introduction</h3>
+
+<p>Using multimedia objects in Web documents comes with a wide variety
+of techniques depending on the technology and the types of
+objects we are addressing. A Web document can be written in SVG, SMIL,
+XHTML, MathML, CSS, and so forth. In Part 1, we will discuss the birth of the <code>img</code> element and explain its limitations, as well as introduce the <code>object</code> element. In the second part of this article, we will give usage examples of the <code>object</code> element and provide an overview on the state of implementation across various user agents.</p>
+
+<h3>History: Birth of Multimedia in HTML</h3>
+
+<p>Reading mailing-lists archives often helps to provide context for
+the creation of a feature in a technology. There is always a tradeoff
+between making the technology more universal (but often more complex)
+and building it fast (but often limited and incomplete). Jeffrey Veen
+gives an historic perspective on the birth of a long-awaited feature of
+HTML: the ability to insert images in an HTML document.</p>
+
+<blockquote
+cite="http://hotwired.lycos.com/webmonkey/97/17/index0a.html?tw=
+authoring"> 
+	<p> In 1993, a debate was exploding on the fledgling HTML
+	mailing list, and finally a college student named Marc Andreessen added
+	&lt;img&gt; to his Mosaic browser. People objected, saying it was too
+	limited. They wanted &lt;include&gt; or &lt;embed&gt;, which would
+	allow you to add any sort of medium to a Web page with the much-touted
+	content negotiation used on the client. That was too big a project,
+	according to Marc, and he need to ship ASAP. Mosaic went with
+	&lt;img&gt;, and it would be years before including media in a page
+	using &lt;embed&gt; or &lt;applet&gt; or &lt;object&gt; would surface
+	again.</p>
+	
+	<p>Mosaic shipped with &lt;img&gt;, Tim went off to the nascent World
+	Wide Web Consortium, and Marc left for California to start a little
+	browser company called Netscape.</p> 
+	
+	<p><cite class="dc:title"><a
+	href="http://hotwired.lycos.com/webmonkey/97/17/index0a.html?tw=authoring">The history of HTML</a></cite> - <cite
+	class="dc:creator">Jeffrey Veen</cite></p> 
+</blockquote>
+
+<p>We can still find the original message sent by Marc Andreessen to
+the www-talk mailing-list in 1993:</p>
+
+<blockquote
+cite="http://www.webhistory.org/www.lists/www-talk.1993q1/0182.html">
+<pre>
+
+IMG
+
+Required argument is SRC="url".
+
+This names a bitmap or pixmap file for the browser 
+to attempt to pull over the network and interpret 
+as an image, to be embedded in the text at the 
+point of the tag's occurrence.
+
+An example is:
+
+&lt;IMG SRC="file://foobar.com/foo/bar/blargh.xbm"&gt;
+
+
+(There is no closing tag; this is just a 
+standalone tag.) 
+</pre>
+
+<p><cite class="dc:title"><a
+href="http://www.webhistory.org/www.lists/www-talk.1993q1/0182.html">
+proposed new tag: IMG</a></cite> - <cite class="dc:creator">Marc
+Andreessen</cite></p> 
+</blockquote>
+
+<p>Since then, the <code>img</code> element has been unfortunately used for layouts devoid of meaningful mark-up, such as where images are cut up into slices that are then placed into individual table cells.</p>
+
+<h3>The <code>img</code> element</h3>
+
+<p>The most common way to insert a graphical element in an HTML
+document (from HTML 3.2 to XHTML 1.1) is to use an <code>img</code>
+element. </p> 
+
+<blockquote
+cite="http://www.w3.org/TR/html4/struct/objects.html#edef-IMG"> 
+<p>The
+IMG element embeds an image in the current document at the location of
+the element's definition. The IMG element has no content; it is usually
+replaced inline by the image designated by the src attribute, the
+exception being for left or right-aligned images that are "floated" out
+of line.</p>
+</blockquote>
+
+<p> The
+HTML specifications do not define any requirements for the format which
+have to be supported, but commonly supported formats are: GIF, JPEG,
+PNG, TIFF and Bitmap &mdash; you can insert different images of various formats in any document. The list of formats supported by browsers have gradually evolved over time.</p>
+
+
+<h4>Markup examples</h4>
+
+
+<pre> &lt;p&gt;&lt;img src="http://example.org/bzcam.png" alt="Image de
+l'&eacute;toile variable cataclysmique BZ Cam."/&gt;&lt;/p&gt;
+</pre>
+
+
+<p>You will find explorative use of HTML markup to insert images in
+documents at the following Web sites:</p>
+
+<ul>	
+	<li><a href="http://www.w3.org/Style/Examples/007/figures.html">W3C
+	CSS: figures and captions</a></li> 
+	<li><a
+	href="http://www.simplebits.com/bits/simplequiz/#entry618">Simplebits:
+	Image floating</a></li> 
+</ul>
+
+<h4>The need for a generic object inclusion mechanism</h4>
+
+<p>The <code>img</code> element does a good job for the inclusion of images, but there are plenty more multimedia objects one may want to embed in a Web document: sound, movies, interactive animations, small programs. Some elements   were created as an attempt to broaden the range of objects to include.</p>
+
+<p>First, the <code>applet</code> element was introduced for Java programs, but this only solved the issue for yet another type of object, thus it was eventually deprecated. Later, the <code>embed</code> element was a first proprietary attempt at creating a generic inclusion mechanism, but it was never  formally included in HTML.</p>
+
+<p>HTML 4.01 finally came with a standardized, generic object inclusion   mechanism: the <code>object</code> element.</p>
+
+
+<h3 id="object-element">Introducing the <code>object</code> element</h3>
+
+<p>In response, the <code><a
+href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/objects.html#edef-OBJECT">object</a></code> element was introduced in <a
+href="http://www.w3.org/TR/1999/REC-html401-19991224/">HTML 4.01</a>. 
+It has been created as a <strong>generic method</strong> to
+insert multimedia objects of <strong>any kind</strong> in a Web
+document. This element has a very powerful cascading fallback mechanism: in addition to the primary object to be rendered, an object element can contain another object or alternate text. User-agents can <a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/objects.html#h-13.3.1">thus cascade</a> through embedded objects in search of one they can render if they do not support the format of the primary object.</p>
+
+<h3>How well is <code>object</code> supported?</h3>
+
+<p>In the <a href="may2005.html">second part</a> on this topic, we will show the use of the
+<code>object</code> element and provide a framework to test the level
+of support of this element in user agents.</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://hotwired.lycos.com/webmonkey/97/17/index0a.html?tw=authoring">The History of HTML</a> (by Jeffrey Veen)</li>
+<li><a href="http://www.webhistory.org/www.lists/www-talk.1993q1/0182.html">proposed new tag: IMG</a> (by Marc Andreessen)</li>
+<li><a href="http://www.w3.org/TR/html4/struct/objects.html#edef-IMG">Definition of the <code>img</code> element</a></li>
+<li><a href="http://www.w3.org/Style/Examples/007/figures.html">W3C
+	CSS: figures and captions</a></li> 
+<li><a
+	href="http://www.simplebits.com/bits/simplequiz/#entry618">Simplebits:
+	Image floating</a></li> 
+<li><a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/objects.html#edef-OBJECT">Definition of the <code>object</code> element</a></li>
+<li><a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/objects.html#h-13.3.1">Rules for rendering objects</a></li>
+</ul>
+
+<h3>Discussion</h3>
+
+<p>For clarification and discussion on this topic, please address your
+comments and questions to the W3C Web Standards Education list.</p>
+
+<p>To subscribe to the list, send an email to <a title="subscribe to
+the public evangelist list"
+href="mailto:public-evangelist-request@w3.org">public-evangelist-
+request@w3.org</a> with &#8220;Subject: subscribe&#8221;.  You can read
+archived posts at <a title="read list archives"
+href="http://lists.w3.org/Archives/Public/public-evangelist/">http://
+lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+
+</div>
+
+<div class="padder" id="footer"> 
+<a href="../../legal/index.html">Legal</a>
+ 
+</div> 
+
+</div>
+
+<div id="SubNav"> 
+<div class="padder"> 
+ 
+</div> 
+</div>
+</body> 
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/jun2004.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:57 GMT -->
+</html> 

@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/interviews/rcarver/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+<head>
+<title>WaSP : Learn : Interviews : Ryan Carver</title>
+<style type="text/css">
+	@import "../../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+.question p { font-style: italic; }
+
+.code	{
+	color: #930;
+	background:#f0f0f0;
+	font-family: monospace;
+	font-size: 95%;
+	line-height: 120%;
+}
+
+.blockquote	{
+	font-style: italic;
+	padding: 15px;
+	
+}
+
+</style>
+</head>
+<body>
+<div id="Header">
+	<a href="../../../index.html" class="imgLink"><img id="logo" src="../../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../../index.html">home</a></li>
+	<li><a href="../../../about/index.html">about</a></li>
+	<li><a href="../../../act/index.html">act!</a></li>
+	<li class="active"><a href="../../index.html">learn</a>
+		<ul>
+		<li><a href="../../faq/index.html">faq</a></li>
+		<li><a href="../../glossary/index.html">glossary</a></li>
+		<li><a href="../../orgs/index.html">orgs</a></li>
+		<li><a href="../../reference/index.html">reference</a></li>
+		<li><a href="../../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../../opinion/index.html">opinion</a></li>
+	<li><a href="../../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+
+
+<div id="MainText">
+	<div class="padder"> 
+	
+	<h1>WaSP Interviews Ryan Carver</h1>
+	
+<h2 class="sub">On the redesign of Lee Jeans&#8217; onetruefit.com</h2>
+
+<h4>Interview Conducted for 9th Jan 2004</h4>
+
+<p>When Lee Jeans&#8217; <a href="http://www.onetruefit.com/">onetruefit.com</a> popped onto the scene a few months ago, it caught some of us off guard. We&#8217;re getting used to technology sites taking the plunge into the world of standards, but the first fashion site was a pleasant surprise. Ryan Carver is the guy to thank, and we caught up with him just after the holidays.</p>
+
+<div id="q1" class="question">
+<h3>WaSP:</h3>
+<p>Ryan, what was your specific role in the creation of onetruefit.com?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>I did all the design and programming for the site.</p>
+</div>
+
+<div id="q2" class="question">
+<h3>WaSP:</h3>
+<p>Were you the one that sold Lee Jeans on standards-based design then? How did you go about it?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>The primary goal of the site was to get the word out about these new jeans, and search engine placement was a very important part of this. After my initial designs were complete, I was pressured to change things to become more &#8220;search engine compatible.&#8221; I quote that because all this meant was changing some graphical text to actual text (thereby mucking up the design), and adding <code>alt</code> attributes to images.</p>
+<p>It took some convincing, but I showed how I could take a page <strong>very</strong> optimized for search engines (the no-style version), and still make it look exactly like my original design. I explained the benefits of semantic markup, very little source code, content at the top of the page, and <abbr title="Cascading Style Sheets">CSS</abbr>. Once they believed that we could have the best of both worlds, the only sticking point was browser compatibility.</p>
+<p>Historically, Lee&#8217;s sites have been 4.0-compatible, but usage of those browsers is continually dropping and probably hovering at 1% now. We decided that the search engine benefits greatly outweighed 1% of the audience seeing an unstyled (but still completely usable) site.</p>
+<q class="pullquote right">&#8230;you have to explain the benefits in business terms.</q>
+<p>The short, and more generic answer to &#8220;how did you do it&#8221; is: you have to explain the benefits in some kind of business terms. For me it was search engines. Without an explanation of added value, there&#8217;s no way anyone will care how nice your code is. They will care that 1% of users can&#8217;t view the design.</p>
+</div>
+
+<div id="q3" class="question">
+<h3>WaSP:</h3>
+<p>So how are you doing? Are the Google results corroborating your pitch?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>I don&#8217;t have any official stats, but I know we were ranked very high within days after launch. There was a temporary placeholder site up before, so that probably helped the speed. Still, it was amazing to see how much better it ended up ranking overall. Not to mention that because we were going for the term &#8220;sexy women&#8217;s jeans&#8221; we&#8217;ve got some pretty stiff competition&#8230;</p> 
+</div>
+
+<div id="q4" class="question">
+<h3>WaSP:</h3>
+<p>One can imagine. We heard that Google initially indexed the page <strong>without</strong> style applied. What a bummer. How did you address that from a technical standpoint? What about explaining that to the bosses?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>Yes, that caused me a little stress. My first move was to change the parameter that triggered the &#8220;no style&#8221; page. It was originally <code>?css=false</code> so I just changed it to <code>?style=false</code>. Luckily that link hadn&#8217;t propagated much at the time. Secondly, I added a meta tag to the unstyled page to tell search engines not to index it:</p>
+<blockquote><pre><code>&lt;meta name="robots" content="noindex" /&gt;</code></pre></blockquote>
+
+<p>Notice I didn&#8217;t specify <code>nofollow</code> since individual links on the page are okay to index, they don&#8217;t contain the style parameter. Within a couple days Google switched its primary <abbr title="Uniform Resource Locator">URL</abbr> and everything was cool.</p>
+<p>As for the bosses, I quietly fixed the problem before anyone noticed and then told &#8217;em.</p>
+</div>
+
+<div id="q5" class="question">
+<h3>WaSP:</h3>
+<p>The art direction is great; the site really captures the feel of the commercials. Any insight into that process and how it went?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>Thanks. The commercials were all I had to go on. Branding for the jeans had gone through a couple phases, the commercials being the strongest and most recent attempt. To make things even more interesting, we didn&#8217;t have web usage rights to any photography that went along with the commercials. Yep, every image on the site is a screen grab from a Beta tape. <em>[Ed. &#8212; ouch!]</em></p>
+<p>As far as direction, the major goals were:</p>
+<ul title="Art direction goals for onetruefit.com">
+<li>Show off the jeans.</li>
+<li>Match the mood of the commercials.</li>
+<li>Balance the glamorized feel of the commercials by creating a feeling that these jeans are for real people. The simple voting and testimonial features helped out here.</li>
+</ul>
+</div>
+
+<div id="q6" class="question">
+<h3>WaSP:</h3>
+<p>Anyone who has started using an image replacement technique, particularly with rollovers, has had to struggle with <abbr title="Internet Explorer">IE</abbr>6&#8217;s flickering problem. What did you do to get around that?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<q class="pullquote left">&#8230;it&#8217;s probably not a problem for most people.</q>
+<p>Fortunately, since the problem is caused by manually setting the cache to check for updates on &#8220;Every Visit to the Page&#8221;, it affects designers a lot more than your typical user. For onetruefit.com, I did as much as I could but ultimately gave in to the fact that it&#8217;s probably not a problem for most people.</p>
+<p>Recently I&#8217;ve found out a few more things about what causes this. The short story is that flicker is caused by any of these three:</p>
+
+<ul>
+	<li><code>background-repeat</code> set to anything but <code>repeat</code></li>
+	<li><code>background-color</code> set to anything but <code>transparent</code></li>
+	<li><code>background-position</code> set to anything at all</li>
+</ul>
+
+<p>If the element&#8217;s <code>width</code> &#215; <code>height</code> is less than 2500 pixels it will flicker. If the image is a transparent <acronym title="Graphical Interchange Format">GIF</acronym> it will flicker. That should be easy enough to avoid in most situations. For more information, <a href="http://www.fivesevensix.com/studies/ie6flicker/" title="Minimizing Flickering CSS Background Images in IE6">the gory details</a> are on my site.</p>
+</div>
+
+<div id="q7" class="question">
+<h3>WaSP:</h3>
+<p>We&#8217;ve noticed you relied heavily on <code>id</code>s and <code>class</code>es applied to the <code>body</code> itself across the site. Why did you do that?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>Putting an <code>id</code> and/or <code>class</code> on the <code>body</code> element allows you to target any element on a specific page, or even override the styles for an entire page.</p>
+<p>My general method uses the <code>body</code>&#8217;s <code>id</code> to define a type of page (e.g., &#8220;home,&#8221; &#8220;internal,&#8221; &#8220;popup&#8221;) and <code>class</code> to define the subtype (e.g., &#8220;products,&#8221; &#8220;contact,&#8221; etc.) One might argue that those should be reversed, because an <code>id</code> should be unique. However, see below on using multiple <code>class</code> names.</p>
+<p>For example, every internal page on the site has <code>id="internal"</code> but a unique <code>class</code> like <code>class="commericals"</code>. This way you can differentiate the <code>h2</code> on the homepage from the one on the Commercials page, from the one on the Where to Buy page all in one stylesheet.</p>
+
+<blockquote><pre><code>body#home h2 {
+ /* only the homepage */
+}
+body#internal h2 {
+ /* all internal pages */
+}
+body#internal.commercials h2 {
+ /* only the commercials page */
+}
+body#internal.wheretobuy h2 {
+ /* only the where to buy page */
+}</code></pre></blockquote>
+
+<p>In practice, I used a separate stylesheet for home and internal to avoid unnecessary download. I also defined the internal page&#8217;s <code>h2</code> (the big title) in an inline stylesheet to avoid excess image downloads since some browsers download all images defined in a stylesheet regardless of whether they&#8217;re used or not.</p>
+<p>A more interesting example is in the Commercials popup window. The body tag looks something like this:</p>
+
+<blockquote><pre><code>&lt;body id="commercials"
+ class="happyplaceb high"&gt;</code></pre></blockquote>
+
+<p><code>id="commercials"</code> &#8212; This is a special kind of page, different than "home" or "internal"</p>
+<p><code>class="happyplaceb"</code> &#8212; The current commercial&#8217;s name. I use this to target the page headline, and show the hover state image of the thumbnail on the right side.</p>
+
+<blockquote><pre><code>body#commercials.happyplaceb
+ #header h2 {
+   background-image:
+   url(title_happyplaceb.gif);
+}
+body#commercials.happyplaceb
+ #navigation a.happyplaceb {
+  background-image:
+  url(thumb_happyplaceb_over.jpg);
+}</code></pre></blockquote>
+
+<p><code>class="high"</code> &#8212; The chosen movie quality (high or low). I use this to target the bandwidth selection button, to highlight the current one.</p>
+<p>So with a few changes to the body tag, I had a very dynamic page without changing other markup at all.</p>
+</div>
+
+<div id="q8" class="question">
+<h3>WaSP:</h3>
+<p>How nicely does your content management system play with your code? Did you have to do anything special to get it to cooperate?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>I was fortunate to be able to write the <abbr title="Content Management System">CMS</abbr> and site together, so there wasn&#8217;t a problem. Using <abbr>CSS</abbr> for presentation makes it a lot easier to create a content management system with a sense of reusable modules.</p>
+<p>For example, the logic and markup for things like the Sweepstakes Ad and the &#8220;10,400 Women love their jeans&#8230;&#8221; block are defined in once place, but look completely different on the home page than on internal pages because of the stylesheet applied. With just the right <code>div</code> wrappers and other <code>id</code>s and <code>class</code>es, you can put a chunk of markup just about anywhere on the page and then style it.</p>
+<p>Of course in reality if you&#8217;re doing a layout that flows, you have to deal with source code order and floats, but you get the idea.</p>
+</div>
+
+<div id="q9" class="question">
+<h3>WaSP:</h3>
+<p>Like Todd Dominey&#8217;s <a href="http://www.webstandards.org/learn/interviews/tdominey/">PGA.com redesign</a>, you&#8217;ve managed to get Flash working alongside standards-based code. Any pointers?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>Most people tend to think these things are conflicting ideals. By using Javascript to write the Flash content or an image if Flash is not available, as well as using a <code>&lt;noscript&gt;</code> tag to write that same image, we get valid markup and the best experience that a particular user can get. I leave it up to you whether writing invalid markup with Javascript still constitutes a valid page, but it works.</p>
+</div>
+
+<div id="q10" class="question">
+<h3>WaSP:</h3>
+<p>How big was your team?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>Three: Creative Director, Producer and myself.</p>
+</div>
+
+<div id="q11" class="question">
+<h3>WaSP:</h3>
+<p>Was there anything you wish you could have done that you didn&#8217;t for one reason or another?</p>
+</div>
+
+<div class="answer">
+<h3>Ryan:</h3>
+<p>I would have liked to make the site a bit more accessible. It&#8217;s very close but since the target audience doesn&#8217;t necessitate it, I didn&#8217;t get the time. What&#8217;s nice is how accessible it ended up without making any special attempt.</p>
+<p>Oh, and I would have liked to fix that stupid <abbr>IE</abbr>6 flicker.</p>
+</div>
+
+<div id="q12" class="question">
+<h3>WaSP:</h3>
+<p>Thanks for taking the time to answer our questions, Ryan.</p>
+
+<hr />
+<p class="bio">Ryan Carver is an interactive designer in Kansas City, Missouri. He currently makes his creative home at <a href="http://www.fivesevensix.com/">fivesevensix.com</a>, but is always looking for other more interesting places to play.</p>
+<hr />
+
+<h3>Referenced Links:</h3>
+<ol title="Links referenced in this interview">
+ <li><a href="http://www.onetruefit.com/">Lee Jeans&#8217; onetruefit.com</a></li>
+ <li><a href="http://www.fivesevensix.com/studies/ie6flicker/">Minimizing Flickering CSS Background Images in IE6 </a></li> 
+ <li><a href="http://www.webstandards.org/learn/interviews/tdominey/">Todd Dominey (PGA.com) Interview</a></li>
+ <li><a href="http://www.fivesevensix.com/">fivesevensix.com</a></li>
+</ol>
+
+<h3>Related Reading:</h3>
+<ol title="Further reading on concepts covered in this interview">
+ <li><a href="http://www.webstandards.org/learn/interviews/dcederholm/">Dan Cederholm (Fast Company) Interview</a></li>
+ <li><a href="http://www.webstandards.org/learn/resources/xhtml/">WaSP <abbr>XHTML</abbr> Resources</a></li>
+ <li><a href="http://www.webstandards.org/learn/resources/css/">WaSP <abbr>CSS</abbr> Resources</a></li>
+</ol>
+
+</div>
+	
+ <div class="padder" id="footer">
+  <a href="../../../legal/index.html">Legal</a>
+
+ </div>
+
+</div>
+
+<div id="SubNav"> 
+ <div class="padder">
+  
+ </div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/interviews/rcarver/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+</html>

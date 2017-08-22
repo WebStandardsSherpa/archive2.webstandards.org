@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:admin="http://webns.net/mvcb/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    <title>Web Standards Project BUZZ</title>
+    <link>http://www.webstandards.org</link>
+	<description>Working together for standards</description>
+    <dc:language>en-us</dc:language>
+    <dc:rights>Copyright 2006 The Web Standards Project</dc:rights>
+    <dc:date>2006-03-20T09:00:00-05:00</dc:date>
+
+    <item>
+      <title>This feed has been replaced.</title>
+      <link>http://webstandards.org/</link>
+      <description><![CDATA[<p>This feed has been replaced by new feeds. Please access the WaSP site for the new feed URIs.</p>
+      <guid isPermaLink="false">598@http://webstandards.org/buzz/</guid>
+      <dc:subject>General</dc:subject>
+      <dc:date>2006-03-20T09:00:00-05:00</dc:date>
+    </item>
+
+  </channel>
+</rss>

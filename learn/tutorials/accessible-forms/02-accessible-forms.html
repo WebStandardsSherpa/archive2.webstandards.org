@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/tutorials/accessible-forms/02-accessible-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:48 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>Learn : Accessible Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+	@import "../../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+<!--
+code {
+	background-color: #FFFFCC;
+}
+img {border:1px solid gray;}
+img#logo {border: 0;}
+-->
+</style>
+</head>
+
+<body>
+<div id="Header">
+	<a href="../../../index.html" class="imgLink"><img id="logo" src="../../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../../index.html">home</a></li>
+	<li><a href="../../../about/index.html">about</a></li>
+	<li><a href="../../../act/index.html">act!</a></li>
+	<li class="active"><a href="../../index.html">learn</a>
+		<ul>
+		<li><a href="../../faq/index.html">faq</a></li>
+		<li><a href="../../glossary/index.html">glossary</a></li>
+		<li><a href="../../orgs/index.html">orgs</a></li>
+		<li><a href="../../reference/index.html">reference</a></li>
+		<li><a href="../../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../../opinion/index.html">opinion</a></li>
+	<li><a href="../../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+<div class="padder">
+<h1>Accessible HTML/XHTML Forms </h1>
+<div class="update">Created: May 2004 | Author: <a href="../../../about/bios/illoyd.html">Ian 
+      Lloyd</a></div>
+<p><a href="01-accessible-forms.html">Beginning Level</a> | Intermediate | <a href="03-accessible-forms.html">Advanced</a></p></p>
+<h2>Introduction</h2>
+<p>The <a href="01-accessible-forms.html">beginner section</a> covered the basics 
+  of layout and positioning of form elements in your web page to improve the accessibility 
+  of your forms. In this section we'll look at some specific elements that you 
+  can add to your forms that will go even further in insuring that your pages 
+  are usable and accessible by the widest possible audience.</p>
+<h2>Stick a Label On It that says 'I Am Accessible!'</h2>
+<p>Without doubt, one of the most useful tags you can use to make a form more 
+  accessible is the <code>&lt;label&gt;</code> tag. In the beginner section we 
+  detailed how some screen readers can get extremely confused when you start moving 
+  the text that relates to a given form input too far away from it. With the &lt;label&gt; 
+  tag, you can start to be a little more adventurous and still feel reasonably 
+  happy that your form will be accessible.</p>
+<h3>What does the label do?</h3>
+<p>The label is a signpost. It tells the browser/user agent/screen reader: &quot;Hey, 
+  you see that form input over there? The one called 'firstname'? Well, that belongs 
+  to me and make no mistake about it&quot;. Or, as you would have it in the more 
+  sober world of XHTML:</p>
+<p><code>&lt;label for=&quot;firstname&quot;&gt;First Name&lt;/label&gt;&lt;br 
+  /&gt;<br />
+  &lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot; 
+  size=&quot;20&quot;/&gt;</code></p>
+<p>It creates an unambiguous link between the text and the input which is only 
+  broken if you introduce some sloppy markup (notably, by copy-pasting and forgetting 
+  to change some ids - remember, ids must be unique, you cannot have two elements 
+  on any page sharing the same id).</p>
+<p>If you so desired, you could now move the text around and many (but not all) 
+  assistive devices would still understand what test relates to the form input:</p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot; 
+  size=&quot;20&quot;/&gt;<br />
+  &lt;label for=&quot;firstname&quot;&gt;First Name&lt;/label&gt; </code></p>
+<p>There is another fringe benefit of using the <code>&lt;label&gt;</code> tag 
+  that might not be immediately obvious - by adding this tag, many browsers will 
+  allow you to click on the text contained in the <code>&lt;label&gt;</code> tag 
+  to focus on the input. This is particularly useful for the likes of checkboxes 
+  and radio buttons which have a very small hit area ordinarily:</p>
+<p><img src="images/click-me-anywhere.gif" alt="Hit area increased by label tag" width="271" height="69" /></p>
+<h3>Where Can I use a Label?</h3>
+<p>The <code>&lt;label&gt;</code> tag can be used on almost every form element, 
+  with the exception of buttons (the control comprises the associated text - no 
+  link to anything external is required). Below is a chart of form elements with 
+  examples of this handy little tag being put to use:</p>
+<table width="100%"  border="1">
+  <tr> 
+    <th width="50%">Form element looks like</th>
+    <th>Coded like:</th>
+  </tr>
+  <tr> 
+    <td width="50%"><span class="inputLabel">
+      <label for="txtFirstName">First Name:</label>
+      </span><br /> <input class="input" type="text" title="Enter your first name" maxlength="" size="" name="txtFirstName" id="txtFirstName" value="" /> 
+    </td>
+    <td><strong><code>&lt;label for=&quot;txtFirstName&quot;&gt;</code></strong><code>First 
+      Name:<strong>&lt;/label&gt;</strong>&lt;br /&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;text&quot; title=&quot;Enter 
+      your first name&quot; maxlength=&quot;&quot; size=&quot;&quot; name=&quot;txtFirstName&quot; 
+      <strong>id=&quot;txtFirstName&quot;</strong> value=&quot;&quot;&gt;</code><br /> 
+    </td>
+  </tr>
+  <tr> 
+    <td width="50%"> <span class="inputLabel">Age:</span><br /> <input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_0" value="Under30" /> 
+      <label for="radAge4_0">&nbsp;Under 30</label>
+      <br /> <input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_1" value="Over30" /> 
+      <label for="radAge4_1">&nbsp;Over 30</label>
+      <br /> </td>
+    <td> <code>Age:&lt;br /&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;radio&quot; title=&quot;Choose 
+      from one of the options&quot; name=&quot;radAge&quot; <strong>id=&quot;radAge4_0&quot;</strong> 
+      value=&quot;Under30&quot;&gt;<strong>&lt;label for=&quot;radAge4_0&quot;&gt;</strong>&amp;nbsp;Under 
+      30<strong>&lt;/label&gt;</strong>&lt;br&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;radio&quot; title=&quot;Choose 
+      from one of the options&quot; name=&quot;radAge&quot; <strong>id=&quot;radAge4_1&quot;</strong> 
+      value=&quot;Over30&quot;&gt;<strong>&lt;label for=&quot;radAge4_1&quot;&gt;</strong>&amp;nbsp;Over 
+      30<strong>&lt;/label&gt;</strong>&lt;br&gt;</code><br /> </td>
+  </tr>
+  <tr> 
+    <td width="50%"> <span class="inputLabel">What colours do you like:</span><br /> 
+      <input class="input" type="checkbox" title="Select what colours you like" name="chk0" id="chk0_0" value="red" /> 
+      <label for="chk0_0">&nbsp;red</label>
+      <br /> <input class="input" type="checkbox" title="Select what colours you like" name="chk1" id="chk1_1" value="green" /> 
+      <label for="chk1_1">&nbsp;green</label>
+      <br /> <input class="input" type="checkbox" title="Select what colours you like" name="chk2" id="chk2_2" value="blue" /> 
+      <label for="chk2_2">&nbsp;blue</label>
+      <br /> <input class="input" type="checkbox" title="Select what colours you like" name="chk3" id="chk3_3" value="purple" /> 
+      <label for="chk3_3">&nbsp;purple</label>
+      <br /> </td>
+    <td> <code>What colors do you like:&lt;br /&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select 
+      what colors you like&quot; name=&quot;chk0&quot; <strong>id=&quot;chk0_0&quot;</strong> 
+      value=&quot;red&quot;&gt;<strong>&lt;label for=&quot;chk0_0&quot;&gt;</strong>&amp;nbsp;red<strong>&lt;/label&gt;</strong>&lt;br&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select 
+      what colors you like&quot; name=&quot;chk1&quot; <strong>id=&quot;chk1_1&quot;</strong> 
+      value=&quot;green&quot;&gt;<strong>&lt;label for=&quot;chk1_1&quot;&gt;</strong>&amp;nbsp;green<strong>&lt;/label&gt;</strong>&lt;br&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select 
+      what colors you like&quot; name=&quot;chk2&quot;<strong> id=&quot;chk2_2&quot;</strong> 
+      value=&quot;blue&quot;&gt;<strong>&lt;label for=&quot;chk2_2&quot;&gt;</strong>&amp;nbsp;blue<strong>&lt;/label&gt;</strong>&lt;br&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select 
+      what colors you like&quot; name=&quot;chk3&quot; <strong>id=&quot;chk3_3&quot;</strong> 
+      value=&quot;purple&quot;&gt;<strong>&lt;label for=&quot;chk3_3&quot;&gt;</strong>&amp;nbsp;purple<strong>&lt;/label&gt;</strong>&lt;br&gt;</code><br /> 
+    </td>
+  </tr>
+  <tr> 
+    <td width="50%"> <span class="inputLabel">
+      <label for="txtLifeStory">Your life story:</label>
+      </span><br /> <textarea title="Write your life story here" name="txtLifeStory" id="txtLifeStory" rows="5" cols="25" class="input"></textarea> 
+    </td>
+    <td><strong><code>&lt;label for=&quot;txtLifeStory&quot;&gt;</code></strong><code>Your 
+      life story:<strong>&lt;/label&gt;</strong>&lt;br /&gt;<br />
+      &lt;textarea title=&quot;Write your life story here&quot; name=&quot;txtLifeStory&quot; 
+      <strong>id=&quot;txtLifeStory&quot;</strong> rows=&quot;5&quot; cols=&quot;25&quot; 
+      class=&quot;input&quot;&gt;&lt;/textarea&gt;</code><br /> </td>
+  </tr>
+  <tr> 
+    <td width="50%"> <span class="inputLabel">
+      <label for="ddlTown">Favorite Town:</label>
+      </span><br /> <select title="Please choose your favourite town" name="ddlTown" id="ddlTown">
+        <option value="">Please Select ... </option>
+        <option value="Swindon">Swindon</option>
+        <option value="London">London</option>
+        <option value="Burkino Faso">Burkino Faso</option>
+      </select> </td>
+    <td> <strong><code>&lt;label for=&quot;ddlTown&quot;&gt;</code></strong><code>Favorite 
+      Town:<strong>&lt;/label&gt;</strong>&lt;br /&gt;<br />
+      &lt;select title=&quot;Please choose your favorite town&quot; name=&quot;ddlTown&quot; 
+      <strong>id=&quot;ddlTown&quot;</strong>&gt;<br />
+      &lt;option value=&quot;&quot;&gt;Please Select ... &lt;/option&gt;<br />
+      &lt;option value=&quot;Swindon&quot;&gt;Swindon&lt;/option&gt;<br />
+      &lt;option value=&quot;London&quot;&gt;London&lt;/option&gt;<br />
+      &lt;option value=&quot;Burkino Faso&quot;&gt;Burkino Faso&lt;/option&gt;<br />
+      &lt;/select&gt;</code><br /> </td>
+  </tr>
+</table>
+<h2>Grouping Elements Naturally</h2>
+<p>Heard of <code>&lt;fieldset&gt;</code> and <code>&lt;optgroup&gt;</code> before? 
+  No? Well let us introduce you to ...</p>
+<h3>The Fieldset Entity</h3>
+<p>If you are presented with a list of 50 seemingly unrelated checkboxes to tick 
+  in a survey it's very daunting. I wouldn't bother - would you? But there is 
+  a saying 'Divide and Conquer', and it has a friend in the XHTML entity <code>&lt;fieldset&gt;</code>. 
+</p>
+<p>Using fieldset you chunk up your 50 questions into, say, 5 clearly identifiable 
+  groups of topics, each with 10 properties/attributes. You increase the usability/accessibility 
+  by making the page clearer to the sighted user, or the user who may have cognitive 
+  difficulties. </p>
+<p>How much it helps blind users is questionable as screen reader support for 
+  these elements is patchy (where present at all) and even if they were supported, 
+  it's even more doubtful how easy it would be for the user to access the semantic 
+  meaning of these items. But ... just because these elements are not fully supported 
+  by assistive devices now is no excuse not to use them. Get into good practices 
+  now and when the assistive technology can do something useful with it you can 
+  pat yourself on the back for being so forward-thinking.</p>
+<p>An example of the Fieldset in use (and its related entity <code>legend</code> 
+  - that's the text that sits along the top and describes the content of the boxed 
+  area - 'My Radio Buttons' in this example):</p>
+<p><img src="images/fieldset.gif" alt="Example of a fieldset" width="211" height="179" /></p>
+<p>The markup to achieve this is as follows:</p>
+<p><code>&lt;fieldset&gt;<br />
+  &lt;legend&gt;My Radio Buttons&lt;/legend&gt;<br />
+  &lt;input type=&quot;radio&quot; id=&quot;rad0&quot; name=&quot;rad&quot; /&gt;<br />
+  &lt;label for=&quot;rad0&quot;&gt;Option
+  0&lt;/label&gt;<br />
+&lt;input type=&quot;radio&quot; id=&quot;rad1&quot; name=&quot;rad&quot; /&gt;<br />
+&lt;label
+for=&quot;rad1&quot;&gt;Option
+1&lt;/label&gt;<br />
+&lt;input type=&quot;radio&quot; id=&quot;rad2&quot; name=&quot;rad&quot; /&gt;<br />
+&lt;label
+for=&quot;rad2&quot;&gt;Option
+2&lt;/label&gt;<br />
+...<br />
+  &lt;/fieldset&gt;</code></p>
+<p>As with most HTML elements, you can style the fieldset to your own needs using 
+  CSS, as the following image shows:</p>
+<p><img src="images/fieldset-styled.gif" alt="A CSS-styled fieldset" width="202" height="155" /></p>
+<p>Note that the fieldset can be used to group together <em>any</em> variety of 
+  form input elements - not just groups of the same type as detailed above. It's 
+  also perfectly legal to use nested fieldsets, if you so desire, as this image 
+  (of the world's most simple form) shows below:</p>
+<p><img src="images/nested-fieldset.gif" alt="Nested fieldset" width="527" height="169" /></p>
+<h3>The Optgroup Element</h3>
+<p>In the same way that you can logically group related form controls, you can 
+  use the <code>&lt;optgroup&gt;</code> tag to group options (predictably) used 
+  in a <code>&lt;select&gt;</code> tag. Let's take a look at the markup:</p>
+<p><code>&lt;select name=&quot;favoritefood&quot;&gt;<br />
+  &lt;optgroup label=&quot;Dairy products&quot;&gt;<br />
+  &lt;option&gt;Cheese&lt;/option&gt;<br />
+  &lt;option&gt;Egg&lt;/option&gt;<br />
+  &lt;/optgroup&gt;<br />
+  &lt;optgroup label=&quot;Vegetables&quot;&gt;<br />
+  &lt;option&gt;Cabbage&lt;/option&gt;<br />
+  &lt;option&gt;Lettuce&lt;/option&gt;<br />
+  &lt;option&gt;Beans&lt;/option&gt;<br />
+  &lt;option&gt;Onions&lt;/option&gt;<br />
+  &lt;option&gt;Courgettes&lt;/option&gt;<br />
+  &lt;/optgroup&gt;<br />
+  &lt;optgroup label=&quot;Fruit&quot;&gt;<br />
+  &lt;option&gt;Apples&lt;/option&gt;<br />
+  &lt;option&gt;Grapes&lt;/option&gt;<br />
+  &lt;option&gt;Pineapples&lt;/option&gt;<br />
+  &lt;/optgroup&gt;<br />
+  &lt;/select&gt; </code></p>
+<p>You see what's happening? The drop-down list has been grouped by food types, 
+  in the example above. Some browsers are able to render this information on screen, 
+  others ignore it. But like the fieldset example above, just because not all 
+  browsers or assistive devices can currently pick up this extra information is 
+  no reason <em>not</em> to use it.</p>
+<p><img src="images/optgroups.gif" alt="Example of Optgroup in Safari and Firebird browsers" width="290" height="280" /></p>
+<p>Note: don't get confused between the <code>&lt;label&gt;</code> tag and the 
+  label attribute (which is only used ion the <code>&lt;optgroup&gt;</code> tag!</p>
+<h2>Summary</h2>
+<p>This section has shown some practical XHTML tags that you can use right now 
+  to add some extra meaning to your web pages, provide some extra categorization/grouping 
+  and in the case of &lt;label&gt; make in an immediate improvement to a form's 
+  accessibility. While not all browsers or devices currently choose to honor 
+  these tags and attribute, when they do you can feel confident that you've done 
+  your bit. </p>
+<p>In the advanced section, we'll look at some real-world problems of accessible 
+  forms and suggest how they can be addressed through a number of different solutions. 
+</p>
+<p><a href="03-accessible-forms.html">Advanced Forms Accessibility &gt;&gt;</a></p>
+</div>
+<!-- Credits: by Molly Holzschlag -->	
+	<div class="padder" id="footer">
+		<a href="../../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		<!-- contextual nav -->
+<!-- $Id: contextual.inc,v 1.1 2002/06/14 16:24:51 schampeo Exp $ -->
+
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/tutorials/accessible-forms/02-accessible-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:53 GMT -->
+</html>

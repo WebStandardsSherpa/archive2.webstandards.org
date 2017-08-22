@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/faq/faq_nl.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:34 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : FAQ</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+<!--
+#LangLinks {
+	border: 1px solid #999;
+	background-color: #eee;
+	color: #000;
+	padding: 3px 8px;
+}
+
+#LangLinks h4 {
+	margin: 0;
+	font-style: normal;
+}
+
+#LangLinks ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: smaller;
+	color: #999;
+}
+-->
+</style>
+</head>
+<body>
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standaarden Project logo" /></a>
+<div id="headerText">
+		<div id="intro">Het <a href="../../index.html" id="logoLink">Web Standaarden Project</a> is een
+	samenwerking van vrijwilligers die zich inzetten voor <a href="../../about/index.html">standardaarden</a>
+		 die zorgen voor eenvoudige en betaalbare toegang tot web technologie&euml;n voor iedereen.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+<div class="padder">
+<h1>FAQ</h1>
+
+<a name="top" id="top"></a>
+<h2>Wat zijn webstandaarden en waarom zou ik ze gebruiken?</h2>
+
+<p class="content">
+<strong>1. <a href="#p1">Introductie</a></strong></p>
+
+<p class="content">
+<strong>2. <a href="#p2">Wat zijn de standaarden?</a></strong><br />
+2.1 <a href="#p21">W3C Standaarden</a><br />
+2.1.1 <a href="#p211">Wat is het W3C?</a><br />
+2.1.2 <a href="#p212">Wat doen ze?</a><br />
+2.1.3 <a href="#p213">Wat zijn de W3C standaarden?</a><br />
+
+2.1.3.1 <a href="#p2131">HTML 4.0</a><br />
+2.1.3.2 <a href="#p2132">XML 1.0</a><br />
+2.1.3.3 <a href="#p2133">XHTML 1.0, 1.1, XHTML Modularisatie</a><br />
+2.1.3.4 <a href="#p2134">CSS - Cascading Stylesheets</a><br />
+2.1.3.5 <a href="#p2135">DOM</a><br />
+<!--2.1.3.6 <a href="#p2136">Emerging Standaarden?</a><br />-->
+
+2.2 <a href="#p22">ECMA Standaarden?</a><br />
+2.2.1 <a href="#p221">Wat is de ECMA?</a><br />
+2.2.2 <a href="#p222">Wat doen ze?</a><br />
+2.2.3 <a href="#p223">Wat zijn de ECMA standaarden?</a><br />
+2.2.3.1 <a href="#p2231">ECMAScript</a></p>
+
+<p class="content">
+
+<strong>3. <a href="#p3">Wat zijn de voordelen van het gebruik van Standaarden?</a></strong><br />
+3.1 &nbsp;&nbsp;<a href="#p31">Toegankelijkheid</a><br />
+3.1.1 <a href="#p311">Voor software/machines</a><br />
+3.1.2 <a href="#p312">Voor mensen</a><br />
+3.2 &nbsp;&nbsp;<a href="#p32">Stabiliteit</a></p>
+
+<p class="content">
+
+<strong>4. <a href="#p4">Conclusies</a></strong><br />
+</p>
+
+<a name="p1"></a>
+<h2>1. Introductie</h2>
+<!--
+by Dane Weber and Laura Mollett
+Matthew Thomas[E]
+Bart Szyszka[E]; parts of paragraph 6 -->
+
+<p>Tim Berners-Lee&#8217;s droom over zijn uitvinding, het Wereld Wijde Web, is een gemeenschappelijke ruimte waar bezoekers informatie kunnen delen om samen te werken, te spelen en elkaar te leren kennen (<a href="http://www.w3.org/People/Berners-Lee/ShortHistory" title="Engelstalig">The World Wide Web, A very short personal history</a>). Als web ontwikkelaars, die commerci&euml;le, sociale en educatieve websites maken, maken we deze droom tot werkelijkheid.</p>
+
+<p>Maar in deze periode van enorme groei heeft het Web begeleiding nodig om zijn potentie volledig tot wasdom te laten komen. Web standaarden zijn deze begeleiding. Deze standaarden helpen om te verzekeren dat iedereen toegang heeft tot de informatie die we geven, en ze maken web ontwikkeling ook nog eens sneller en leuker.</p>
+
+<p>Toepassen van de standaarden maakt het voor mensen met speciale behoeften gemakkelijker om het web te gebruiken. Blinde mensen kunnnen de computer de webpagina's laten voorlezen. Mensen met slechte ogen kunnen hun pagina's anders laten indelen en uitvergroten om makkelijker te kunnen lezen. En mensen die kleine zak-apparaten gebruiken kunnen net zo makkelijk over het web surfen als mensen met super-de-luxe werkstations.</p>
+
+<p>Zoals we zullen uitleggen, er zijn vele <a href="#p3">praktische redenen</a> voor webontwikkelaars om zich bezig te houden met web standaarden. Zoekmachines kunnen bijvoorbeeld hun werk beter doen bij het indexeren van sites. Het gebruik van browser-specifieke codering verdubbelt of verdrievoudigt veelal het werk om webpagina's te maken, en is verre van optimaal voor nieuwe media. Dit wordt er alleen maar erger op zonder de degelijke richtlijnen van web standaarden.</p>
+
+<p>Sommige mensen vrezen dat standaarden beperkend zijn. In werkelijkheid nemen ze juist veel van het saaie werk in web ontwikkeling weg, en bieden zij ontwikkelaars meer tijd en flexibibiliteit om echt creatief te zijn. Ze zijn zijn zowel gereed voor toekomstige ontwikklingen als aangepast aan oudere technologie.</p>
+
+<p>Veel toepassingen van het Web, waaronder enkele waar vandaag alleen nog maar over wordt gedroomd, zullen onbruikbaar of veel moeilijker te gebruiken zijn zonder wijdverbreide toepassing van web standaarden. Tegenwoordig zijn er systemen en software die vrij algemeen, bijna universeel worden gebruikt, maar wie weet wat de toekomst zal brengen?</p>
+
+<p>Standaarden hebben zo veel te bieden dat wij van het <a href="../../about/mission/nl/index.html" title="NL vertaling van onze missie">Web Standaarden Project</a> (WaSP) het nodig vinden om jou te helpen er meer over te leren. Dit document is daarvoor slechts een eerste begin; het geeft je een degelijk overzicht welke standaarden er zijn, wat ze doen, en waarom we er waarde aan zouden moeten hechten. Elke keer dat we een stukje van het Web bouwen, dragen we bij aan de gemeenschappelijk informatie ruimte die het Web is. We kunnen het verder uitbouwen, of we kunnen er ballast aan toevoegen die het uiteindelijk doet versplinteren. De keus is aan ons, de gevolgen zijn voor iedereen.</p>
+
+<a name="p2"></a>
+<h2>2 Wat zijn de standaarden?</h2>
+<a name="p21"></a>
+<h3>2.1 W3C Standaarden</h3>
+
+<a name="p211"></a>
+<h4>2.1.1 Wat is het W3C?</h4>
+<!-- Matthew Thomas -->
+
+<p>Het <a href="http://www.w3.org/">World Wide Web Consortium</a> (W3C) [<a href="http://www.w3c.nl/" title="Nederlandstalige webiste van het Benelux kantoor van W3C">nl</a>] is een internationaal samenwerkingsverband van bedrijven die "<a href="http://www.w3.org/Consortium/">het Web leiden naar zijn volle potentie</a>". Het wordt geleid door Tim Berners-Lee, de uitvinder van het Web. Sinds de oprichting in 1994, heeft het W3C meer dan 450 <a href="http://www.w3.org/Consortium/Member/List.html">lid organisaties</a> - waaronder <a href="http://www.microsoft.com/">Microsoft</a>, <a href="http://aol.com/">America Online</a> (het moederbedrijf van <a href="http://home.netscape.com/company/">Netscape Communications</a>), <a href="http://apple.com/">Apple Computer</a>, <a href="http://www.adobe.com/">Adobe</a>, <a href="http://www.macromedia.com/">Macromedia</a>, <a href="http://www.sun.com/">Sun Microsystems</a>, en verscheidene andere producenten van hardware en software, kennis leveranciers, academische instellingen, en telecommunicatie bedrijven. Het Consortium is gevestigd bij drie  onderzoeksinstellingen - <a href="http://www.lcs.mit.edu/">MIT</a> in de Verenigde Staten, <a href="http://www.inria.fr/">INRIA</a> in Frankrijk, en de <a href="http://www.keio.ac.jp/">Keio University</a> in Japan.</p>
+
+<a name="p212"></a>
+<h4>2.1.2 Wat doen ze?</h4>
+<!-- Laura Mollett, Stephan Nedregaard, Peter Fleck, Juergen Steinwender[E], Kynn Bartlett -->
+
+<p>Het W3C ontwikkelt open specificaties (feitelijk standaarden) om de onderlinge operationele samenwerking van web-gerelateerde producten te vergroten. W3C Aanbevelingen zijn ontwikkeld door werkgroepen samengesteld door de consortiumleden en daarbij genodigde experts. Werkgroepen bereiken algemene consensus van bedrijven en andere organisaties die webapplicaties maken, en schrijven Werk Concepten en Voorgestelde Aanbevelingen. Deze worden vervolgens beschikbaar gesteld aan de W3C leden en de directeur, voor de formele goedkeuring als W3C Aanbevelingen. Meer informatie over deze procedure en de herzieningsstappen kun je vinden op de <a href="http://www.w3.org/">W3C website</a>.</p>
+
+<a name="p213"></a>
+<h4>2.1.3 Wat zijn de W3C standaarden?</h4>
+
+<a name="p2131"></a>
+
+<h5>2.1.3.1 HTML 4.0 - HyperText Markup Language</h5>
+<!-- Stephan Nedregaard -->
+
+<p>HyperText Markup Language (HTML) is veelgebruikt op het Web voor het toevoegen van structuur aan tekstdocumenten. Browsers verwerken dergelijke documenten en geven deze structuur weer aan de gebruiker op een media-specifieke wijze. Zo geven visuele browsers het <code>strong</code> element (<code>&lt;strong&gt;</code> ... <code>&lt;/strong&gt;</code>) weer als vette tekst, terwijl spraak-browsers die tekst extra nadruk geven bij het uitspreken ervan.</p>
+
+<p>Met behulp van <a href="#p2134">Cascading Style Sheets</a> (CSS) kan de webauteur bepalen hoe structurele elementen worden weergegeven, in weerwil van de browser instellingen.</p>
+
+<a name="p2132"></a>
+
+<h5>2.1.3.2 XML 1.0 - Extensible Markup Language</h5>
+<!-- Stephan Nedregaard -->
+
+<table style="float:right" cellspacing="0" cellpadding="5" class="sample">
+<tr><th class="gray">Voorbeeld van een gedeelte van een XML document</th></tr>
+<tr><td><pre>&lt;rolodex&gt;
+  &lt;kaartje&gt;
+    &lt;naam&gt;Bill Gates&lt;/naam&gt;
+
+    &lt;email&gt;bgates@microsoft.com&lt;/email&gt;
+  &lt;/kaartje&gt;
+  &lt;kaartje&gt;
+    &lt;naam&gt;Marc Andreesen&lt;/naam&gt;
+    &lt;email&gt;marca@netscape.com&lt;/email&gt;
+
+  &lt;/kaartje&gt;
+  &lt;kaartje&gt;
+    &lt;naam&gt;Jon S. von Tetzchner&lt;/naam&gt;
+    &lt;email&gt;jon@opera.com&lt;/email&gt;
+  &lt;/kaartje&gt;
+
+&lt;/rolodex&gt;</pre></td></tr></table>
+
+<p>Extensible Markup Language (XML) is een markup taal zoals <a href="#p2131">HTML</a>, maar in plaats van een eenduidige, vaste set van elementen, laat het je eigen elementen bepalen - of een set gebruiken die door iemand anders is gemaakt. Het is zelfs mogelijk om meerdere sets te gebruiken in een enkel document - door toepassing van <a href="http://www.w3.org/TR/REC-xml-names/">XML namespaces</a>.</p>
+
+<p>Sommige toepassingen van XML, zoals <a href="http://www.playgarden.com/w3c/TR/xhtml1/overview.html">XHTML</a> en <a href="http://www.w3.org/TR/REC-MathML/">MathML</a>, zijn al  W3C Aanbevelingen. Andere zijn momenteel W3C Werk Concepten.</p>
+
+<p>Stijlblad standaarden, zoals CSS en XSL, bieden vele mogelijkheden om te specificeren hoe XML elementen weergegeven moeten worden. Standaarden conformiteit voor directe weergave van XML in browsers is twijfelachtig, dus voor het presenteren van informatie aan mensen is de combinatie van HTML (of XHTML) en CSS-gestuurde opmaak de beste manier. XML wordt vandaag de dag meestal gebruikt voor communicatie tussen machines.</p>
+
+<p>XML is flexibeler dan HTML, vooral vanwege de mogelijkheden om je eigen elementen toe te voegen en je eigen structuursystemen te maken. Dit maakt het een ideaal format voor de organisatie van grote hoeveelheden data - het wordt dan ook al door vele databases en zoekmachines gebruikt.</p>
+
+<a name="p2133"></a>
+
+<h5>2.1.3.3 XHTML 1.0, 1.1, and Modularisatie</h5>
+<!--  Molly E. Holzschlag, Feb. 27, 2002 -->
+
+<p>XHTML 1.0 is is een nieuwe omschrijving van HTML in de vorm van een  XML toepassing. XHTML 1.0 komt voort uit het gedachtengoed van HTML 4.01, en zit technisch strakker in het pak onder invloed van XML.</p>
+
+<p>XHTML zal in je browser hetzelfde worden weergegeven als het verwante HTML. Je zou XHTML willen gebruiken als er een kans is dat je je inhoud opnieuw moet bewerken, bijvoorbeeld om het naar een PDA te sturen; de strakkere XML regels maken automatische verwerking van XHTML veel gemakkelijker en goedkoper dan gewone HTML.</p>
+
+<p>XHTML 1.0 heeft dit algemene gedachtengoed van HTML 4.01 overgenomen:</p>
+
+<ul>
+<li>Scheiden van document structuur en document opmaak met gebruikmaking van stijlbladen</li>
+<li>Documenten toegankelijk maken</li>
+<li>Documenten internationaal herkenbaar maken</li>
+</ul>
+
+<p>XHTML 1.0 gebruik ook het model van drie DTDs: Strict, Transitional, en Frameset. Dit model werd het eerst gebruikt in HTML 4.0 en werd overgenomen in HTML 4.01.</p>
+
+<p>Enkele belangrijke technische gebruiken voor de toepassing van XML in XHTML zijn:</p>
+
+<ul>
+
+<li>Alle documenttypen worden gemeld met een DOCTYPE declaration</li>
+<li>De structuur van een standaard document omvat achtereenvolgens de DOCTYPE declaration, een html element met daarin een aanduiding voor de XHTML namespace, een head element met daarin het title element, en een body element</li>
+<li>Alle elementen en attributen worden geschreven in kleine letters, en alle attribuut waarden staan tussen aanhalingstekens</li>
+<li>De niet-lege elementen (bijvoorbeeld: p, li) worden netjes afgesloten met een afsluitende tag</li>
+<li>De niet-lege elementen (bijvoorbeeld: br, hr, img) worden netjes afgesloten met een 'trailing slash' (&lt;br /&gt;)</li>
+<li>Documenten moeten voldoen aan hetgeen in in de DTD is vastgelegd</li>
+</ul>
+
+<!--
+<p>For templates and tutorials on XHTML 1.0, please see <a title="go to learn section, tutorials and articles" href="index.html#tutorials">
+
+Learn &gt; Tutorials and Articles
+</a>.</p>
+-->
+<p>Voor sjablonen kun je terecht op deze website bij <a title="go to learn section, templates" href="../templates/index.html">Learn &gt; Templates</a></p>
+
+<p>XHTML 1.1 bestaat uit drie basis onderdelen:</p>
+
+<ul>
+<li>De XHTML 1.0 Strict DTD (with kleine aanpassingen)</li>
+<li>XHTML  Modularisatie</li>
+<li>De Ruby Annotatie</li>
+</ul>
+
+<p>Je kunt op verschillende manieren een document in XHTML 1.1 schrijven. De eerste manier is met gerbuik van de openbare XHTML 1.1 DTD. Hierdoor wordt je werk extreem op structuur gericht omdat er vrijwel geen lay-out attributen meer zijn in XHTML 1.1. De scheiding van structuur en presentatie is hier vrijwel volledig, en al je presenteerwerk gaat in het stijlblad zitten.</p>
+
+<p>Een andere manier van schrijven van XHTML 1.1 documenten is het gerbuiken van XHTML Modularisatie. Dat is het indelen met bekende componenten van HTML and XHTML (zoals text, tables, frames, forms) in te onderscheiden stukjes. Vervolgens kun je een eigen DTD schijven en daarin alleen de componenten gebruiken die je nodig hebt. Dit is uitbreidbaarheid in actie, waarbij kenmerkend is dat het jou als schrijver de mogelijkheid geeft om je markup op maat te maken.</p>
+
+<p>The Ruby Annotatie is een speciale wijze om om te gaan met enkele Aziatische tekens. Ruby is in te delen bij het werk aan de mogelijkheden van Internationalisatie.</p>
+
+<a name="p2134"></a>
+<h5>2.1.3.4 CSS - Cascading Style Sheets</h5>
+<!-- Stephan Nedregaard -->
+
+
+<p>Cascading Style Sheets (<a href="http://www.playgarden.com/w3c/TR/REC-CSS1/CSS1.html" title="NL vertaling van de aloude versie 1">CSS</a>) is de toepassing voor het wijzigen van de verschijningsvorm van <a href="#p2131">HTML</a> of <a href="#p2132">XML</a> elementen, door stijlen toe te wijzen aan element typen, zelf verzonnen classes of individuele elementen.</p>
+
+<p>Stijlbladen kunnen gebruikt worden om de lay-out van een hele website te omschrijven. Na de introductie van CSS heeft het W3C aanbevolen dat de lay-out specifieke opties uit HTML zouden moeten verdwijnen en worden vervangen door stijlbladen, met als doel een eenvoudiger en meer gestructureerd Wereld Wijd Web.</p>
+
+
+<a name="p2135"></a>
+<h5>2.1.3.5 DOM 1 - Document Object Model Level 1</h5>
+<!-- Dane Weber, SC[E], Joe D. Williams(ex), Lewis A. Shadoff(ex/other-sgg) -->
+
+<p>Het DOM reguleert hoe de volle kracht en interactiviteit van scripttalen (zoals <a href="#p2231">ECMAScript</a>, de standaard versie van JavaScript) gebruikt kan worden. (In programmeer termen, het Document Object Model (DOM) Level 1 is een Application Programming Interface (API) voor interactie met webpagina's.) Het geeft de scripttaal gemakkelijke toegang tot de structuur, inhoud en presentatie van een document dat is geschreven in talen als <a href="#p2131">HTML</a> en <a href="#p2133">CSS</a>.</p>
+
+<p>Het DOM is toepasbaar op toekomstige verbeteringen van technologie; het maakt het mogelijk dat alle mogelijke scripttalen interactie hebben met welke taal ook maar in het document wordt gebruikt. Deze standaard maakt het niet alleen makkelijker om dynamische HTML te programmeren, maar het maakt ook de aanpassingen aan toekomstige Internettechnologie minder lastig.</p>
+
+<a name="p2136"></a>
+
+<!-- <h5>2.1.3.6 Emerging Standaards?</h5> -->
+<!-- Stephan Nedregaard, Kynn Bartlett[B] Matthew Thomas[E] -->
+<!--
+<p>The W3C is constantly at work on creating new standards; the most important of these right now are are XHTML and XSL. <a href="http://www.w3.org/TR/xhtml1/">XHTML</a>, Extensible Hypertext Markup Language, is a reformulation of <a href="#p2131">HTML 4.0</a> in <a href="#p2132">XML</a>; <a href="http://www.w3.org/TR/WD-XSLReq">XSL</a>, the Extensible Stylesheet Language, is a language for transforming and displaying XML documents, using an XML vocabulary.</p>
+-->
+
+<a name="p22"></a>
+<h3>2.2 ECMA Standaarden?</h3>
+<a name="p221"></a>
+<h4>2.2.1 Wat is de ECMA?</h4>
+<!-- Bart Szyszka: -->
+
+<p>De <a href="http://www.ecma-international.org/">European Computer Manufacturers Association</a> (ECMA) is een organisatie opgericht in 1961 met het doel te werken aan standaardisatie in operationele computers formats, waaronder programmeertalen en input/output codering.</p>
+<p>De ECMA heeft is gevestigd in Geneve, Zwitserland, nabij de kantoren van de <a href="http://www.iso.ch/">International Organization for Standardization</a> (ISO) en de <a href="http://www.iec.ch/">International Electrotechnical Commission</a> (IEC). In 1994 is de naam van de organisatie gewijzigd in ECMA - European Association for Standardizing Information and Communication Systems, om het verbrede gebied van activiteiten beter aan te duiden.</p>
+
+<a name="p222"></a>
+<h4>2.2.2 Wat doen ze?</h4>
+<!-- Holger Maier, Stephan B. Nedregaard[E], Matthew Thomas[E] -->
+
+<p>De belangrijkste taak van de ECMA is de ontwikkeling van Standaarden en Technische Rapporten op het terrein van informatie en communicatie-technologie. Aangezien ECMA een samenwerkingsverband van bedrijven is en geen officieel standaardisatie-instituut, werken ze vaak samen met offici&euml;le nationale en internationale instituten.</p>
+
+<p>ECMA Standaarden zijn geaccepteerd als een basis voor internationale en Europese standaarden. Tot dusver zijn meer dan <a href="http://www.ecma-international.org/publications/publications.htm">270 ECMA Standaarden en 70 Technische Rapporten</a> gepubliseerd.</p>
+<!-- updated URL 02-2002 skaiser --><!-- updated URL 06-2003 oskar -->
+
+<p>Van deze standaarden zijn er 85 geaccepteerd als internationale standaarden door de <a href="http://www.iso.ch/">International Organization for Standardization</a> (ISO). Daarenboven zijn er nog eens 25 geaccepteerd als Europese standaarden door het <a href="http://www.etsi.org/">European Telecommunications Standards Institute</a> (ETSI).</p>
+
+<a name="p223"></a>
+<h4>2.2.3 Wat zijn de ECMA standaarden?</h4>
+
+<a name="p2231"></a>
+
+<h5>2.2.3.1 ECMAScript (standaard JavaScript)</h5>
+<!-- Matthew Thomas, Holger Maier
+Lewis A. Shadoff
+Nedregaard/Thomas[E], based on Th/Maier & Shadoff -->
+
+<p>ECMAScript is een gestandaardiseerde scripting taal, grotendeels gebaseerd op <a href="http://home.netscape.com/company/">Netscape</a>&#8217;s <a href="http://developer.netscape.com/tech/javascript/">JavaScript</a> en <a href="http://microsoft.com/">Microsoft</a>&#8217;s <a href="http://msdn.microsoft.com/library/en-us/script56/html/js56jsoriJScript.asp">JScript</a>. Het ECMAScript is gedefinieerd door ECMA&#8217;s <a href="http://www.ecma.ch/ecma1/MEMENTO/tc39.htm">Technical Committee 39</a> (TC-39).</p>
+
+<p>Het ECMAscript, een object-gebaseerde taal, wordt meestal gebruikt om de objecten in webpagina, die zijn gespecificeerd door het <a href="#p2134">Document Object Model</a> (DOM). Deze objecten (feitelijk de elementen die een webpagina vormen of de webpagina&#8217;s als geheel) kunnen worden toegevoegd, verwijderd, verplaatst of van eigenschappen gewijzigd. Dit stelt de webontwikkelaars in staat om effecten te bereiken zoals geanimeerde tekst, grafisch roll-overs en pagina&#8217;s die wijzigen door handelingen van gebruikers, zonder dat ze opnieuw geladen hoeven te worden.</p>
+
+<p>De huidige ECMAscript specificatie is ECMA Standaard ECMA-262, <a href="http://www.ecma-international.org/publications/standards/ECMA-262.HTM"><cite>ECMAScript Language Specification, 2nd edition</cite></a>.</p>
+<!-- updated URL 02-2003 mholzschlag -->
+
+<a name="p3"></a>
+<h2>3 Wat zijn de voordelen van het gebruik van webstandaarden?</h2>
+<a name="p31"></a>
+
+<h3>3.1 Toegankelijkheid</h3>
+<a name="p311"></a>
+<h4>3.1.1 Voor software/machines</h4>
+<!-- Stephan Nedregaard, Matthew Thomas[E], Kynn Bartlett[E] -->
+
+<p>Het gebruik van webstandaarden kan je pagina&#8217;s beter zichtbaar maken in web zoekresultaten. De structurele informatie aanwezig in standaard-conforme documenten maakt het gemakkelijk voor zoekmachines toegang te krijgen en de informatie in deze documenten te wegen, waardoor ze ook beter worden ge&iuml;ndexeerd.</p>
+
+<p>Omdat het gebruik van web standaarden het zowel voor server-side als client-side software gemakkelijker maken om de structuur van jouw document te herkennen, is het makkelijker en effectiever om een zoekmachine aan je eigen website toe te voegen.</p>
+
+<p>Standaarden zijn zodanig geschreven dat ook oude browsers de basis-structuur van je documenten zullen herkennnen. Ook al kunnen ze niet de nieuwste en flitsende uitbreidingen van de standaarden herkennen, ze zullen in elk geval de inhoud van jouw website weergeven. Hetzelfde geldt, vanzelfsprekend, voor robots - systemen die informormatie van jouw website verzamelen voor gebruik door zoekmachines en andere indexeerders.</p>
+
+<p>Standaard-conforme codering maakt het mogelijk jouw webpagina te testen met een validatie-service. Deze verwerken je documenten en geven een overzicht van fouten. Hierdoor wordt het ontdekken en corrigeren van fouten veel makkelijker, wat je veel tijd kan besparen.</p>
+
+<p>Standaard-conforme documenten kunnen makkelijk worden omgezet in andere formats, zoals databases of Word documenten. Dit stimuleert een meer gevarieerd gebruik van de informatie in documenten op het Web, en eenvoudige migratie naar nieuwe systemen - zowel hardware als software - waaronder apparaten zoals TV&#8217;s en PDA&#8217;s.</p>
+
+<a name="p312"></a>
+<h4>3.1.2 Voor mensen</h4>
+<!-- Matthew Thomas, Jens Edlund[B], Laura Mollett[B] -->
+
+<p><a href="http://www.w3c.nl/Vertalingen/2000/WAI-WEBCONTENT/WAI-WEBCONTENT-NL.html">Toegankelijkheid</a> is een belangrijk gedachtengoed achter de webstandaarden, met name HTML.</p>
+
+<p>Dit betekent niet alleen het toegankelijker maken van het Web voor mensen met een handicap, maar ook dat webpagina&#8217;s verwerkt kunnen worden door mensen die andere browsers hebben dan de gebruikelijke - waaronder stem-browsers die webpagina&#8217;s voorlezen voor mensen met beperkt gezichtsvermogen, Braille-browsers die tekst in braille vertalen, zakagenda-browsers met zeer geringe schermafmetingen, teletext schermen, en andere minder gebruikelijke output apparaten.</p>
+
+<p>Naarmate de variatie in webtoegang methoden toeneemt, wordt het steeds ingewikkelder om websites aan te passen of opnieuw te gebruiken (sommigen stellen zelfs dat het vandaag de dag al onmogelijk is geworden). Het volgen van de webstandaarden is een grote stap in het oplossen van dit probleem. Maak je website standaard-conform en je kunt erop rekenen dat niet alleen de traditionele browsers, zowel de oude als de nieuwere, in staat zullen zijn om je websites correct weer te geven, maar ook dat ze getoond kunnen wodern met ongebruikelijke browsers en media.</p>
+
+<p>Enkele gevolgen van het veronachtzamen zijn vanzelfsprekend: het meest basale gevolg is dat het de toegang tot je website beperkt. Wat is de zakelijke afweging om je klantenkring te beperken tot slechts een gedeelte van degenen die klant willen worden? Voor een commerci&euml;le website veroorzaakt het verhinderen van toegang voor zelfs een klein deel van de doelgroep al gauw een groot verschil in de winstmarge. Voor een educatieve website is het natuurlijk logisch om toegang te bieden aan niet alleen de rijke en gezonde schoolkinderen met grafische browsers, maar ook aan de kinderen in Derde-Wereld landen die slechts tekst-browsers hebben, of gehandicapte studenten die bijzondere browsers moeten gebruiken.</p>
+
+<p>Dezelfde afweging is van toepassing op alle soorten websites &#8212; ook al lijkt het soms aantrekkelijk om af te wijken van de standaarden en gebruik te maken van browser-specifieke toeters-en-bellen, is de toegenomen toegankelijkheid die voortkomt uit het gebruik van standaarden op de langere termijn veel voordeliger.</p>
+
+<a name="p32"></a>
+
+<h3>3.2 Stabiliteit</h3>
+<!-- Matthew Thomas, Bart Szyszka[B], Jens Edlund[B], Stephan Nedregaard[B] -->
+
+<p>Het merendeel van de web standaarden is algemeen ontworpen met voorwaartse en achterwaartse compatibiliteit &#8212; opdat gegevens die oude versies van standaarden gebruiken gewoon verwerkt blijven worden door nieuwe browsers, en data die nieuwere versies van de standaarden gebruiken 'keurig degraderen' om een acceptabel resultaat te tonen in oudere browsers.</p>
+
+<p>Omdat een website gedurende zijn levenscyclus door verschillende teams van ontwerpers zal worden gewijzigd, is het belangrijk dat al die mensen de codering kunnen begrijpen en deze gemakkelijk kunnen wijzigen. Web standaarden bieden een setje regels die elke webontwikkelaar kan volgen, begrijpen en zich eigen kan maken. Wanneer de ene ontwikkelaar een website overeenkomstig de standaarden ontwerpt, zal de volgende de draad kunnen oppakken waar de vorige was gebleven.</p>
+
+<a name="p4"></a>
+
+<h2>4. Conclusies</h2>
+<!-- Randy Piatt and Lewis A. Shadoff, Peter Fleck[B]
+Matthew Thomas -->
+
+<p>Wij webontwikkleaars zijn voortdurend bezig om het probleem van de verschillende weergave van webpagina&#8217;s in de verschillende browsers en verschillende versies van browsers het hoofd te bieden. Dit dwingt ons tot hetzij tijdvretende dubbele/meervoudige codering, hetzij tot codering voor een enkele browser, wat het weer moeilijker maakt, zo niet onmogelijk, voor een deel van de bezoekers om de website te gebruiken. Dit wordt allemaal alleen nog maar lastiger met het verschijnen van nog weer andere hardware en software waarmee men over het web kan surfen, zoals telefoons, pagers en PDA&#8217;s.</p>
+
+<p>Web standaarden zijn geen aftanse wetten verordonneerd door ivoren-toren organsaties. <a href="#p2">Zoals we hebben beschreven</a>, zijn deze standaarden merendeels vastgesteld door vertegenwoordigers van dezelfde mesnen die ze ook gaan gebruiken &#8212; browser producenten, webontwikkelaars, inhoud leveranciers en andere organisaties.</p>
+
+<p>Het schrijven van webpagina&#8217;s in overeenstemming met de standaarden is sneller en maakt het eenvoudiger om de pagina&#8217;s te onderhouden. Debuggen en problemen oplossen worden gemakkelijker, omdat de codering een standaard volgt. Je hoeft je niet langer zorgen te maken over codering en onderhoud van verschillende versies van code die toch eenzelfde weergave moeten bewerkstelligen. Er is slechts <em>&eacute;&eacute;n</em> versie van je website, en daar blijft het bij.</p>
+
+<p>De algemene toepassing van web standaarden is van groot belang geworden. Het is de <a href="../../about/mission/nl/index.html" title="NL vertaling">missie</a> van de WaSP om van het web een betere plek te maken, zowel voor ontwikkelaars als eindgebruikers, door browser producenten en webontwikkelaars te stimuleren om de web standaarden te gebruiken. Deze inspanning wordt zeer gediend wanneer webontwikkelaars de standaarden als vanzelfsprekend <em>gebruiken</em>, en erop aandringen dat hun code wordt gemaakt en weergegeven volgens de standaarden.</p>
+
+<p>De <a href="#p3">argumenten die we hebben gegegeven</a> zouden jou, de web ontwikkelaar, voldoende stimulans moeten geven om te beginnen met het gebruik van web standaarden, en tevens voldoende ammunitie om jouw bedrijf en mede-ontwikkelaars te kunnen aanmoedigen om deze standaarden ook te gebruiken.</p>
+
+    <p><a href="../../act/index.html">Help deze droom werkelijkheid te worden.</a></p>
+    <div class="authors"> <cite><strong>Web Standaarden - Project Developer Education 
+      Committee:</strong><br />
+      <script type="text/javascript">
+<!--
+document.write('<a href="mailto:&#115;&#116;&#101;&#112;&#104;&#97;&#110;&#64;&#111;&#112;&#101;&#114;&#97;&#46;&#99;&#111;&#109;" title="click here to email Stephan">Stephan Nedregaard<\/a>');
+// -->
+</script>
+      (co&ouml;rdinator), Kynn Bartlett, Gail T. Cohen, Jens Edlund, Nick Finck, Tomas 
+      Fjetland, Peter Fleck, Markus Gut, Holger Maier, Julian Missig, Laura Mollett, 
+      Randy Piatt, Lewis A. Shadoff, Juergen Steinwender, Bart Szyszka, Matthew 
+      Thomas, Dane Weber. 
+        LEARN Committee
+      </cite> </div>
+      <p>Geactualiseerd op 27-02-2002 door Molly E. Holzschlag en Shirley E. Kaiser van het WaSP</p>
+	<p>De Nederlandse <strong>vertaling</strong> is gemaakt door: <a href="http://www.w3os.nl/oskar/" title="&raquo;&raquo; zijn homepage">Oskar van Rijswijk</a> [ <a href="http://w3os.nl/logos/" title="&raquo; zijn weblog">LOGos</a> ]</p>
+</div>
+<!-- Credits: by Molly Holzschlag -->	
+	<div class="padder" id="footer">
+		<!--<a href="/legal/">Legal</a>-->
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+	<div id="LangLinks">
+		<ul>
+		<li><a href="faq_fr.html">Engels (en)</a></li>
+		<li><a href="faq_fr.html">Frans (fr)</a></li>
+		<li><a href="faq_it.html">Italiaans (it)</a></li>
+		<li><a href="faq_jp.html">Japans (ja)</a></li>
+		<li>Nederlands (nl)</li>
+		</ul>
+	</div>
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/faq/faq_nl.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:34 GMT -->
+</html>
+<!-- $Id: faq_nl.html,v 1.1 2003/08/02 05:25:21 david Exp $ -->

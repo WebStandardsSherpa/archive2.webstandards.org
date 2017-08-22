@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/resources/css/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:42 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Standards : CSS</title>
+<style type="text/css">
+	@import "../../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+
+<style type="text/css">
+	hr	{
+	color: #930; /* for IE(Win?) */
+    background-color: #930; /* for Moz/NN6+ (Gecko) */
+    border: 1px solid #930; /* for Opera7 */
+	}
+</style>
+
+</head>
+<body>
+<div id="Header">
+	<a href="../../../index.html" class="imgLink"><img id="logo" src="../../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../../index.html">home</a></li>
+	<li><a href="../../../about/index.html">about</a></li>
+	<li><a href="../../../act/index.html">act!</a></li>
+	<li class="active"><a href="../../index.html">learn</a>
+		<ul>
+		<li><a href="../../faq/index.html">faq</a></li>
+		<li><a href="../../glossary/index.html">glossary</a></li>
+		<li><a href="../../orgs/index.html">orgs</a></li>
+		<li><a href="../../reference/index.html">reference</a></li>
+		<li class="active"><a href="../index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../../opinion/index.html">opinion</a></li>
+	<li><a href="../../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+<div class="padder">
+<h1><!--Learn: Standards: -->Cascading Style Sheets</h1>
+
+<h2 class="sub">New listings!</h2>
+
+<ul>
+	<li><a href="http://meryl.net/css/">CSS Tableless Web Sites</a></li>
+	<li><a href="http://www.csszengarden.com/">CSS Zen Garden: The Beauty in CSS Design</a></li>
+</ul>
+
+<hr class="prior" />
+
+<p>The <a href="http://www.w3.org/" title="World Wide Web Consortium.">W3C</a> invented Cascading Style Sheets (CSS) in 1996 to increase the presentational sophistication <em>and</em> the accessibility of websites, and to eliminate the browser-specific markup that threatened to fragment the emerging web. In 1997, some browsers began to support parts of CSS-1, but the standard did not become truly usable until 2001. Today, with <a href="http://www.webstandards.org/upgrade/">standards-compliant browsers</a> dominating the market, there is every reason to use CSS to remove invalid markup from your sites, separate style from content, lighten the bandwidth of your pages, and increase the odds that people and devices will actually be able to access the sites you create.
+
+</p>
+
+<ul>
+<li>
+The <a href="http://www.w3.org/Style/CSS/" title="W3C CSS home page.">CSS Homepage</a> at W3C  is the mothership, with links to tutorials, test suites, core styles, authoring tools, the free CSS validator, and of course the official specs.
+</li>
+
+<li>WestCiv maintains a free online <a href="http://www.westciv.com/style_master/academy/css_tutorial/">CSS Guide</a> that is informative, detailed, and helpful.</li>
+
+
+<li>A List Apart&#8217;s <a href="http://www.alistapart.com/stories/journey/" title="Converting from table-based layouts to CSS in five easy pages.">Web Designer&#8217;s Journey</a> ... making the transition from HTML table-based layouts to clean CSS design.</li>
+
+<li>A List Apart provides working developers with a &#8220;No-Fault CSS&#8221; Plan in <a href="http://www.alistapart.com/stories/fear">Fear of Style Sheets,</a> and further details in <a href="http://www.alistapart.com/stories/fear2/">Fear of Style Sheets 2</a>, <a href="http://www.alistapart.com/stories/fear3/">Fear 3</a>, and especially <a href="http://www.alistapart.com/stories/fear4/">Fear 4</a>, which explains how workarounds for old cross-platform differences fail in newer, more standards-compliant browsers ... and what you can do instead. <br /><br />
+
+If you&#8217;re new to CSS, or confused by it, read this stuff before you read the official CSS-1 and CSS-2 specs. (The specs are the real deal, but they&#8217;re not always easy to understand without a little background info.)</li>
+
+</ul>
+
+<p>Browser comparisons, charts, references:</p>
+
+<ul>
+
+<li><a href="http://gallery.theopalgroup.com/selectoracle/" title="English translations of CSS-2 selectors.">SelectORacle</a> ... turns CSS-2 selectors into English. Confused about what <code>div&gt;h1+*#text a[title~="W3C"][class="external"]:visited:hover</code> means? Wonder no more.</li>
+
+<li><a href="http://www.xs4all.nl/~ppk/css2tests/">CSS2 tests</a> ... what the new css declarations mean, how they&#8217;re supposed to work, which browsers support them, and which don&#8217;t.</li>
+
+<li><a href="http://www.webreview.com/style/css1/charts/mastergrid.shtml" title="A useful listing of what works, and what fails, in various &#8217;CSS-capable&#8217; browsers. WARNING: Long load time!">The WebReview CSS Reference Chart</a> is a rough guide to CSS issues, and shows the kinds of incompatibilities that brought WSP together in the first place (updated link). WARNING: Big file, long load time. But worth it.</li>
+
+</ul>
+
+<p>To help guide you through the various browsers:</p>
+
+<ul>
+
+<li><a href="http://archive.webstandards.org/css/">CSS Samurai Top 10</a> ... the classic &#8220;top 10 css problems&#8221; report from The WaSP&#8217;s CSS Samurai, 1998-1999.</li>
+
+<li><a href="http://www.alistapart.com/stories/sizematters/" title="@ALA: Fahrner on putting accessible font size keywords to work.">Size Matters</a>: Working around screwy inheritance models. Fahrner puts accessible CSS font size keywords to work.</li> 
+
+<li><a href="http://style.cleverchimp.com/">agitprop</a> ... Todd Fahrner&#8217;s seminal writings on css and text styling on the Web. Anyone who even pretends to design websites should read this stuff several times over.</li>
+
+<li>Tantek &Ccedil;elik&#8217;s <a href="http://www.tantek.com/CSS/Examples/boxmodelhack.html" title="Tantek&#8217;s CSS box model hack works around remaining quirks in various CSS-compliant browsers.">CSS box model hack </a> works around quirks in IE5/Win, IE4.5/Mac, and IE6/beta.</li>
+
+</ul>
+
+<p>Want some CSS templates to help make life easier? Here are some to get you started:</p>
+
+<ul>
+<li>BlueRobot&#8217;s CSS <a href="http://www.bluerobot.com/web/layouts/" title="Elegant CSS layouts for the taking.">Layout Reservoir</a> ... elegant css layouts, yours for the taking.</li>
+
+<li>Glish&#8217;s <a href="http://glish.com/css/" title="Look, Ma, no tables! Code for the taking.">CSS Layout Techniques</a> ... look, Ma, no tables! Grab and run, or linger and learn. Similarly: Glish&#8217;s <a href="http://glish.com/css/hacks.asp" title="Layout Techniques: The Good, the Bad, and the Ugly.">CSS Layouts: The Good, the Bad, and the Ugly</a> discusses problems (and workarounds) in CSS browsers.</li>
+
+<li>Owen Briggs&#8217;s <a href="http://www.thenoodleincident.com/tutorials/box_lesson/boxes.html" title="Click a layout, view the CSS that built it.">Little Boxes</a> visual layouts page ... click a layout, view the css that built it. Similarly, Owen Briggs&#8217;s <a href="http://www.thenoodleincident.com/tutorials/box_lesson/" title="Using standards while working around browser bugs.">Box Lesson</a> Problem &amp; Workaround Set documents browser bugs and offers possible workarounds.</li>
+
+
+</ul>
+
+<p>Some older documents might prove useful as well:</p>
+
+<ul>
+<li>
+Yuriko Ienaga provides a complete list showing which browsers support which CSS elements at  <a href="http://www.ncdesign.org/html/sindex.htm" >www.ncdesign.org/html/sindex.htm.</a></li>
+
+
+<li>
+<a href="http://css.nu/pointers/bugs.html">CSS Bugs and Workarounds in IE3, IE4 and NN4</a> from the CSS Pointers Group. We&#8217;re not necessarily recommending the workarounds, but the bug list itself does a wonderful job of finding and describing problems in current implementations.</li>
+
+
+
+<li>
+
+<a href="http://msdn.microsoft.com/workshop/author/css/css-ie4.asp" >CSS in IE4</a> includes a discussion of IE3/4 compatibility issues and MS&#8217;s CSS support chart.</li>
+
+<li>
+<a href="http://developer.netscape.com/support/bugs/known/css.html" >Netscape&#8217;s official CSS bug page for NS 4.0.</a> Obviously, this is old information, but it may come in handy until all Netscape users have upgraded to the standards-compliant 6.0 version.</li>
+</ul>
+
+</div>
+
+<!-- Credits: by Molly Holzschlag -->
+	
+	<div class="padder" id="footer">
+		<a href="../../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+				<ul>
+			<li><a href="../wai/index-2.html">Accessibility</a></li>
+			<li><a href="index-2.html">CSS</a></li>
+			<li><a href="../dom/index-2.html">DOM</a></li>
+			<li><a href="../javascript/index-2.html">Scripting</a></li>
+			<li><a href="../html/index-2.html">HTML</a></li>
+			<li><a href="../graphics/index-2.html">Graphics</a></li>
+			<li><a href="../xhtml/index-2.html">XHTML</a></li>
+			<li><a href="../xml/index-2.html">XML</a></li>
+			<!--<li><a href="/learn/resources/rdf/">RDF</a></li>-->
+			<li><a href="../others/index-2.html">Other resources</a></li>
+		</ul>
+
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/resources/css/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:42 GMT -->
+</html>
+<!-- $Id: index.html,v 1.4 2004/06/18 17:13:22 april Exp $ -->

@@ -1,0 +1,154 @@
+FOR IMMEDIATE RELEASE:
+  
+Contact:
+Chris Carrico                                        George Olsen
+Urge Public Relations                                2-Lane Media
+chris@urgepr.com                                     golsen@2lm.com 
+213-848-8743                                         310-473-3706 x2225
+
+INTERNET EXPLORER 5 FALLS SHORT ON STANDARDS SUPPORT, WEB
+DEVELOPERS FORCED TO CONTINUE WORKAROUNDS
+
+While Microsoft's Internet Explorer 5.0 makes marked improvements
+over version 4.0, it still falls short -- sometimes significantly
+-- of fully supporting key Web standards, the Web Standards
+Project said today.
+
+"We realize that many business considerations go into selecting a
+release date, but we wish Microsoft had delayed Internet Explorer
+5.0's release to focus on getting standards support right," said
+WSP Project Leader George Olsen. "This would've benefited Web
+developers, Web users -- and Microsoft itself."
+
+Instead, Web developers will be forced to continue extensive --
+and expensive -- workarounds and debugging to deal with Internet
+Explorer's failure to fully implement standards created by the
+World Wide Web Consortium (W3C).
+
+"We'd hoped that the latest round of browsers would take the
+opportunity to get things right. Internet Explorer 5.0 is an
+opportunity lost," Olsen said. "We'd like to know: when will
+Internet Explorer have full support for any one Web standard?"
+
+"We're disheartened because Microsoft helped W3C develop the very
+standards that they've failed to implement in their browser," he
+said. "We're also dismayed to see Microsoft continue adding
+proprietary extensions to these standards when support for the
+essentials remains unfinished."
+
+The patchwork support for these standards among browsers is
+wasting millions of dollars spent on Web development each year
+and threatens to further fragment the Web, especially as browsers
+move beyond the desktop to televisions and PDAs.
+
+Standards-related problems with Internet Explorer 5.0 include:
+
+* Cascading Style Sheets (CSS) 1.0 - CSS is supposed to give
+control over the appearance of many pages at once, from the
+typography to the behavior of links, as well as precise control
+over page layout.
+
+Unfortunately, Internet Explorer continues to fail to fully
+support this 27-month old standard, meaning page layouts aren't
+always displayed correctly. By contrast, Gecko, the new layout
+engine under development for Netscape's next browser, already
+achieves accurate layouts in a number of tests devised by W3C and
+WSP -- tests that Internet Explorer fails.
+
+Worse than any omissions, Internet Explorer implements key parts
+of it in ways that assure incompatibility with standard-compliant
+authoring tools and other browsers -- Gecko, Opera 3.51, and in
+some cases even Microsoft Internet Explorer 4.5 for the Macintosh
+- all of which handle CSS more accurately. Meanwhile, as in
+previous releases, Internet Explorer 5.0 introduces "CSS
+extensions" that aren't part of the actual CSS standard.
+
+* DOM 1.0 (Document Object Model) - DOM lets developers use
+scripting languages, such as ECMAScript (née JavaScript), to
+manipulate text, images and other parts of Web pages; for
+instance, dynamically changing their appearance over time, or
+moving them around inside the browser window.
+
+However, support for DOM elements is spotty at best, meaning
+Internet Explorer falls short in some crucial areas that any Web
+developers creating a reasonably complex application would need
+to use.
+
+Again, Gecko already shows much more extensive support for DOM
+despite being still in early alpha testing.
+
+* Extensible Markup Language (XML) 1.0 - This "super mark-up"
+language is intended to share information about the content
+within a Web page, but Internet Explorer has bugs in its basic
+interpretation of XML data even though there have been freeware
+parsers available since 1997 that do this correctly.
+
+Even more surprising, Explorer's handling of XML namespaces --
+which lets developers use more than one XML-based language in the
+same Web page -- violates both the spirit and the letter of that
+specification, which Microsoft itself helped develop. For
+example, Internet Explorer has hard-wired support for the "html"
+prefix, even though developers should be able to override this.
+
+* Extensible Stylesheet Language - XSL is a standard still under
+development by W3C, which is intended to allow manipulating and
+formatting XML pages. It aims to provide a standard, elegant
+means to accomplish many tasks that full support for DOM 1.0 and
+CSS would also make possible.
+
+Unfortunately, Internet Explorer is heavily biased in favor of
+the still-experimental XSL (if a page provides both CSS and XSL,
+Internet Explorer chooses XSL). This is totally unacceptable
+given that CSS has been a stable standard since 1996, and XSL is
+still very far from being finished. Also, the Microsoft XSL
+examples include proprietary keywords and syntax that do not
+appear in any of the W3C drafts being used to develop the actual
+XSL standard.
+
+By implementing an experimental version of XSL before supporting
+the finished DOM and CSS standards completely Microsoft runs the
+risk that Internet Explorer will be incompatible with the actual
+XSL standard when it is finalized.
+
+* HTML 4.0 - While Internet Explorer does appear to support the
+majority of HTML 4.0, there are still some bugs and missing
+features, including a several important features for Web
+accessibility. Failure to support these features makes the Web
+more inaccessible to people with disabilities.
+
+Making a site universally accessible and usable should be almost
+seamless. HTML 4.0 was specifically created with certain
+accessibility features to make it easier for developers to do
+this without compromising the design and layout of a page.
+However, this requires that the standard be fully supported.
+
+"We're disappointed that Internet Explorer 5.0 has not done a
+better job supporting standards because they have shown that they
+do have excellent programmers," Olsen said.
+
+For example, Olsen said, while the Macintosh version of Internet
+Explorer 4.5 doesn't support as much of the CSS standard as
+Internet Explorer 5.0, of the parts that Mac Internet Explorer
+4.5 supports, it does a better job of supporting them more
+accurately than Internet Explorer 5.0. This puts it on par with
+Opera 3.51 in doing the best job of rendering CSS accurately
+among officially-released browsers.
+
+About The Web Standards Project: WSP is an international
+coalition of Web developers and Web experts who are urging
+browser makers to fully support Cascading Style Sheet Level 1
+(CSS-1), the Document Object Model (DOM) and XML in their
+browsers. Its effort to bring attention to the existing and
+potential problems involved with browser incompatibility does not
+mean that WSP is opposed to innovations  by browser
+manufacturers. The coalition merely urges browser manufacturers
+to use open standards for enhancements and support existing ones
+before adding new features.
+
+
+
+George Olsen                                     mailto:golsen@2lm.com         
+Design Director                                     http://www.2lm.com
+2-Lane Media                                   tel: 310/473-3706 x2225
+
+

@@ -1,0 +1,65 @@
+Contact:
+Chris Carrico                                     George Olsen
+Urge Public Relations                             2-Lane Media
+chris@urgepr.com                                  golsen@2lm.com 
+213-848-8743                                      310-473-3706 x2225
+
+
+WEB STANDARDS WILL HELP WEB ACCESSIBILTY
+
+Full support for Web standards would enable developers to make
+even fuller use of guidelines intended to make the Web more
+accessible to people with disabilities, according to the Web
+Standards Project.
+
+The Web Content Accessibility Guidelines 1.0, developed by the
+World Wide Web Consortium, will help Web developers build sites
+that can be more easily access, whether by people with
+disabilities or by anyone who might be visiting the site under
+some constraint, for example a slow Internet connection.
+
+"People will find many of the guidelines are things they may be
+doing already, or can do just by planning ahead," said George
+Olsen, WSP Project Leader. "For example, most developers are
+already using <ALT> tags to describe graphics."
+
+Most of the guidelines can be used by Web developers with minimal
+extra effort and few, if any, trade-offs.
+
+"The guidelines aren't asking us to design to the lowest common
+denominator, they're merely asking us to provide alternate ways
+for users to comprehend our content," Olsen said.
+
+Using the accessibility features built into Web standards
+minimizes the need for developers to build alternate versions of
+their sites, he said.
+
+But there are a few aspects of the guidelines that still need
+full support for Web standards in order to be used fully.
+
+For example, the guidelines ask Web developers to avoid using the
+<TABLE> tag to layout elements of a page -- a workaround that's
+used by a vast majority of Web sites -- unless the table can make
+sense when read line-by-line. The Cascading Style Sheets 2.0
+(CSS-2) standard, finalized more than a year ago, would enable
+Web developers to lay out pages much more easily, and still be
+accessible -- but few browsers today support the layout and
+positioning features of CSS-2.
+
+In writing the guidelines, the Web Accessibility Initiative had
+to provide "interim" guidelines for several areas, describing
+workarounds developers can use to make pages more accessible
+until browsers fully support standards and eliminate the need for
+stop-gap measures.
+
+"As browsers fully support key Web standards, it will become
+easier to use these guidelines," Olsen. "But in the meantime,
+developers should incorporate the majority of the guidelines that
+can be used today."
+
+ABOUT THE WEB STANDARDS PROJECT WSP (http://www.webstandards.org)
+is an international coalition of Web developers advancing the Web
+industry by bringing attention to browser incompatibilities. The
+coalition urges all browser manufacturers to support existing
+standards before incorporating proprietary innovations.
+

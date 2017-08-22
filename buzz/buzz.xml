@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<rss version="0.91">
+  <channel>
+    <title>Web Standards Project BUZZ</title>
+    <link>http://webstandards.org/buzz/</link>
+    <description>The Buzz: the Web Standards Project Weblog. Fighting for standards that ensure simple, affordable access to web technologies for all.</description>
+    <language>en-us</language>
+    <item>
+      <title>Help Free the Web with WaSP</title>
+<author>mollyeh</author>
+      <description>We&apos;ve stung, we&apos;ve swarmed, we&apos;ve buzzed. Sometimes we&apos;ve failed to make our mark, other times we&apos;ve been far more successful....</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_03.html#a000612</link>
+    </item>
+    <item>
+      <title>Microsoft IE7 Progress: Sneak Preview of MIX06  Release</title>
+<author>mollyeh</author>
+      <description>I&apos;m sitting here with Malarkey and Markus Mielke in Mandelieu, a beautiful town in the south of France. We&apos;re here...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_03.html#a000611</link>
+    </item>
+    <item>
+      <title>Kudos to Michigan State </title>
+<author>hmkoltz</author>
+      <description>Michigan State University launched a redesign of its Web site, yesterday. Designed and developed with best practices that follow Web...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000610</link>
+    </item>
+    <item>
+      <title>Migration</title>
+<author>schampeo</author>
+      <description>Steve here, with a brief post asking for your forbearance during the next few hours, as I migrate the Buzz...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000609</link>
+    </item>
+    <item>
+      <title>NFB vs. Target in perspective</title>
+<author>mattmay</author>
+      <description>Since the National Federation of the Blind sued Target Corp. for the inaccessibility of its Web site, many people have...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000608</link>
+    </item>
+    <item>
+      <title>Yahoo! Developers: Setting a Standard for the New Professionalism</title>
+<author>mollyeh</author>
+      <description>In an article published Monday, February 13, 2006, Yahoo! Senior Web Developer Nate Koechley outlines the Yahoo! concept of Graded...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000606</link>
+    </item>
+    <item>
+      <title>Staying on Target</title>
+<author>feather</author>
+      <description>A lot can happen in 24 hours. In the time since yesterday&apos;s post, Taking Aim at Target(.com), the Target.com web...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000605</link>
+    </item>
+    <item>
+      <title>Taking Aim at Target(.com)</title>
+<author>feather</author>
+      <description>With a name like Target, you would almost think they would have seen it coming, wouldn&apos;t you? The US National...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000604</link>
+    </item>
+    <item>
+      <title><![CDATA[<code>!important</code> Fixed in Later IE7 Releases]]></title>
+<author>mollyeh</author>
+      <description>It was brought to my attention today that the IE7 Beta 2 Preview wasn&apos;t honoring the role of the !important...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_02.html#a000603</link>
+    </item>
+    <item>
+      <title>IE7 Beta 2 Preview Available to the Public</title>
+<author>kblessing</author>
+      <description>Microsoft today made Internet Explorer 7 Beta 2 PREVIEW available to the public. Along with the download, they&apos;ve posted a...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_01.html#a000602</link>
+    </item>
+    <item>
+      <title>Web Standards in Small Organisations</title>
+<author>drewm</author>
+      <description>I don&amp;#8217;t really make resolutions at new year, but perhaps if I did it should be this. To be more...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_01.html#a000601</link>
+    </item>
+    <item>
+      <title>Another Failed Redesign: IEEE</title>
+<author>kblessing</author>
+      <description>Oh the irony -- that a standards body should ignore standards in creating their new Web site! As a member...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_01.html#a000600</link>
+    </item>
+    <item>
+      <title>Failed Redesigns</title>
+<author>tantekc</author>
+      <description>Joe Clark recently wrote about several Failed Redesigns. His post has such a classic WaSP tone, that I hope he...</description>
+      <link>http://www.webstandards.org/buzz/archive/2006_01.html#a000599</link>
+    </item>
+    <item>
+      <title>Star HTML and Microsoft IE7</title>
+<author>mollyeh</author>
+      <description>Chris Wilson, Group Program Manager for IE Platform and Security at Microsoft, and Position is Everything&apos;s Big John Gallant have...</description>
+      <link>http://www.webstandards.org/buzz/archive/2005_12.html#a000598</link>
+    </item>
+    <item>
+      <title>A Final End to IE/Mac</title>
+<author>chrisk</author>
+      <description>Microsoft has announced that they will cease all support for IE/Mac as of December 31, 2005 and will cease all...</description>
+      <link>http://www.webstandards.org/buzz/archive/2005_12.html#a000597</link>
+    </item>
+
+  </channel>
+</rss>

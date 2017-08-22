@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/tutorials/accessible-forms/01-accessible-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:29:44 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>Learn : Accessible Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+	@import "../../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+<!--
+code {
+	background-color: #FFFFCC;
+}
+img {border:1px solid gray;}
+img#logo {border: 0;}
+-->
+</style>
+</head>
+
+<body>
+<div id="Header">
+	<a href="../../../index.html" class="imgLink"><img id="logo" src="../../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../../index.html">home</a></li>
+	<li><a href="../../../about/index.html">about</a></li>
+	<li><a href="../../../act/index.html">act!</a></li>
+	<li class="active"><a href="../../index.html">learn</a>
+		<ul>
+		<li><a href="../../faq/index.html">faq</a></li>
+		<li><a href="../../glossary/index.html">glossary</a></li>
+		<li><a href="../../orgs/index.html">orgs</a></li>
+		<li><a href="../../reference/index.html">reference</a></li>
+		<li><a href="../../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../../opinion/index.html">opinion</a></li>
+	<li><a href="../../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+<div class="padder">
+<h1>Accessible HTML/XHTML Forms</h1>
+<div class="update">Created: May 2004 | Author: <a href="../../../about/bios/illoyd.html">Ian 
+      Lloyd</a></div>
+<p>Beginning Level | <a href="02-accessible-forms.html">Intermediate</a> | <a href="03-accessible-forms.html">Advanced</a></p>
+<h2>Introduction</h2>
+<p>In this first look at forms and accessibility we'll cover the very basics you 
+  should consider if you are to help as many users as possible to interact with 
+  you and your web site just as you would like them to.</p>
+<p>Forms are often the most tricky aspect of web development for beginners to 
+  get their head around, largely because it means stepping out of the comfort 
+  zone of one-way information - no longer are you simply presenting information 
+  at the person viewing your site, now you are asking for input, for feedback 
+  that you have to process in some way. And just as it may be difficult for HTML 
+  beginners to understand just how they handle form data, so is it difficult to 
+  understand some of the issues relating to accessibility.</p>
+<p>Static content presented to the person visiting your site may be perfectly 
+  well understood by someone using a screen reader, or perhaps a Braille computer, 
+  assuming you've used semantic, structural markup (such as <code>h1</code> - 
+  <code>h6</code> for headings). However, for someone visiting your site and simply 
+  reading the content is quite a passive activity - they can take it or leave 
+  it, whatever that 'it' may be. But with a form, the visitor has found something 
+  that they <em>want</em> to interact with and suddenly the playing field has 
+  changed - it's a two-way street. Now, marking up your pages becomes crucial 
+  if you are to capture the correct information.</p>
+<h2>HTML Entities Used</h2>
+<p>The following are the HTML entities that you will use in your forms:</p>
+<ul>
+  <li>The <code>&lt;form&gt;</code> element (your container for everything that 
+    is to follow)</li>
+  <li><code>&lt;input&gt;</code> - which includes many types, including text, 
+    submit, button, radio button and checkbox</li>
+  <li><code>&lt;textarea&gt;</code> - for entering multi-line text, such as comments</li>
+  <li>and the <code>&lt;select&gt;</code> element - otherwise known as the drop-down-list, 
+    or the pull-down menu (depending on your preference)</li>
+</ul>
+<p>There is also a <code>&lt;button&gt;</code> element but this hasn't been seen 
+  in wide usage since the steam engine was invented.</p>
+<p>These elements are rendered and behave almost identically on different (GUI-based) 
+  browsers. There may be some styling changes from one browser to another, but 
+  essentially, a text input looks like a text input and a drop-down-list will 
+  behave as a drop-down list. In theory, using forms should be easy for everybody, 
+  regardless of the device or browser they are using.</p>
+<h2>The Basics of Layout</h2>
+<p>When you see a newspaper story, you read the heading and know that the text 
+  to follow is related to that, and the text that appears underneath a photo is 
+  the caption for that photo. Sometimes a page layout may differ from that expectation, 
+  and you may have to work harder to understand what's going on - two photos with 
+  one caption sitting between them. OK, you're clever, you can work it out.</p>
+<p>With forms there are some well recognized CHI (Computer-Human Interaction) 
+  principles with forms that, like the newspaper analogy, mean that if you do 
+  things a certain way, these forms will be more easy to use. Because of this, 
+  some adaptive technologies, such as screen readers, follow those principles 
+  when interpreting a page that contains a form. As such, if they encounter a 
+  text input, they <em>expect</em> that the text related to it comes before that 
+  input ... and so it goes looking for it! So, if a screen reader sees something 
+  like this it has difficulty:</p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot; 
+  /&gt; - Please enter your first name&lt;br&nbsp;/&gt;<br />
+  &lt;input type=&quot;text&quot; name=&quot;surname&quot; id=&quot;surname&quot; 
+  /&gt; - Please enter your surname&lt;br&nbsp;/&gt;</code></p>
+<p>Why? Because it <em>may</em> incorrectly associate the second input with the 
+  first line of text, as if you had this:</p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;surname&quot; id=&quot;surname&quot; 
+  /&gt;&lt;-- Please enter your first name&lt;br /&gt;</code></p>
+<p><img src="images/incorrect-association.gif" alt="Form element is associated with incorrect text" width="415" height="62" /></p>
+<p>It's a recipe for disaster. But who puts the text after the input, we hear 
+  you cry? Well, for some inputs this is actually the <em>correct</em> way of 
+  doing things:</p>
+<p><code>&lt;input type=&quot;checkbox&quot; name=&quot;athome&quot; id=&quot;athome&quot; 
+  /&gt; Please call me at home&lt;br&nbsp;/&gt;<br />
+  &lt;input type=&quot;checkbox&quot; name=&quot;atwork&quot; id=&quot;atwork&quot; 
+  /&gt; Please call me at work&lt;br&nbsp;/&gt;</code></p>
+<form name="form1" id="form1" method="post" action="#">
+  <p>Why is it this way round? Consider a long series of checkboxes. Using the 
+    layout above, everything lines up neatly:</p>
+  <p class="no-indent">
+    <input type="checkbox" name="athome" id="athome" />
+    Please call me at home<br />
+    <input type="checkbox" name="atwork" id="atwork" />
+    Please call me at my workplace<br />
+    <input type="checkbox" name="atshack" id="atshack" />
+    Please call me at the shack<br />
+  </p>
+  <p>But if you had it the other way around, it would be rendered like this:</p>
+  <p class="no-indent">Please call me at home <input type="checkbox" name="at-home" id="at-home" />
+    <br />
+    Please call me at my workplace 
+    <input type="checkbox" name="at-work" id="at-work" />
+    <br />Please call me at the shack <input type="checkbox" name="at-shack" id="at-shack" />
+</p>
+</form>
+<p>If you do nothing else, follow this advice and <strong>your forms will automatically 
+  become more accessible</strong> because this is how assistive devices <em>expect</em> 
+  them to be set out:</p>
+<table width="100%"  border="1">
+  <caption>
+  Layout of form elements - CHI Best Practice 
+  </caption>
+  <tr> 
+    <th width="34%">HTML Element and type</th>
+    <th width="44%">Order of Appearance</th>
+    <th width="22%">Example</th>
+  </tr>
+  <tr> 
+    <td>input type=&quot;text&quot;</td>
+    <td>Descriptive label, HTML element</td>
+    <td><code>Your First Name&lt;br&nbsp;/&gt;<br />
+      &lt;input type=&quot;text&quot; name=&quot;txtFirstName&quot;&nbsp;/&gt;</code></td>
+  </tr>
+  <tr> 
+    <td>input type=&quot;password&quot;</td>
+    <td>Descriptive label, HTML element</td>
+    <td><code>Your Passnumber&lt;br&nbsp;/&gt;<br />
+      &lt;input type=&quot;password&quot; name=&quot;txtPassword&quot;&nbsp;/&gt;</code></td>
+  </tr>
+  <tr> 
+    <td>input type=&quot;button&quot;</td>
+    <td>Not applicable (value attribute used instead)</td>
+    <td><code>&lt;input type=&quot;button&quot; name=&quot;cmdChkAvail&quot; value=&quot;Check 
+      Availability&quot;&nbsp;/&gt;</code></td>
+  </tr>
+  <tr> 
+    <td>input type=&quot;submit&quot;</td>
+    <td>Not applicable (value attribute used instead)</td>
+    <td><code>&lt;input type=&quot;submit&quot; name=&quot;cmdBookNow&quot; value=&quot;Place 
+      Booking&quot;&nbsp;/&gt;</code></td>
+  </tr>
+  <tr> 
+    <td>input type=&quot;radio&quot;</td>
+    <td>HTML element, Descriptive label</td>
+    <td><code>&lt;input type=&quot;radio&quot; name=&quot;radMarried&quot; value=&quot;Yes&quot;&nbsp;/&gt;&nbsp;Yes, 
+      I am married&lt;br /&gt;<br />
+      &lt;input type=&quot;radio&quot; name=&quot;radMarried&quot; value=&quot;No&quot;&nbsp;/&gt;&nbsp;No, 
+      I am single&lt;br /&gt;</code></td>
+  </tr>
+  <tr> 
+    <td>input type=&quot;checkbox&quot;</td>
+    <td>HTML element, Descriptive label</td>
+    <td><code>&lt;input type=&quot;checkbox&quot; name=&quot;chkSubscribe&quot; 
+      value=&quot;Subscribe&quot;&nbsp;/&gt;&nbsp;Subscribe to the newsletter</code></td>
+  </tr>
+  <tr> 
+    <td>select</td>
+    <td>Descriptive label, HTML element</td>
+    <td><p><code>Title&lt;br&nbsp;/&gt;<br />
+        &lt;select name=&quot;ddlTitle&quot;&gt;<br />
+        &lt;option&gt;Mr&lt;/option&gt;<br />
+        ...<br />
+        &lt;/select&gt; </code></p></td>
+  </tr>
+  <tr> 
+    <td>textarea</td>
+    <td>Descriptive label, HTML element</td>
+    <td><code>Your comments&lt;br&nbsp;/&gt;<br />
+      &lt;textarea name=&quot;txtComments&quot;&gt;&lt;/textarea&gt;</code></td>
+  </tr>
+  <tr> 
+    <td>button</td>
+    <td>Not applicable (value attribute used instead)</td>
+    <td><code>&lt;button name=&quot;cmdBigButton&quot;&gt;Go on, click me!&lt;/button&gt;</code></td>
+  </tr>
+</table>
+<h2>But What About Accessibility?</h2>
+<p>What? Oh yes, there's not been much mention of any of 'the accessibility tags'. 
+  Trust us, by following the guidelines above and laying out your forms according 
+  to recognised CHI principles, you will be making your forms more accessible 
+  and usable. For now, it's about establishing good practices and keeping things 
+  simple (we''ll build on this foundation very soon). And in the spirit of keeping 
+  it simple, we should consider how scripting is used (and not used) to make forms 
+  more accessible.</p>
+<h2>This Script Sucks</h2>
+<h3>Don't assume scripting is enabled</h3>
+<p>A form should be usable regardless of whether scripting is enabled within a 
+  browser (if it even supports scripting - remember, some assistive devices do 
+  not support scripts at all). Server-side validation and manipulation of form 
+  data mean that it is eminently possible to do this. However, many developers 
+  still rely heavily on client-side scripting for validation or simply for triggering 
+  events (for example, here is is a form that is totally reliant on scripting 
+  being enabled for it to work: <code>&lt;input type=&quot;button&quot; value=&quot;Place 
+  order&quot; onclick=&quot;document.forms('main'.submit();&quot;&nbsp;/&gt;</code> 
+  where <code>&lt;input type=&quot;submit&quot; value=&quot;Place order&quot;&nbsp;/&gt;</code> 
+  would do the job equally well).</p>
+<p><strong>Ensure that your form works with scripting disabled</strong> - let 
+  the server do the work!</p>
+<h3>Avoid JavaScript for Navigation</h3>
+<p>On the other hand, what if you are using JavaScript do do something with a 
+  form element that takes control away from the user? The classic example of this 
+  is the drop-down-list used as a navigation tool. Many sites use these in such 
+  a way that when you select an item from the list you are automatically taken 
+  to the page. However, these are very difficult to use (if not impossible) for 
+  people who cannot use a mouse (this includes blind users with screen readers, 
+  people with motor deficiencies and more). </p>
+<p><img src="images/inaccessible-ddl-nav.gif" alt="The options in this dro-down list are difficult, if not impossible, to use without a mouse" width="382" height="211" /></p>
+<p>Consequently, using the keyboard to change the list always results in the first 
+  item in the list being selected and activated. Trying to be clever has thrown 
+  in an accessibility hurdle. Keep it simple - use a drop-down-list if you want, 
+  but allow the user to activate the selection using a Go button, like this:</p>
+<p><img src="images/ddl-with-go-button.gif" alt="Drop-down list made accessible by addition of a Go button" width="397" height="54" /></p>
+<h2>A Note About Tables</h2>
+<p>Another accessibility gotcha with forms is that they are invariably set out 
+  using tables to achieve a nice grid-like effect. This is not always an automatic 
+  accessibility problem, but it can be - a table layout is irrelevent to a screen 
+  reader which effectively reads the content in the order it appears in the source 
+  code. If you decide to split the text and the form element that the text relates 
+  to, you will get unstuck. This is because the screen reader 'linearizes' the 
+  content and then gets things badly wrong, as this image demonstrate:</p>
+<p><img src="images/confusing-table-layout.gif" alt="Table layouts for forms can confuse screen readers if you are not careful" width="492" height="194" /></p>
+<h2>Summary</h2>
+<p>So, those are a few basic rule regarding layout and positioning of form elements 
+  and the associated text which will get you off to a good start. In the intermediate 
+  page we'll start to look at some of the HTML elements that specifically aid 
+  accessibility, including <code>label</code>, <code>fieldset</code>, <code>legend</code> 
+  and <code>optgroup</code>. </p>
+<p><a href="02-accessible-forms.html">Intermediate Forms Accessibility &gt;&gt;</a></p>
+</div>
+<!-- Credits: by Molly Holzschlag -->	
+	<div class="padder" id="footer">
+		<a href="../../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		<!-- contextual nav -->
+<!-- $Id: contextual.inc,v 1.1 2002/06/14 16:24:51 schampeo Exp $ -->
+
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/tutorials/accessible-forms/01-accessible-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:29:50 GMT -->
+</html>

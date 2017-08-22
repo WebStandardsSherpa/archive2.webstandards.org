@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/buzz/archive/2004_10.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:13 GMT -->
+<head>
+<title>The Web Standards Project</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<link rel="alternate" type="application/rss+xml" title="Buzz RSS Feed" href="http://www.webstandards.org/buzz/buzz.xml" /> 
+</head>
+<body>
+<div id="Header">
+        <a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+        <ul>
+        <li><a href="../../index.html">home</a></li>
+        <li><a href="../../about/index.html">about</a></li>
+        <li><a href="../../act/index.html">act!</a></li>
+        <li><a href="../../learn/index.html">learn</a></li>
+        <li><a href="../../opinion/index.html">opinion</a></li>
+        <li><a href="../../press/index.html">press</a></li>
+        </ul>
+
+        <div id="preferences"></div>
+<div id="linkPreferences"></div>
+
+</div>
+
+<div id="MainText">
+        <div class="padder"> 
+        <h1>Buzz Archive: October 2004</h1>
+  <div class="blog">
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000463">October 26, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/mholzschlag.html">mholzschlag</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000463" id="a000463">What is a "web standard?"</a></h2>
+
+                                <p>The grand irony as we debate the importance of validation and what web standards are is this little bugaboo: </p>
+
+<p>Web "standards" aren't.  </p>
+
+<p>The <a href="http://w3.org/">W3C</a> provides <em>specifications</em> and <em>recommendations</em> which have been coined by practitioners as "standards" when they are not precisely standards, but de facto standards.  <a href="http://www.iso.org/">ISO</a>, for example, is a standards organization with a full compliance set that if not met - well, products don't ship, period.  With a true standard, compliance is <em>mandatory</em>.  With de facto standards, what we have are browser compliance problems up our collective wazoo. </p> 
+
+<p>What we also appear to have is confusion as to what qualifies as a "web standard."</p>
+
+<h2>Taking a closer look</h2>
+
+<p>In HTML and XHTML there is an implication in the specs that working in a strict environment is the ideal.  That using meaningful markup is ideal.  But neither of these are a real or even de facto standard.  So semantic markup is an <em>implied goal</em>, not even a measure of compliance, and something we are trying still to understand.  Semantic markup is a best practice, not an explicit recommendation.</p>
+
+<p>Separation of presentation and content?  An <em>implied ideal</em>, not a measure of compliance, and something we are still working toward perfecting despite the user agent concerns.  Documents using table-based layouts can be completely conforming and even Strict DTDs contain what could be interpreted as presentational elements and attributes (<code>b</code>, <code>i</code>, <code>width</code>, <code>height</code>, <code>cellspacing</code>). Separation of presentation and content is a best practice, not an explicit requirement across the boards.</p> 
+
+<p>Media types?  The W3C uses very specific language in its recommendations such as SHOULD, MAY, STRONGLY RECOMMENDED and MUST NOT.  This language is always written in upper case and presented in bold.  Media type purists need to read this and weep:</p>
+
+<blockquote><p>
+&ldquo;'application/xhtml+xml' SHOULD be used for XHTML Family documents, and the use of 'text/html' SHOULD be limited to HTML-compatible XHTML 1.0 documents. 'application/xml' and 'text/xml' MAY also be used, but whenever appropriate, 'application/xhtml+xml' SHOULD be used rather than those generic XML media types. &rdquo;</p>
+</blockquote>
+
+<p>This means you should serve XHTML 1.0 as application/xhtml+xml, but that you also may use text/html as a media delivery type for XHTML. XHTML 1.1 differs in that it  SHOULD NOT be served as text/html.  The only MUST NOT issues we see in the specs is that HTML 4 MUST NOT be served as any form of XML.  Managing media types is explicit, and therefore a "web standard" although there is an implication of best practices in the case of XHTML 1.0 here, too.</p>
+
+<p>Validation? Here's a surprise! Validation is in and of itself not a requirement per se.  What is required is <em>conformance</em>.  So you theoretically don't have to validate a darn thing but if you want to test its conformance, which IS an explicit requirement, you have to validate.</p>  
+
+<h2>Add it up</h2>
+
+<p>So, here's what we have:</p>
+
+<ul>
+<li>Separation of presentation and structure: implied as ideal: a best practice.</li>
+<li>Semantic markup: implied: a best practice.</li>
+<li>Content delivery via media types: explicit, a "standard."</li>
+<li>Well-formed markup: explicit, a "standard."</li>
+<li>Conformance: explicit, a "standard."</li>
+</ul>
+
+<p>Clearly a difference between what is an explicit part of a specification or recommendation and what is the ideal goal that's implied by either the specification and practitioners (or both).</p>
+
+<h2>Separation of practice and science</h2>
+
+<p>There is also a separation within the industry of practice and science.  This is an idea that applies to a lot of professions, but at the recent <a href="http://www.uiconf.com/">UI9 Conference</a>, Jared Spool presented an interesting keynote in which he separated usability into practice and science, and I immediately noticed the relationship this has to web standards.</p>
+
+<p>In our case, the science does not always provide everything required for practice, but it sure does provide lots of help.  The opposite is also true: our practice doesn't always follow the science (and we have plenty of evidence of that). </p> 
+
+<p>Ideally, the practice should follow the science wherever it can, and spurning the science as being unimportant is like telling a doctor to not treat a patient with antibiotics where there is a clear case of bacterial infection.  The possible result in not bridging that gap is death. </p> 
+
+<p>I am deeply concerned about practitioners and advocates who blow off conformance when they can and should conform and claim it's okay to do so.</p>
+
+<p>When we cannot conform - for reasons beyond our control - there is a great need there for us to discuss why and try to help solve some of those problems (suck CMSs, ad servers, time factors), but that is no reason to say that validation and conformance are unnecessary, and certainly no reason to point a finger at the science as having failed.  In those cases, the practitioners are failing the science, I'm sorry to say.  Of course, the science - and our practice of it - can and should be improved as time goes on, and I believe that it will.</p>
+
+<p>As an educator, and at this point in my own understanding of things (once upon a time I wrote all about web design practice without understanding any of the science, and I'm plenty guilty of not applying the science even when I know I should) what concerns me most is that anyone who takes the stand that conformance is an unnecessary part of practice is essentially acting as a doctor not prescribing the proper medication when there's a clear scientific solution. </p>
+
+<p>Such a message to other practitioners is a dangerous one. With it, we degrade our goals, and ultimately end up with poorly educated practitioners, poorly educated software developers, and severely compromised user agents and development tools as a result. </p> 
+
+<p>What's more, there seems to be a belief out there that best practices are wrapped up with de facto standards when they are implied but not explicit.  This is a problem with semantics (sorry to put it that way, but it is).  The term "web standards" is and always has been a misnomer, and we are suffering many of these problems because of that fact.</p>
+
+<h2>So what can we do?</h2>
+
+<p>Obviously, the terminology itself has caused problems,  but trying to name what we all refer to as "web standards" something else at this point is as impossible as trying to tell people it's not an "alt tag" when they've been using that terminology for 8 years or more.</p> 
+
+<p>What we <em>can</em> do is work together more effectively to hone in on what should explicitly fit into a standard, and what is a best practice, and come up with some useful terms that we as professionals understand. These terms should also be more friendly to marketing departments, non-technical support people, and the lay public, and they should adequately describe the marriage of science and practice within our industry.</p> 
+
+<p>What we absolutely <em>must</em> do is take care to spread a message that encourages rather than discourages using the best science and best practice. It is holding <em>that</em> goal high that makes us professionals, after all.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000462">October 18, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/bhenick.html">bhenick</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000462" id="a000462">In Search of Validation...</a></h2>
+
+                                <p>Last week was great for chatter &#8212; not just about history or U.S. politics, though there was plenty of chatter about those things as well.</p>
+<p>Yes, folks, it&#8217;s official:  <a href="http://www.webstandards.org/opinion/" title="WaSP Opinion:  Committed to Sincere Progress, Not Perfection.">validation is a must-have</a>, as explained with a few friendly caveats in the latest Web Standards Project Opinion.</p>
+<p>In summary, it appears that <a href="http://www.7nights.com/asterisk/archive/2004/10/standards-equals-validation" title="Web Standards = 100% Validation?">you don&#8217;t like it</a>, and we don&#8217;t like it, but there are still many obstacles to to creating a standards friendly web.  Valid markup, and tools that produce valid markup, are still the exception and not the rule.  Standards friendly design and development techniques are gaining currency, but haven&#8217;t yet come into the mainstream.  Most importantly, complaining about the obstacles, or making excuses around them, are sorry substitutes for overcoming them.</p>
+<p>For six years, the Web Standards Project has been available to those interested in applying standards toward making site implementation a straightforward affair, and leaving the hard parts to intanglible points of interest, such as user experience, return on investment, and aesthetics.</p>
+<p>That availability is not something we see changing anytime soon.</p>
+<p>Another consequence of last week&#8217;s dialogues is that they exposed a misconception held by many of those who are aware of our efforts.</p>
+<p>Put simply, the only positions endorsed by the Web Standards Project as a body are expressed in our <a href="../../press/index.html">press releases</a> and <a href="../../opinion/index.html">Opinions</a>, which go live with the approval (sometimes reluctant) of every Project participant with an interest.</p>
+<p>Everything else you see on this site is published on the initiative of a single author, or perhaps a small group, possibly over the objections of other Project participants (a rare outcome, but not unheard of, either).</p>
+<p>Does it seem like anarchy?  On occasions few and far between, it is.</p>
+<p>The only lines we toe are the ones we draw together, always with an eye on the practical.</p>
+<p>That may seem to contradict the stance taken in the previously linked Opinion, but the simple fact of the matter is that valid markup is <em>not</em> a challenge for developers who have the time, patience, and skill to coax it out of their tools &#8212; coaxing that becomes easier with practice.</p>
+<p>With too many tools, it&#8217;s the coaxing that&#8217;s the hard part.</p>
+<p>That, however, is another battle for another day...</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000461">October 13, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000461" id="a000461">Happy 10th Birthday, Netscape</a></h2>
+
+                                <p><a href="http://channels.netscape.com/ns/browsers/default.jsp" title="Netscape product page">Netscape</a> is  10 years old, and <a href="http://news.com.com/" title="C|net news site">C|net</a> is celebrating with a <a href="http://news.com.com/A+decade+on+the+Web+with+Netscape/2009-1032_3-5406640.html" title="C|net's special report on Netscape's 10th birthday">special section</a> on the once-mighty brand. Their <a href="http://news.com.com/Netscape+bowed%2C+but+not+broken/2100-1032_3-5406682.html" title="C|net article on the history and future of the Netscape browser">retrospective on the browser itself</a> is especially good.</p>
+
+<p>While you're there, you might also want to read what nice things Netscape founder Marc Andreeson had to say about <a href="http://news.com.com/Andreessen+IE+faces+one-two+punch/2100-1032_3-5399954.html" title="Marc Andreeson's comments on Firefox's potential to challenge IE">Firefox's potential to challenge IE</a>.</p>
+
+<p>Also worth a look is an <a href="http://news.com.com/Unearthing+the+origins+of+Firefox/2008-1032_3-5406708.html" title="C|net's interview with Ben Goodger">interview with lead Mozilla engineer Ben Goodger</a>. In addition to his thoughts on the future of the web ("The browser is back &mdash; Longhorn is irrelevant in a Web application world."), Ben discusses the origins of Firefox, including a mention of the WaSP's contribution thereto.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000460">October 12, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/emarcotte.html">emarcotte</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000460" id="a000460">All That Glitters</a></h2>
+
+                                <p>Mike Davidson, art director behind the now-legendary <a href="http://www.espn.com/">ESPN.com</a> <abbr title="Cascading Style Sheets">CSS</abbr> redesign, <a href="http://www.mikeindustries.com/blog/archive/2004/10/abcnews-redesigns">announces the redesign</a> of <a href="http://abcnews.go.com/"><abbr title="American Broadcasting Company">ABC</abbr> News</a>, touting it as a success of <q>real-world web standards</q>. While the site&#8217;s new design successfully incorporates Flash, JavaScript, and <abbr title="Cascading Style Sheets">CSS</abbr> into an appealing, well-reasoned layout, I&#8217;m not exactly sure what <q>real-world web standards</q> means.  It apparently doesn&#8217;t mean valid: <a href="http://validator.w3.org/check?verbose=1&amp;uri=http%3A//abcnews.go.com/">the validator spews hundreds of errors</a> at the time of this writing.  Granted, Davidson admits that <q>the overwhelming majority of errors&#8230;are ampersand-related and [they&#8217;re] fine with that</q>, perhaps since valid code isn&#8217;t really required to meet their users&#8217; needs.</p>
+
+<p><a title="Joe Clark: Influence of valid code on screen readers" href="http://blog.fawny.org/2004/05/13/screen-reader-code/">Oh, wait</a>.</p>
+
+<p>And surely unencoded ampersands couldn&#8217;t louse up a web application.</p>
+
+<p><a title="456 Berea Street: Ampersands and validation" href="http://www.456bereastreet.com/archive/200406/ampersands_and_validation/">Oh, wait</a>.</p>
+
+<p>But if Davidson and Disney are &#8220;fine&#8221; with the current state of their code, that&#8217;s of course their prerogative.  After all, for a brand that size to launch an online property that validates right out of the gate?  Surely that&#8217;s expecting too much.</p>
+
+<p><a title="The Web Standards Project: The UK Disney Store relaunches with web standards" href="http://www.webstandards.org/buzz/archive/2004_10.html#a000456">Oh, wait</a>.</p>
+
+<p>I&#8217;m of the mindset that validation isn&#8217;t an ideal, it&#8217;s a necessary baseline.  The true costs of a software project are incurred in maintenance; ensuring that your code is standards-compliant &mdash; and yes, valid &mdash; will keep support issues to a minimum, and your clients happier.  That&#8217;s not to say that it&#8217;s easy, not by a long shot; Davidson and his team have done a stellar job of applying (<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://abcnews.go.com/css/base.css&amp;usermedium=all" title="W3 CSS validator results of one of ABC's stylesheets">nearly valid</a>) <abbr title="Cascading Style Sheets">CSS</abbr> to a media-rich web site, and I&#8217;m sure site owners and users alike are reaping the benefits of lighter pages that are easier to maintain.</p>
+
+<p>However, to say that validation is unimportant and then call your work <q>web standards</q>?  Real world or otherwise, it smells like semantic snake oil to me.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000459">October 12, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/hmkoltz.html">hmkoltz</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000459" id="a000459">Penn State Group</a></h2>
+
+                                <p>To address a challenge, <em>How to help others understand and use web standards</em>, individuals at Pennsylvania State University have formed the <a href="http://webstandards.psu.edu/">Penn State Web Standards Users Group</a>. Group membership includes people from various colleges within the university who meet monthly on campus to discuss topics and issues, share knowledge, and to promote the use of web standards at their workplace or university.</p>
+
+<p>In a recent article by Christian Vinten-Johansen and the
+group, <a href="http://webstandards.psu.edu/articles/whyWebStandards.cfm">Why Adopt Web Standards?</a>, several key points and benefits are identified and explained.</p>
+
+<p>Group membership is open to all staff, faculty, and members of the university web development community. Member Rob Dickerson is hoping to connect with other university groups having similar <a href="http://webstandards.psu.edu/about/" title="About the Penn State Web Standards Users Group">goals</a>.</p>
+
+<p>In just a few minutes from the time this post is made, the users group will be meeting. Great work everyone, it is good to see web standards topics  addressed and promoted at the work place and in the schools.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000458">October 08, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000458" id="a000458">ASP.Net &amp; Standards Part II</a></h2>
+
+                                <p>Wow. My post on <a href="http://webstandards.org/buzz/archive/2004_10.html#a000452" title="Buzz post on ASP.Net and web standards">ASP.Net and standards</a> seems to have touched a nerve. I received a pile of feedback via email on that one, and with a currently crazed work schedule it's taken me until now to sort through all the good info provided.</p>
+
+<p>The upshot: yep, ASP.Net's built-in functions are tone-deaf when it comes to standards. And yep, there are irritating restrictions on <code>&lt;form&gt;</code>s in ASP.Net. But the latter aren't so bad as they seem, and the former are slated to be addressed in ASP.Net 2.0, which should be along Real Soon Now.</p>
+                        <h3>The Form Thang</h3>
+
+<p><a href="http://www.wubbleyew.com/blog/default.asp" title="Phil Baines' blog">Phil Baines</a> notes that while there is no requirement to put the <em>entire</em> page in a <code>&lt;form&gt;</code> tag, there is an irksome ASP.Net limitation regarding <code>&lt;form&gt;</code>s: only one per page can use ASP.Net's custom validation and the like.</p>
+
+<p>According to Rick Mason, Web Technical Officer for <a href="http://www.eastsussex.gov.uk/" title="East Essex County's site">East Essex County</a>, this is due to the way Microsoft has chosen to maintain state across form submissions. When a user submits a <code>&lt;form&gt;</code> with an error, ASP.Net automagically returns the <code>&lt;form&gt;</code> to the user with the user's input still in place.</p>
+
+<p>That's a very good thing for <code>&lt;form&gt;</code> usability. What maybe isn't so good is that Microsoft implemented this functionality by adding a hidden <code>&lt;input&gt;</code> called <code>_VIEWSTATE</code>. The way <em>that</em> is implemented precludes using more than one <code>&lt;form&gt;</code> per page, thereby making it necessary to wrap every element whose state is to be maintained in a single <code>&lt;form&gt;</code> tag.</p>
+
+<p>While this requirement doesn't do anything good for document semantics, it's really not the end of the world, and in any event is to be addressed in ASP.Net 2.0.</p>
+
+<h3>Invalid Validators</h3>
+
+<p>Milan Negovan of <a href="http://www.aspnetresources.com/" title="ASP.Net Resources site">ASP.Net Resources</a>, a site dedicated to using ASP.Net and web standards (bookmark!), does a great job <a href="http://www.aspnetresources.com/blog/xml_le_divorce.aspx" title="Milan Negovan's post regarding invalid markup from ASP.Net's built-in controls">demonstrating</a> the problems ASP.Net's built-in controls create when trying to create valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr> (<em>real</em> XHTML, with an <code>application/xhtml+xml</code> MIME type and everything) or even just <abbr title="HyperText Markup Language">HTML</abbr> (BTW, be sure to read to the end for his thoughts on the suitabilty of XHTML for web applications).</p>
+
+<p>It gets worse, though. <a href="http://www.aspnetresources.com/blog/adaptive_rendering.aspx" title="Milan Negovan's post regarding Scott Mitchell's article about ASP.Net's adaptive rendering">According</a> to Milan, ASP.Net has a notion called '<a href="http://aspnet.4guysfromrolla.com/articles/050504-1.aspx" title="Scott Mitchell's article explaining ASP.Net's adaptive rendering">adaptive rendering</a>.' The idea is that ASP.Net will automagically write markup tailored to the specific user agent requesting the page. Setting aside for a moment the fundamental stupidity of <abbr title="User Agent">UA</abbr>-based markup switching, there's still a problem with the implementation: it considers every browser but IE/Win to be 'downlevel' ('old and crippled', in the parlance of our time) and serves them up crufty ol' <a href="http://www.w3.org/TR/REC-html32" title="The W3C's HTML 3.2 Recommendation">HTML 3.2</a>. Ironic, no?</p>
+
+<p>To be completely fair, ASP.Net was under development right around the turn of the century. Back then, the main 'alternative' browser was <a href="http://channels.netscape.com/ns/browsers/archive47x.jsp" title="Netscape product archive">Netscape 4.x</a>, which was most definitely 'downlevel' in anyone's book. But that's cold comfort to those of us developing web pages <em>today</em>.</p>
+
+<p>So what to do? Well, in the article cited above <a href="http://www.4guysfromrolla.com/ScottMitchell.shtml" title="Scott Mitchell's bio on 4 Guys from Rolla.com">Scott Mitchell</a> of <a href="http://www.4guysfromrolla.com/" title="4 Guys From Rolla.com's site">4 Guys from Rolla.com</a> suggest editing some config files so ASP.Net writes <a href="http://www.w3.org/TR/REC-html40/" title="The W3C's HTML 4.01 Recommendation">HTML 4</a> for other modern browsers.</p>
+
+<p>Yay? Not yay. When writing 'modern' markup, ASP.Net <a href="http://www.aspnetresources.com/blog/adaptive_rendering_and_validation.aspx" title="Milan Negovan's article discussing ASP.Net's 'uplevel' markup">insists on using Microsoft's propietary <code>document.all</code> collection</a>. <code>&lt;weeble /&gt;</code></p>
+
+<p>For this reason, Rick echoes Nick Vrillo's sentiments that creating <a href="http://www.liquid-internet.co.uk/content/dynamic/pages/series1article1.aspx" title="Tutorial on creating custom ASP.Net controls">custom controls</a> is the way to go, and notes that ASP.Net's <code><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpgenref/html/cpconHtmlGenericControl.asp" title="MSDN documentation for HtmlGenericControl">HtmlGenericControl</a></code> is mighty helpful in this respect.</p>
+
+<p>What <code>HtmlGenericControl</code> does is allow you to manipulate the contents of an elment via ASP.Net. All you do is insert an <code>id</code> and the ASP.Net attribute <code>runat="server"</code> (don't get your panties in a wad &#8212; it's removed before the page is sent to the browser) and away you go.</p>
+
+<p>Useful, but it seems as though it'd be more useful if it didn't rely on an <code>id</code> and could therefore use more than one such control per page.</p>
+
+<h3>Other Odds &amp; Sods</h3>
+
+<p>Phil has also <a href="http://www.wubbleyew.com/blog/showblog.asp?blogID=250" title="Phil Baines' blog post regarding standards and Visual Studio 2003">posted</a> a mini-rant about the difficulties of developing to web standards in Visual Studio 2003. Phil is particularly frustrated by Visual Studio's insistence on changing the formatting of his source code, a glitch whose source is explained by <a href="http://weblogs.asp.net/mikhailarkhipov/" title="Mikchail Arkhipov's blog">Mikhail Arkhipov</a> in a <a href="http://weblogs.asp.net/mikhailarkhipov/archive/2004/05/16/132886.aspx" title="Mikhail Arkhipov's blog post explaining why Visual Studio 2003 rewrites HTML source code">blog post</a>.</p>
+
+<p>Peter Ankelein also wrote in to express his frustration with ASP.Net's postback. Postback is Microsoft's term for when an ASP.Net <code>&lt;form&gt;</code> assigns its <code>action</code> attribute to itself, so the <code>&lt;form&gt;</code> gets submitted to itself. This is common practice in <abbr title="PHP Hypertext Preprocessor">PHP</abbr> as well, and in most instances it's a pretty useful trick. However, ASP.Net apparently forces this behavior unless you jump through hoops to avoid it. That makes things like posting <code>&lt;form&gt;</code> input both to a local database and to a remote handler more difficult than it ought to be.</p>
+
+<p>What does that have to do with standards? Not much, except that it's a great example of why it's a Bad Idea to subvert standard attibutes and elements. By appropriating the <code>action</code> attribute of the <code>&lt;form&gt;</code> tag, Microsoft has altered its functionality and made things that <em>should</em> be easy less so.</p>
+
+<p>While you're in a reading mood, be sure to read to the bottom of Milan Negovan's <a href="http://www.aspnetresources.com/blog/xml_le_divorce.aspx" title="Milan Negovan's post regarding invalid markup from ASP.Net's built-in controls">post</a> for some interesting thoughts on the suitabilty of XHTML for web applications.</p>
+
+<h3>Summing Up</h3>
+
+<p>While ASP.Net is a powerful, and in many ways convenient, server-side scripting language, its fundamental philosophy can make life unnecessarily difficult for standards-aware web developers.</p>
+
+<p>For starters, Microsoft has 'integrated' markup with the language by appropriating attributes like <code>id</code> and the <code>&lt;form&gt;</code> tag's <code>action</code>. While it's certainly a far cry from the mishmash of server-side code and markup that characterized old-skool ASP or much of the PHP out there, there are times when this integration turns around and bites the very developers it's supposed to help.</p>
+
+<p>More fundamentally, ASP.Net still views markup as primarily a presentation tool. Even when generating markup for 'uplevel' browsers, it just substitutes <code>&lt;span&gt;</code> for <code>&lt;font&gt;</code> and <code>&lt;div&gt;</code> for <code>&lt;table&gt;</code>. That might have made sense back in the bad old tag soup days, but today there's a better way. Keeping document structure separate from style pays big dividends in page weight, flexibility and maintainability. By working against this separation, ASP.Net again complicates the lives of the very developers at whom it is aimed.</p>
+
+<p>Likewise, ASP.Net attempts to work around browser incompatibilities via the discredited technique of browser-sniffing. Browser sniffing is attractive in some cases, and in fact most CSS hacks are just a sophisticated form of browser sniffing. However, the fact remains that when you go down that road you're practically begging for your code to break when a new browser arrives. More, you dramatically increase the complexity of your code as you try to keep straight all the browsers, versions and micro-versions around.</p>
+
+<p>A more flexible and robust approach is to sniff for browser <em>capabilities</em>, and then write to those. That's easier to do on the client side than on the server, of course. But good defensive coding practices like WaSP project leader <a href="http://webstandards.org/about/bios/schampeon.html" title="Steven Champeon's WaSP bio">Steven Champeon's</a> <a href="http://webmonkey.wired.com/webmonkey/templates/print_template.htmlt?meta=/webmonkey/03/21/index3a_meta.html" title="Webmonkey article on the progressive enhancement methodology">progressive enhancement</a> can minimize the frustration.</p>
+
+<h3>The Future</h3>
+
+<p>Virtually every person responding to my post made a point to say Microsoft has seen the error of their ways &#8212; at least as far as ASP.Net's standards-unfriendly behavior is concerned. They've promised to rectify <em>all</em> of the frustrations listed above, and then some.</p>
+
+<p>While we won't know what actually gets addressed and how until Microsoft actually releases the final ASP.Net 2.0 engine, I'm optimistic that ASP.Net will soon be as strong a platform as there is for developing standards-compliant web sites.</p>
+
+<p><br /><strong>Update:</strong> Paul Watson of the <a href="http://www.bluegrassgroup.com/" title="Bluegrass Group's site">Bluegrass Group</a> has written in to tell me my newbie is showing.</p>
+
+<p>Apparently, the <code>id</code> attribute on an ASP.Net custom tag (<abbr title="Also Known As">AKA</abbr> 'custom control') is just an <em>instance</em> name. That is, it's a handle to identify a unique (as in one and only one) occurence of the control in an ASP.Net page &mdash; rather like an <code>id</code> attribute on an HTML tag identifies a unique occurance, or 'instance', of that tag on a page. So Microsoft looks to be doing the Right Thing there (some folks may wish to debate whether server-side code should pay any attention at all to attributes that are meaningful on the client side; I'm not one of 'em).</p>
+
+<p>What identifies which code defines the behavior of a custom control, then? Well&hellip;thereby hangs the tail of a cat, it would seem.</p>
+
+<p>The short answer is that custom controls are defined by the tag name + prefix, which looks something like: <code>&lt;chris:MySuperControl&gt;</code>, which looks an awful lot like an <abbr title="eXtensible Markup Language">XML</abbr> <a href="http://www.w3.org/TR/REC-xml-names/" title="The W3C's XML namespace recommendation">namespace</a>. But it isn't. At all. Let's put a stop that rumor, <em>right</em> now.</p>
+
+<p>What it is, is a tag prefix (in the example above, <code>chris</code>) and a tag name (in the example above, <code>MySuperControl</code>). From there, things get a mite hairy. I'll let Paul explain:</p>
+
+<blockquote><p>When you want to include a custom control in your ASPX page you have to tell ASP.NET to expect custom control tags in your HTML. You do this using <code>&lt;%@ Register TagPrefix="chris" TagName="MySuperControl"
+Src="SuperControl.ascx" %&gt;</code> right at the top of your ASPX file.</p>
+
+<p>May be blindingly obvious, but; <code>SuperControl.ascx</code> is your custom control code file. It is the only bit which has to map through to something, in this case a physical file. The TagPrefix is the bit before the <code>:</code> and the TagName is the bit after the <code>:</code>. The latter two don't have to have any correlation to what is in<code>SuperControl.ascx</code> though it makes sense to use the same name.</p>
+
+<p>If you have two different custom controls then you would have that declaration twice. The TagPrefix could stay the same but the TagName and the <code>src</code> will have to be unique. If you have three custom controls then you need three declarations, and so on.</p>
+
+<p>It gets even more confusing when you consider there are two levels of custom control. The ASCX type I mentioned above and then a more abstracted type which comes straight from a C#/VB.NET class file. E.g.
+SuperControl.ascx would normally have an associated <code>SuperControl.ascx.cs file</code>; that is the code-behind file which contains the logic of the control. But with the second type of custom control you wouldn't have the .ascx file at all, you just have a <code>SuperControl.cs</code> file. With the latter type you use a different declaration to tell ASP.NET to expect custom control tags and in this case the TagName will map to the class name so it can't be anything you like. The TagPrefix can still be whatever you like though.</p>
+
+<p><code>asp:TextBox</code> and other built-in ASP.NET controls are treated slightly differently in that you don't need to tell ASP.NET what tags/prefixes to expect in the ASPX file. Strangely <code>asp:</code> is not reserved to built-in controls. I just did a custom control and used <code>asp:</code> as the prefix and it worked fine. I wouldn't normally do that though so as to distinguish custom controls from built-in.</p></blockquote>
+
+<p>So there you have it.</p>
+
+<p>Now, if you'll excuse me I'm going to go grab some pepto to quell that queasy feeling I got from reading that Microsoft is employing a syntax that <em>looks</em> just like a significant part of the XML standard (albeit a controversial one), but is actually completely different. I'm sure there's a reasonable explanation, and I'm not at all sure what they've done actually <em>hurts</em> anything, but it makes me uneasy nonetheless.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000457">October 07, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000457" id="a000457">Google Investor: New Browser War Coming, Google to Sit It Out</a></h2>
+
+                                <p><a href="http://news.com/" title="C|net news">C|net</a> is reporting that Google board member and <abbr title="Venture Capitalist">VC</abbr> extraordinaire John Doerr said <a href="http://news.com.com/Investor+doesnt+see+browser+in+Googles+future/2100-1038_3-5397833.html?tag=nefd.top" title="C|net article on John Doerr's Web 2.0 presentation">Google won't offer its own browser</a>, contrary to <a href="http://webstandards.org/buzz/archive/2004_09.html#a000446" title="Buzz post on rumors of a Google-branded browser">recent speculation</a>. Of course, Doerr also remarked that "that just because he was on the board of Google didn't necessarily mean he knew what they were doing."</p>
+
+<p>Doerr <em>does</em>, however, believe the browser market &#8212; and the web in general &#8212; is set to hot up again:</p>
+
+<blockquote><p>Doerr said that he believed that many services of the first iteration of the Web were being reinvented now, much in the way Google reinvented search while many other Internet portals abandoned search R&amp;D in the late 1990s. "Most of the old Web-based services are in the process of being systemized reinvented, even the browser," he said.</p></blockquote>
+
+<p><a href="http://webstandards.org/buzz/archive/2004_10.html#a000450" title="Buzz post on the development of the web as an application development platform">Yup</a>.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000456">October 04, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/emarcotte.html">emarcotte</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000456" id="a000456">It's a standard world, after all</a></h2>
+
+                                <p><a href="http://www.stuffandnonsense.co.uk/archives/disney_store_and_webstandards.html">Andy Clarke</a> just announced the standards-based redesign of <a href="http://www.disneystore.co.uk/">Disney Store <abbr title="United Kingdom">UK</abbr></a> &mdash; and yes, folks, <a href="http://validator.w3.org/check?verbose=1&amp;uri=http%3A//disneystore-shopping.disney.co.uk/store/Home.aspx">the new site even validates</a> right out of the gate. The site's <a title="Meyerweb: Redesign Watch" href="http://www.meyerweb.com/eric/redesigns/">yet another compelling argument</a> for how easily it is to build a high level of standards compliance and accessibility into <a href="http://www.disney.com/">a well-established brand</a>.  Congratulations to <a href="http://www.stuffandnonsense.co.uk/">Andy</a> and the entire team for a job well done.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000454">October 03, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000454" id="a000454">Zen of CSS</a></h2>
+
+                                <p>WaSP <a href="http://webstandards.org/about/bios/mholzschlag.html" title="Molly Holzschlag's WaSP bio">Molly Holzschlag</a> has posted an <a href="http://www.molly.com/2004/10/02/zen-of-css/" title="Announcement for the book 'The Zen of CSS Design: visual enlightenment for the web'">announcement for her new book</a>, co-authored by fellow WaSP <a href="http://webstandards.org/about/bios/dshea.html" title="Dave Shea's WaSP bio">Dave Shea</a>.</p>
+
+<p>Just what I need &#8212; one more reason to blow my milk money on books. Thanks a lot, Molly. ;-)</p>
+
+<p><br /><strong>Update:</strong> Dave Shea has added a very complete <a href="http://mezzoblue.com/archives/2004/10/12/the_zen_of_c/" title="Dave Shea's post previewing 'The Zen of CSS Design'">previewing</a> the book.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000453">October 03, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000453" id="a000453">Standard Slideshow System</a></h2>
+
+                                <p><a href="http://www.meyerweb.com/" title="Eric Meyer's site">Eric Meyer</a> has released a <a href="http://www.meyerweb.com/eric/thoughts/2004/10/02/slide-show-beta-2/" title="Post describing the second release of Eric Meyer's web standards-based slideshow system">second beta</a> of his <a href="http://www.meyerweb.com/eric/thoughts/2004/09/24/slide-show-beta/" title="Post announcing Eric Meyer's web-standards based slideshow system">web standards-based slideshow system</a>.</p>
+
+<p>I haven't mucked about with it yet, but having developed a couple of slideshows myself I'm cognizant of the issues involved. This promises to be a valuable, lightweight alternative to the omnipresent PowerPoint slideshows we all know and <em>cough</em> love.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000452">October 03, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000452" id="a000452">Standards Frustration of an ASP.Net Newbie</a></h2>
+
+                                <p>As I mentioned in my <a href="http://webstandards.org/buzz/archive/2004_10.html#a000451" title="Buzz post mentioning 3SIXTY Internet's hosting platform">previous post</a>, my employer has adopted Microsoft's <abbr title="Active Server Pages .Net">ASP.Net</abbr> as their server-side technology of choice. </p>
+
+<p>For the most part, this decision has only tangential impact on me: I spend most of my time on client-side development, project management, <abbr title="Information Architecture">IA</abbr> and the odd incursion into the worlds of graphics and Flash/ActionScript. The server-side tech just stays out of my way, which is how it should be.</p>
+
+<p>Once in a while, I do end up doing some lightweight server-side stuff, usually when a client is hosting their own site on an Apache server and using <abbr title="PHP Hypertext Preprocessor">PHP</abbr> or <abbr title="Pathologically Eclectic Rubbish Lister">PERL</abbr>. But last week I was pressed into service hacking together an email form in ASP.Net.</p>
+
+<p>It was an extremely simple task, really &#8212; especially as I was able to crib most of what little code was needed from forms developed by our regular programmer. Even so, I have to admit being a little excited: it was a chance to develop some (very) basic chops with a widespread technology about which I've heard many good things.</p>
+
+<p>The good feeling didn't last long, though.</p>
+                        <p>First, I discovered a very curious practice among ASP.Net developers: wrapping the entire page &#8212; everything within the <code>&lt;body&gt;</code> tags &#8212; in a <code>&lt;form&gt;</code> tag. Apparently, if you want ASP.Net to process the dynamic bits (for example, to insert text from a database where you've stuck a variable name), said bits must live within a <code>&lt;form&gt;</code> tag with a <code>runat="server"</code> attribute. </p>
+
+<p>I don't come close to knowing enough about ASP.Net to know if I've been sold a bill of goods, but if the foregoing is accurate it really rankles. Maybe the whole-page-is-a-<code>&lt;form&gt;</code> thing makes sense to Microsoft developers accustomed to the WinForms metaphor, wherein each and every UI is a form. But to this webhead, it makes no sense whatever. In fact, it seems downright hostile to good document structure. </p>
+
+<p>Here's hoping the whole thing is just a misunderstanding caused by my extreme ignorance regarding ASP.Net best practices.</p>
+
+<p>The second issue I encountered went beyond curious to being downright frustrating. One of the oft-touted benefits of ASP.Net is it's labor-saving built-in functions. While slapping together my primitive form handler, I employed one that promised to be seriously nifty: automated form validation controls.</p>
+
+<p>I know from the dozen or so PHP form handlers I've written that validation is easily the most time-consuming bit in a simple email form. So the prospect of inserting a few tag-like bits of ASP.Net code and being done had me giddily cackling away. Until I saw the error output.</p>
+
+<p>You see, the error messages generated by ASP.Net are all wrapped in &#8212; <em>eeyew</em> &#8212; <code>&lt;table&gt;</code> tags. So much for that nice semantic markup. </p>
+
+<p>To be fair, the <code>&lt;table&gt;</code> markup was valid, and it did include an <code>id</code> attribute for easy styling with <abbr title="Cascading Style Sheets">CSS</abbr>. But still. Why throw in an extraneous <code>&lt;table&gt;</code> at all? The validation control offers the option of producing error messages that are enclosed in a <code>&lt;p&gt;</code> tag or marked up as an unordered list. It would be easy enough to mark-up the optional error header with an <code>&lt;hn&gt;</code> + an ID. What on earth do I need the extra <code>&lt;table&gt;</code> for?</p>
+
+<p>Maybe there's an option to change the <code>&lt;table&gt;</code> to a <code>&lt;div&gt;</code>, or even to suppress it altogether. But after 30 minutes of furious googling, I handn't found it and the deadline was looming. So <code>&lt;table&gt;</code> it was.</p>
+
+<p>Like I said at the outset, I've heard lots of good things about ASP.Net: the separation of server-side code from markup, the ease of developing reusable components, its <abbr title="Object Oriented">OO</abbr> architecture and, of course, the built-in functions.</p>
+
+<p>Those last, in particular, <em>could</em> be real time savers. But if using them means sacrificing semantic integrity, then they look like a faustian bargain to me.</p>
+
+<p>Ah, well. I suppose in the worst case, I'll just have to roll my own replacements &#8212; something I'd be doing anyway if I were using PHP or Perl (depending on which modules/libraries were available on the server, of course). And I still hold out hope that it's just my own ignorance that's making ASP.Net look bad, rather than any flaw in Microsoft's implementation itself.</p>
+
+<p><br /><strong>Update:</strong> After I posted the above, something was nagging me about the list of ASP.Net benefits. It just seemed I was missing something. Turns out, I was: <abbr title="eXtensible Markup Language">XML</abbr> support. While I've not done a whole lot of XML wrangling (apart from <abbr title="eXtensible HyperText Markup Lanuage">XHTML</abbr>, of course), from what little I know ASP.Net is at least as good as any other server-side language when it comes to handling XML, and probably better than most. PHP, for example, is pathetic without the installation of additional modules, and my (quite limited) experience with those indicates they're rather awkward &#8212; assuming you can even get them installed, which isn't a given if you're on a shared server.</p>
+
+<p>So whatever standards-related kvetches there may be about ASP.Net, it's most definitely got it's good points, too.</p>
+
+<p><br /><strong>Update the 2<sup>nd</sup>:</strong> Another thing about the post was bothering me, too: my assertion that the markup for ASP.Net's form validation error messages was, if not semantically kosher, at least valid.</p>
+
+<p>Guess what? I screwed up. It isn't. I'd forgotten that to color the error messages red, ASP.Net inserts a <code>&lt;font&gt;</code> tag inside the <code>&lt;table&gt;</code> tag. Apart from just being a semantic no-no, the <code>&lt;font&gt;</code> tag is also an inline element. But as noted, ASP.Net further wraps error messages in either a <code>&lt;ul&gt;</code> (the default) or a <code>&lt;p&gt;</code> &#8212; both <em>block</em> elments, and therefore invalid when placed inside the inline <code>&lt;font&gt;</code> element.</p>
+
+<p>So the markup ASP.Net generates by default is not only a semantic mess, it isn't even valid (X)HTML. <code>&lt;weeble /&gt;</code></p>
+
+<p><br /><strong>Update the 3<sup>rd</sup>:</strong> Via email, Nick Vrvilo confirmed my worst fears regarding ASP.Net's HTML generation functions. Nick says they do largely generate semantic nonsense, and <em>invalid</em> semantic nonsense at that.</p>
+
+<p>Worse, Nick says there's no easy way to override the default markup. To do so, one has to write one's own libraries. Nick helpfully points to a <a href="http://www.liquid-internet.co.uk/content/dynamic/pages/series1article1.aspx" title="Tutorial on creating your own ASP.Net libraries">tutorial on creating custom ASP.Net libraries</a> but also observes that it's an awful lot of work just to create a simple valid HTML form. Just so.</p>
+
+<p>On balance, Nick says that eschewing the built-in goodies in ASP.Net is the easiest way to get valid pages, and that it's really not <em>that</em> bad since you end up in the same place you'd be with other languages. True enough, and ASP.Net still has other advantages.</p>
+
+<p>On a brighter note, Nick confirms my suspicion that the entire-page-inside-the-<code>&lt;form&gt;</code>-tag number is nothing more than a carryover from developers used to working on Windows apps, where each screen of an application <em>is</em> a form. He says developers used to that metaphor just slap the <code>&lt;form&gt;</code> element around everything out of habit; ASP.Net only requires it around the actual form elements &#8212; which is just as it should be.</p>
+
+<p>So a mixed review, then. ASP.Net has much to recommend it, but Microsoft still gets raspberries for encouraging presentational, invalid markup with their default ASP.Net functions.</p>
+
+<p><br /><strong>Update the 4<sup>th</sup>:</strong> Due to the volume of responses I've received, I've just rolled all the rest of my updates into a <a href="http://webstandards.org/buzz/archive/2004_10.html#a000458" title="Follow-up post to 'Standards Frustrations of an ASP.Net Newbie'">new post</a>.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000451">October 02, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000451" id="a000451">C|net Discovers Browser Incompatibilities</a></h2>
+
+                                <p>As part of a <a href="http://news.com.com/Internet+Explorer--headed+for+extinction/2009-1032_3-5388995.html?tag=ne.iesr" title="C|net series on Ineternet Explorer">series on IE</a>, <a href="http://news.com.com/" title="C|net's News.com site">C|net</a> has an article on the <a href="http://news.com.com/Internet+Explorer--headed+for+extinction/2009-1032_3-5388995.html?tag=ne.iesr" title="C|net article on browser incompatibilities">problem of browser incompatibilities</a>.</p>
+                        <p>According to the article, users of 'minority' browsers like <a href="http://www.mozilla.org/products/firefox/index.html" title="Firefox product page">Firefox</a> and <a href="http://www.opera.com/" title="Opera site">Opera</a> are unable to escape IE entirely due to IE-only sites:</p>
+
+<blockquote><p>For many people, using a non-Microsoft browser such as Firefox is now a must for secure Web surfing &#8212; but most still keep a copy of Internet Explorer around just in case.</p><p>The problem is that many Web developers create their sites so they work best with Internet Explorer (IE), but not to work as well with browser software used by relatively tiny groups of potential visitors.</p></blockquote>
+
+<p>C|net's not entirely wrong: there are indeed sites that don't work in browsers other than IE. However, I almost never open IE for anything but testing. </p>
+
+<p>I've been using a Gecko-based browser for most of my surfing since 2001 and Mozilla 0.9.4; returning to IE now is just painful. Besides which, my primary personal computer is a Mac, so IE/Win isn't a realistic option for me at home. If a site requires IE/Win I take my business elsewhere and, if I can find a contact addy, let the losing vendor know why. </p>
+
+<p>I can think of only two execptions to the rule. First, my electric and gas supplier, <a href="http://www.powergen.co.uk/" title="Powergen's site">Powergen</a>. Their offline incompetence (speaking organisationally; no offence to any particular employee intended) has me looking to better-deal them as soon as they get my account straightened out anyway. The second is <a href="http://www.maximumasp.com/Default.aspx?bhcp=1" title="MaximumASP's site">MaximumASP</a>, the web host used by my employer. Their account management app simply falls down in Firefox &#8212; no surprise given their focus, I suppose. But if I were in charge of selecting hosting vendors at work, I'd have us at another host faster than you can say 'best practices.'</p>
+
+<p>What's particularly frustrating about sites like Powergen and MaximumASP is that it really doesn't have to be that way &#8212; C|net's assertions notwithstanding:</p>
+
+<blockquote><p>These incompatibilities between browsers are as big a headache for developers as they are for Web surfers, some professionals say.</p><p>"It's definitely a problem," said Noel Briggs, a developer at Web design company NetTensity. "The time we waste on addressing browser incompatibility problems easily amounts to a significant percentage of our payroll."</p></blockquote>
+
+<p>Pardon me if I call 'baloney.' </p>
+
+<p>When the WaSP was founded in the dark days of 1998, we estimated that browser incompatibilities added 20% to the cost of developing a web site. Back then, Netscape Communications was by far the worst offender in terms of standards support. The flaws in their Navigator browser and <a href="http://wp.netscape.com/download/archive/client_archive4x.html" title="Archived versions of the Communicator suite">Communicator suite</a> are the stuff of legends. IE was no picnic either, but Microsoft was trying and it showed: IE was neck-and-neck with Opera in terms of standards support, even a bit ahead where the <abbr title="Document Object Model">DOM</abbr> was concerned.</p>
+
+<p>Today, both Navigator and Communicator have given way to a new <a href="http://channels.netscape.com/ns/browsers/default.jsp" title="Netscape 7.2 product page">Netscape browser</a> based on <a href="http://www.mozilla.org/" title="The Mozilla Foundation site">The Mozilla Foundation's</a> outstanding Gecko rendering engine. Meanwhile, web developers have developed standards-based methodologies like WaSP project leader <a href="http://webstandards.org/about/bios/schampeon.html" title="Steven Champeon's WaSP bio">Steven Champeon's</a> '<a href="http://webmonkey.wired.com/webmonkey/templates/print_template.htmlt?meta=/webmonkey/03/21/index3a_meta.html" title="Webmonkey article on the progressive enhancement methodology">progressive enhancement</a>.'</p>
+
+<p>Together, better browsers (<em>including</em> IE 6/Win, warts and all) and better practices have slashed the time I spend hacking around browser incompatibilities to something like 10-15% of total development time. And that's just 10% of development time; it doesn't account for design, <abbr title="Information Architecture">IA</abbr>, project management, photography, copywriting and so on. Those aspects of site development are only minimally impacted by browser incompatibilities. </p>
+
+<p>So the percentage of total site development cost spent on browser incompatibilities these days is probably under 5%, at least in my experience. On scripting-intensive projects the total may be a bit more &#8212; as much as 10-15% of the total, even. But that's still a significant reduction from the bad old days.</p>
+
+<p>This reduction is almost entirely due to the adoption of web standards by browser makers and site developers. How do I know? Because testing and debugging all but the most complex sites in the most standards-compliant browsers &#8212; those based on Mozilla's Gecko engine, <abbr title="K Desktop Environment">KDE</abbr>'s <a href="http://www.konqueror.org/features/browser.php" title="Konqueror browser product page">KHTML</a> and the Opera browser &#8212; can be done in an hour or six. On a large project, the team probably spends more time than that making coffee or ordering pizza. The lion's share of the debugging time and effort is spent on the less standards-compliant IE/Win and, to a (much) lesser extent, the officially-moribund IE/Mac.</p>
+
+<p>Bottom line, if IE/Win were brought up to snuff on standards, browser incompatibilities would largely be a non-issue. And even as it stands, devoting 5% of costs to support a group of browsers that comprises more than 5% of the audience (according most recent web statistics I've seen) looks like a bargain to me.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2004_10.html#a000450">October 01, 2004</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/ckaminski.html">ckaminski</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000450" id="a000450">The Web as Platform</a></h2>
+
+                                <p>In my last <a href="http://webstandards.org/buzz/archive/2004_09.html#a000449" title="Buzz post on the future of IE">post</a>, I observed that the action on the web in the next few years would be its development as a platform for developing and deploying applications. In fact, the fun has already started.</p>
+                        <p>Web mail clients like <a href="http://gmail.google.com/" title="Google's Gmail web email client">Gmail</a>, <a href="http://www.hotmail.com/" title="Hotmail web email client">Hotmail</a> and <a href="http://mail.yahoo.com/" title="Yahoo's web email client">Yahoo! mail</a> were among the earliest, but the list has grown to include <a href="http://www.flickr.com/" title="Flickr photo management application">photo management apps</a>, <a href="http://www.technorati.com/" title="Technorati feed management application">news feed management software</a> and, of course, <a href="http://www.blogger.com/" title="Blogger publishing application">publishing software</a>. <a href="http://joelonsoftware.com/" title="Joel Spolsky's site">Joel Spolsky</a> offers perhaps the best history and explication of the move in his oustanding article <a href="http://joelonsoftware.com/articles/APIWar.html" title="Joel Spolsky's article on the rise of web applications">"How Microsoft Lost the API War"</a>:</p>
+
+<blockquote><p>Web Applications are easier to deploy because there's no installation involved. Installing a web application means typing a URL in the address bar. Today I installed Google's new email application by typing Alt+D, gmail, Ctrl+Enter. There are far fewer compatibility problems and problems coexisting with other software. Every user of your product is using the same version so you never have to support a mix of old versions. You can use any programming environment you want because you only have to get it up and running on your own server. Your application is automatically available at virtually every reasonable computer on the planet. Your customers' data, too, is automatically available at virtually every reasonable computer on the planet.</p></blockquote>
+
+<p>The usual suspects have been rushing in to stake out their turf in the emerging 'rich application' market: <a href="http://www.sun.com/" title="Sun Microsystems' site">Sun</a> with <a href="http://java.sun.com/products/javawebstart/" title="Java Web Start product page">Java Web Start</a>, <a href="http://www.macromedia.com/" title="Macromedia's site">Macromedia</a> with their <a href="http://www.macromedia.com/software/central/?promoid=home_prod_ce_0111903" title="Macromedia Central product page">Central</a> product for <a href="http://www.macromedia.com/software/flash/">Flash</a>, <a href="http://www.mozilla.org/" title="The Mozilla Foundation's site">Mozilla</a> with <a href="http://www.mozilla.org/projects/xul/" title="XUL interface language project page">XUL</a>, <a href="http://www.microsoft.com/" title="Microsoft's site">Microsoft</a> with <a href="http://msdn.microsoft.com/msdnmag/issues/04/01/Avalon/default.aspx" title="MSDN article on Avalon">Avalon</a>/<a href="http://www.ondotnet.com/pub/a/dotnet/2004/01/19/longhorn.html" title="O'Reilly OnDotNet article on eXtensible Application Markup Language">XAML</a> and the <a href="http://w3.org/" title="The W3C's site">W3C</a> with <a href="http://xml.coverpages.org/ni2004-09-01-a.html" title="'Cover Pages' article on SVG + XBL"><abbr title="Scalable Vector Graphics">SVG</abbr> + <abbr title="eXtensible Binding Language">XBL</abbr></a>. As well, a group of developers including representatives from Mozilla, <a href="http://www.opera.com/" title="Opera's site">Opera</a> and <a href="http://www.apple.com/" title="Apple's site">Apple</a> have been working on an evolution of <abbr title="HyperText Markup Language">HTML</abbr> under the auspices of a group called <a href="http://whatwg.org/" title="WHAT Working Group's site">WHAT Working Group</a>.</p>
+
+<p>While the immediate impact of most of these technologies on the working web developer is minimal, over the long haul one or more of them will define the way we work for the next decade. In the near term, they will have tremendous impact on developers working on purpose-built applications inside corporations, and to a lesser degree on developers working on consumer applications as well.</p>
+
+<p>The competition for defining the next generation application platform will, to a large extent, determine whether we have an open computing environment with robust competition or are chained to a proprietary platform where innovation is determined by a single entity. As is usual in computing, Microsoft has the early advantage. From the aforementioned C|Net article:</p>
+
+<blockquote><p>Microsoft needs only a small percentage of Internet companies to offer Windows-specific tools to have succeeded in giving the platform a leg up in a world in which all operating systems with standards-compliant Web browsers are equal.</p></blockquote>
+
+<p>Even so, <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> includes a veritable who's who of working web and browser developers: <a href="hixie.html" title="Ian Hickson's site">Ian Hickson</a>, <a href="http://annevankesteren.nl/" title="Anne Van Kesteren's site">Anne Van Kesteren</a>, <a href="http://weblogs.mozillazine.org/hyatt/" title="Dave Hyatt's site">Dave Hyatt</a>, <a href="http://www.w3.org/People/howcome/" title="H&aring;kon Wium Lie">H&aring;kon Wium Lie</a>, <a href="http://dean.edwards.name/" title="Dean Edwards' site">Dean Edwards</a>, <a href="http://fantasai.inkedblade.net/" title="Fantasai's site">Fantasai</a>. It's hard to bet against that group.</p>
+
+<p>There's also a wildcard in this game: a little company called <a href="http://www.google.com/" title="Google's site">Google</a> that has been moving more and more into web applications and has the brand recognition and user base to make waves in this space that would rock even Microsoft's boat.</p>
+
+<p>Obviously, none of these technologies is a formal standard just now &#8212; even SVG + XBL is just at the draft stage. But things are moving quickly. WHATWG has promised working implementations by the end of the year, Sun and Macromedia's solutions are available now, and Avalon/XAML should be with us sometime in 2006.</p>
+
+<p>I haven't really sorted out who I think the winners and losers will be as yet, but my gut tells me WHATWG has as good a chance as anyone. The most significant factor for me is that they are designing their specification to degrade gracefully in older browsers, and intend to implement much of it in IE as behaviors. That avoids the 'boil-the-sea' problem Joel cites with regard to XAML in his 'API War' article, which to me is a very big deal. Even Microsoft, rightfully famous for the lengths to which they go to ensure backwards-compatibility for Windows, doesn't have that edge in this battle. I must admit, too, that WHATWG is partly a sentimental favorite: not only do I respect and admire the drivers of the project, but they're committed to handing off their specification to a formal standards body such as the W3C or the <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>.</p>
+
+<p>Whichever technology comes out on top, the important thing to me is that it be developed openly, with input from many disparate sources, and be available for use royalty-free. Without those attributes, the web will never achieve its full potential as an applicaton platform.</p>
+        
+    </div>
+    
+  </div>
+
+</div>
+
+        <div class="padder" id="footer">
+                <a href="../../legal/index.html">Legal</a>
+
+        </div>
+</div>
+
+<div id="SubNav">
+ <div class="padder">
+      <h2>Past Buzzings</h2>
+      <ul>
+                <li><a href="2006_02.html">February 2006</a></li>
+                <li><a href="2006_01.html">January 2006</a></li>
+                <li><a href="2005_12.html">December 2005</a></li>
+                <li><a href="2005_11.html">November 2005</a></li>
+                <li><a href="2005_10.html">October 2005</a></li>
+                <li><a href="2005_09.html">September 2005</a></li>
+                <li><a href="2005_08.html">August 2005</a></li>
+                <li><a href="2005_07.html">July 2005</a></li>
+                <li><a href="2005_06.html">June 2005</a></li>
+                <li><a href="2005_05.html">May 2005</a></li>
+                <li><a href="2005_04.html">April 2005</a></li>
+                <li><a href="2005_03.html">March 2005</a></li>
+                <li><a href="2005_02.html">February 2005</a></li>
+                <li><a href="2005_01.html">January 2005</a></li>
+                <li><a href="2004_12.html">December 2004</a></li>
+                <li><a href="2004_11.html">November 2004</a></li>
+                <li><a href="2004_10.html">October 2004</a></li>
+                <li><a href="2004_09.html">September 2004</a></li>
+                <li><a href="2004_08.html">August 2004</a></li>
+                <li><a href="2004_07.html">July 2004</a></li>
+                <li><a href="2004_06.html">June 2004</a></li>
+                <li><a href="2004_05.html">May 2004</a></li>
+                <li><a href="2004_04.html">April 2004</a></li>
+                <li><a href="2004_03.html">March 2004</a></li>
+                <li><a href="2004_02.html">February 2004</a></li>
+                <li><a href="2004_01.html">January 2004</a></li>
+                <li><a href="2003_12.html">December 2003</a></li>
+                <li><a href="2003_11.html">November 2003</a></li>
+                <li><a href="2003_10.html">October 2003</a></li>
+                <li><a href="2003_09.html">September 2003</a></li>
+                <li><a href="2003_08.html">August 2003</a></li>
+                <li><a href="2003_07.html">July 2003</a></li>
+                <li><a href="2003_06.html">June 2003</a></li>
+                <li><a href="2003_05.html">May 2003</a></li>
+                <li><a href="2003_04.html">April 2003</a></li>
+                <li><a href="2003_03.html">March 2003</a></li>
+                <li><a href="2003_02.html">February 2003</a></li>
+                <li><a href="2003_01.html">January 2003</a></li>
+                <li><a href="2002_12.html">December 2002</a></li>
+                <li><a href="2002_11.html">November 2002</a></li>
+                <li><a href="2002_10.html">October 2002</a></li>
+                <li><a href="2002_09.html">September 2002</a></li>
+                <li><a href="2002_08.html">August 2002</a></li>
+                <li><a href="2002_07.html">July 2002</a></li>
+                <li><a href="2002_06.html">June 2002</a></li>
+                <li><a href="2002_04.html">April 2002</a></li>
+                <li><a href="2002_03.html">March 2002</a></li>
+      
+      </ul>
+      <div>Also available in <a href="../index.xml" title="Buzz RSS Feed"><img src="../../img/xml_button.gif" alt="Buzz RSS feed" /></a></div>
+      <div>The Buzz Weblog is<br /><a href="http://www.movabletype.org/" title="Powered by Movable Type"><img src="../../img/powered.gif" width="128" height="22" alt="" /></a></div>
+  </div>
+        <div class="padder">
+                <!--
+<h3>CONTeXTUAL LINKS</h3><p><a href="">A hot link</a>Followed by a write up of what can be found at the other end of the "hot link".</p><p>/inc/nav/ buzz/contextual.inc</p>-->
+
+        </div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/buzz/archive/2004_10.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:14 GMT -->
+</html>

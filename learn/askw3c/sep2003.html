@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/sep2003.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : September 2003</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+.code	{
+	color: #930;
+	background:#f0f0f0;
+	font-family: monospace;
+	font-size: 95%;
+	line-height: 120%;
+}
+
+.blockquote	{
+	font-style: italic;
+	padding: 15px;
+	
+}
+
+</style>
+</head>
+<body>
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+	<div class="padder"> 
+	
+	<h1>WaSP Asks the W3C</h1>
+	
+<h2 class="sub">Serving XHTML with the Right MIME Type</h2>
+
+	<p>
+	In the previous issue of &#8220;<a href="index-2.html" title="WaSP Asks the W3C:  How Web authors specify character encodings in Web documents">WaSP Asks the W3C</a>&#8221;, we examined how to correctly specify the character encoding
+	for a document. In this edition, we consult the <a href="http://www.w3.org/QA/">W3C&#8217;s Quality Assurance Group</a> about serving <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> documents with
+	the correct <acronym title="Multipurpose Internet Mail Extension">MIME</acronym> type.
+	</p>
+
+<p>
+<a href="http://www.wikipedia.org/wiki/MIME">MIME</a> has its origins as an extension to email and is reused by <acronym title="HyperText Transfer Protocol">HTTP</acronym> as a means to declare the type of content (or media type) being served. Each resource has a specific MIME type
+that is constructed of two parts: the main type and a subtype, which are separated by a slash &#8220;/&#8221;. The MIME type indicates to the user-agent (as it receives the document) how to handle and treat it accordingly,  thereby allowing you to associate a particular application or behavior to the particular media type in your browser.</p>
+
+
+	<h3>WaSP asks</h3>
+	
+
+<p>Which MIME type should XHTML be served with?</p>
+
+<h3>The W3C Responds</h3>
+
+<p>The short answer is <code>application/xhtml+xml</code>, as described by the <a href="http://www.w3.org/TR/xhtml-media-types/">XHTML Media-types W3C Note</a>, but the long answer is somewhat more involved and provides a couple of alternatives.</p>
+
+<h4>Why not text/html?</h4>
+
+<p>
+The main reason to use a new MIME type for XHTML is that it is an <acronym title="eXtensible Markup Language">XML</acronym>
+language, which means that it is subjected to stricter validation and
+hence less prone to becoming the tag soup that too many people have
+called HTML; thus, it is reasonable to indicate the difference to
+browsers so they will be able to handle the resulting code more
+efficiently.
+</p>
+
+<p>
+The fact that XHTML is based on XML also involves important syntax
+differences &mdash; the most significant being that empty tags such as
+<code>&lt;br&gt;</code> need not be closed in <acronym title="HyperText Markup Language">HTML</acronym> whereas they must be done so in XHTML (&agrave; la <code>&lt;br/&gt;</code> ) . These changes in syntax are another reason to clearly
+distinguish HTML from XHTML , and thus use a different MIME type.
+</p>
+
+
+<h4>But some browsers don&#8217;t know about
+<code>application/xhtml+xml</code>.</h4>
+<p>Indeed, and that&#8217;s one of the biggest current issues with the adoption of the new MIME 
+type, especially since Internet Explorer doesn&#8217;t recognize it
+(at least for any version up to 6.x on both Windows and Mac OS). Of
+course, this is a common problem with adoption of new technologies and
+it usually improves over time. However, for the time being, there are
+ways out of this vicious cycle:</p>
+
+<ul>
+<li>XHTML 1.0 defines a <a href="http://www.w3.org/TR/xhtml1/#guidelines">backward compatibility mode</a>
+that allows one to use XHTML 1.0 while maintaining compatibility with
+the legacy browsers. If you follow these guidelines, you are allowed to
+serve your XHTML as <code>text/html</code>. The backward compatibility
+mode defines some syntactic tricks which allows an XHTML document to be understood by most HTML browsers.</li>
+
+<li>Using <a
+href="http://www.w3.org/2003/01/xhtml-mimetype/content-negotiation"
+title="read about content negotiation techniques">content negotiation</a> on your Web server, you can actually serve your XHTML 1.0 either as <code>text/html</code> or <code>application/xhtml+xml</code>
+depending on the user-agent&#8217;s capabilities, so that you are able to maintain backward compatibility for legacy browsers while exploiting the capabilities of modern ones.</li>
+</ul>
+<p>The first technique makes your content understandable by the vast
+majority of web browsers, but in doing so, you lose all the advantages of having
+a different MIME type: the power of being treated as XML, allowing your document to be distinguished from tag soup, getting fast track rendering on modern browsers.</p>
+
+<p>The second technique caters for existing browsers while keeping the new MIME 
+type for those which are able to understand it; the down side is that it can be
+quite tricky to implement on your server, depending on how much access
+you have to its configurations and settings.</p>
+
+<p>Alternatively, you can serve your XHTML (any version)
+as <code>application/xml</code>, or even as <code>text/xml</code>. However,
+in serving your XHTML document as <code>text/xml</code> you may
+run into issues with character sets because  the rules which apply to
+<code>text/*</code> MIME types are more complex than those for
+<code>application/*</code>. It is also important to note
+that for either of these MIME types, Internet Explorer will display the
+source code instead of interpreting it as XHTML .
+</p>
+
+<h4>How do I set up the content negotiation you&#8217;re speaking about?</h4>
+
+<p>This depends on the Web server you&#8217;re using: if you&#8217;re not an
+administrator of the Web server where you want to use this type of content
+negotiation, point your Web server administrator to this document and
+ask him or her to set it up as needed for you.</p>
+
+
+<p>If you&#8217;re the administrator of the Web server in question, you
+can have a look at the <a
+href="http://www.w3.org/2003/01/xhtml-mimetype/content-negotiation"
+title="go to content negotiaton techniques">linked techniques</a> for
+your web server &mdash; or even better, send the techniques that you
+know to the <a href="mailto:public-evangelist@w3.org" title="contact the W3C Web Standards Education list">W3C Web Standards Education list</a>
+(publicly archived) so we can add it to our knowledge base. </p>
+
+<h3>To sum it up</h3>
+<p>Let&#8217;s try to summarize what we&#8217;ve just discussed:</p>
+<table summary="Usage of &lt;acronym title='Multipurpose Internet Mail
+Extension'&gt;MIME&lt;/acronym&gt; type for each (X)HTML version, and their
+coverage in browsers" border="1" cellspacing="0" cellpadding="5">
+<thead>
+
+<tr>
+<th>(X)HTML version</th>
+<th>Recommended MIME type</th>
+<th>Limitations in browser</th>
+<th>Alternate MIME types</th>
+<th>Techniques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>HTML 2.0,3.2,4.0,4.01</th>
+
+<td><code>text/html</code></td>
+<td>none, but this MIME type has been abused very often as an umbrella for tag soup</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>XHTML 1.0</th>
+<td><code>application/xhtml+xml</code></td>
+<td>Not recognized by Internet Explorer 6.x and previous versions</td>
+<td><ul>
+
+<li>if using the backward compatibility guidelines, <code>text/html</code></li>
+<li><code>application/xml</code> (or <code>text/xml</code>, but with much caution with regards to charset setting)</li>
+</ul>
+</td>
+<td><ul>
+<li><a href="http://www.w3.org/TR/xhtml1/#guidelines">backward compatibility guidelines</a></li>
+<li><a href="http://www.w3.org/2003/01/xhtml-mimetype/content-negotiation">content negotiation</a> between <code>text/html</code> and <code>application/xhtml+xml</code></li>
+
+</ul>
+</td>
+</tr>
+<tr>
+<th>XHTML 1.1, XHTML Basic, XHTML profiles</th>
+<td><code>application/xhtml+xml</code></td>
+<td>Not recognized by Internet Explorer 6.x and previous versions</td>
+<td><ul>
+<li><code>application/xml</code> (or <code>text/xml</code>, but with much caution with regards to charset setting)</li>
+
+</ul>
+</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.ietf.org/rfc/rfc2046.txt">Multipurpose Internet Mail Extensions
+(MIME) Part Two: Media Types</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc3236.txt">The &#8220;application/xhtml+xml&#8221; Media Type</a></li>
+<li><a href="http://www.w3.org/TR/xhtml-media-types/">XHTML Media-types W3C Note</a></li>
+
+<li><a href="http://www.w3.org/TR/xhtml1/#guidelines">HTML compatibility guidelines for XHTML 1.0</a></li>
+<li><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html#sec12">Content Negotiation in HTTP/1.1</a></li>
+</ul>
+
+
+
+<h3>Discussion</h3>
+
+	<p>For clarification and discussion on this
+topic, please address your comments and questions to the W3C Web
+Standards Education list.</p>
+
+	<p>To subscribe to the list, send an email to <a title="subscribe to the public evangelist list" href="mailto:public-evangelist-request@w3.org">public-evangelist-request@w3.org</a> with 
+	&#8220;Subject: subscribe&#8221;.  You can read archived posts at <a title="read list archives" href="http://lists.w3.org/Archives/Public/public-evangelist/">http://lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+
+	</div>
+	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/sep2003.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+</html>
+<!-- $Id: sep2003.html,v 1.4 2003/09/04 16:23:21 molly Exp $ -->

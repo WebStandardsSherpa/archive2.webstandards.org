@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/buzz/archive/2005_11.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:11 GMT -->
+<head>
+<title>The Web Standards Project</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<link rel="alternate" type="application/rss+xml" title="Buzz RSS Feed" href="http://www.webstandards.org/buzz/buzz.xml" /> 
+</head>
+<body>
+<div id="Header">
+        <a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+        <ul>
+        <li><a href="../../index.html">home</a></li>
+        <li><a href="../../about/index.html">about</a></li>
+        <li><a href="../../act/index.html">act!</a></li>
+        <li><a href="../../learn/index.html">learn</a></li>
+        <li><a href="../../opinion/index.html">opinion</a></li>
+        <li><a href="../../press/index.html">press</a></li>
+        </ul>
+
+        <div id="preferences"></div>
+<div id="linkPreferences"></div>
+
+</div>
+
+<div id="MainText">
+        <div class="padder"> 
+        <h1>Buzz Archive: November 2005</h1>
+  <div class="blog">
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2005_11.html#a000592">November 27, 2005</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/tantek.html">tantek</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000592" id="a000592">Pandora's Box (Model) of CSS Hacks And Other Good Intentions</a></h2>
+
+                                <p>This Thanksgiving I've decided it's about time that I provided some more background and analysis on one of the things I am certainly unintentionally (in)famous for.  This entry was started at 7pm on Thanksgiving evening, but took me until now to complete.
+</p>
+<h3>
+Before CSS hacks
+</h3>
+<p>
+I don't know who first came up with using the presence of a '<code>media</code>' attribute on <code>&lt;link&gt;</code> or <code>&lt;style&gt;</code> to hide CSS from Netscape 4, but it was the first technique that I remember hearing of to use a perfectly reasonable HTML feature (yes, the 'media' <em>attribute</em> is in <em>HTML</em>, not CSS) to deliver CSS selectively to browsers that supported a certain feature.  
+This HTML-based "filter" was perhaps the first such technique, though it would be many years before the term "<a href="http://tantek.com/CSS/Examples/highpass.html">filter</a>" was introduced as a general term for such techniques.
+</p>
+<h3>
+Banishing version four browsers
+</h3>
+<p>
+The first filter I came up with (again, before they were named as such) was perhaps the @import with quotes filter, which I didn't even bother writing a page about in particular because it seemed so simple:  @import "foo.css"; is only supported by IE5, NS6, Opera3 and better.  I just posted <a href="http://www.tantek.com/XHTML/Examples/browserupgrade.html">an example usage</a> at the time for <a href="http://webstandards.org/">Web Standards Project</a>'s Browser Upgrade Campaign (BUC). That particular legacy contribution was also made anonymously to one of the <a href="http://alistapart.com/">ALA</a> redesigns, though I believe <a href="http://zeldman.com/">Jeffrey</a> has outed me at some point since.
+</p>
+<p>
+Neither the HTML 'media' attrribute filter nor the CSS @import quotes filter, in my humble opinion, qualified as hacks, because they lacked what some might term the essence of a <a rel="tag" href="http://technorati.com/tag/hack">hack</a>: 
+<a href="http://en.wikipedia.org/wiki/Hack_(technology_slang)"><q cite="http://en.wikipedia.org/wiki/Hack_%28technology_slang%29">either a kludge, or the opposite of a kludge, as in a clever or elegant solution to a difficult problem</q></a>.   Neither of those filters were particularly kludgy (warning, not a <a href="http://scrabble.com/">Scrabble</a> word), nor clever.  In other words they were too <a href="http://img.fark.com/images/topics/obvious.gif" class='gif'>"obvious"</a> to really be considered hacks.
+</p>
+<h3>
+Seemed harmless
+</h3>
+<p>
+Anyway, the @import filter seemed harmless enough.   At the time the only big difference it made was to filter out IE4.x (both Mac and Windows), which had already been obsoleted by IE5 (both versions).  And it was <a href="http://www.alistapart.com/articles/journey/" title="See section titled 'Protecting the Innocent'">praised</a> as: <q cite="http://www.alistapart.com/articles/journey/">... for people who make websites, that is nothing short of revolutionary.</q>  
+Sidenote: note the fact that that article on ditching &lt;table&gt;s for layout is  <strong>almost FIVE years old</strong> 
+yet those of us that <a href="http://accessify.com/2005/11/interview-with-andy-clarke-aka.php">are</a> <a href="http://www.stuffandnonsense.co.uk/archives/accessibility_the_gloves_come_off.html">real</a> <a href="http://www.molly.com/2005/11/14/web-standards-and-the-new-professionalism/">professionals</a> <a href="http://www.456bereastreet.com/archive/200511/a_web_professional_can_never_stop_learning/">still</a> <a href="http://www.quirksmode.org/blog/archives/2005/11/the_new_amateur.html">have</a> <a href="http://robdickerson.com/blog/?p=9">to</a> <a href="http://www.webstandards.org/buzz/archive/2005_11.html#a000591">repeat</a> <a href="http://web-graphics.com/mtarchive/001672.php">the</a> <a href="http://placenamehere.com/article/107/OnCraftANewProfessionalismAndNewAmateurs">message</a> <a href="http://www.isolani.co.uk/blog/standards/KnowingOurCraft">.</a>  
+</p>
+<p>
+Thus the idea of using a feature of  <em>CSS</em> to essentially do a lightweight form of browser specific style sheet switching was born, but the <a rel="tag" href="http://technorati.com/tag/pandora">Pandora</a>'s <a rel="tag" href="http://technorati.com/tag/box">Box</a> (<a rel="tag" href="http://technorati.com/tag/model">Model</a>) of <a rel="tag" href="http://technorati.com/tag/css">CSS</a> <a rel="tag" href="http://technorati.com/tag/hacks">Hacks</a> had yet to be opened.  That would come exactly one week later.
+</p>
+<h3>
+Hacking open the <a rel="tag" href="http://technorati.com/tag/boxmodel">Box Model</a> and releasing the filters
+</h3>
+<p>
+<a href="http://zeldman.com/">Jeffrey Zeldman</a> expressed to me how nice it was that it was possible to write CSS without having to worry about what might look bad in 
+(or even  <em>crash</em>) obsolete browsers like Netscape 4.   Having been freed to use more of (and depend more on) CSS, he and many others following <a rel="tag" href="http://technorati.com/tag/alistapart">A List Apart</a>'s suggestions quickly ran into the next issue which was the inconsistent box model treatment between IE5.x/Windows and <a rel="tag" href="http://technorati.com/tag/ie6">IE6</a>/Windows.
+</p>
+<p>
+<q>If only there were a way to send one width to IE5.x/Windows, and another width to modern browsers which supported the CSS box model...</q> is a rough approximation of what <a rel="tag" href="http://technorati.com/tag/jeffreyzeldman">Jeffrey Zeldman</a> said (emailed) to me at the time.
+</p>
+<p>
+Eager to be helpful, and armed with the intuitive knowledge that the key to  Pandora's Box of <a rel="tag" href="http://technorati.com/tag/csshacks">CSS hacks</a> could be hidden amongst the jungle of <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/sec71.htm">CSS1 section 7.1 parsing tests</a>, I went hunting.  It didn't take long until (with Todd Fahrner's help) I discovered how test twentyb (<code>rotation-code: "\"}\"";</code> - look familiar?) messed up all versions of IE5.x/Windows, 
+<em>but no other modern browser</em>.  After that it was a simple manner of finding <a href="http://www.w3.org/TR/REC-CSS2/aural.html#propdef-voice-family">an abandoned CSS2 property</a> which accepted arbitrary string values.
+</p>
+<p>
+I had <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">opened</a> Pandora's Box (Model) of CSS Hacks, and there was no turning back.  
+</p>
+<p>
+Shortly thereafter, I generalized the Box Model Hack to enable hiding entire style sheets from IE5.x/Windows and <a href="http://tantek.com/CSS/Examples/highpass.html">CSS Filters</a> were born.  <a href="http://tantek.com/CSS/Examples/inlinehpf.html">More</a> <a href="http://tantek.com/CSS/Examples/midpass.html">followed</a> <a href="http://tantek.com/CSS/Examples/ie50winbandpass.html">soon</a> <a href="http://tantek.com/CSS/Examples/ie55winbandpass.html">thereafter</a>.
+</p>
+<h3>
+Intelligently designed hacks
+</h3>
+<p>
+Implicit in the story above are a set of design <a rel="tag" href="http://technorati.com/tag/principles">principles</a> which I kept in mind when I first set about creating <a href="http://tantek.com/CSS/Examples/">CSS hacks</a>, and which I really should have noted at the time.  Given all the <a href="http://dougal.gunters.org/blog/2005/10/13/css-hacks">hand-wringing</a> about CSS hacks <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">incited</a> by my colleague <a href="http://longhornblogs.com/mmielke/" rel="met colleague">Markus Mielke</a>, it's about time I documented these principles.  More on the hang-wringing later.
+</p>
+<h4>
+A <a rel="tag" href="http://technorati.com/tag/csshack">CSS hack</a> should (or MUST in the <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC2119</a> sense if you prefer):
+</h4>
+<ol>
+<li>
+Be valid.  Invalid hacks are unacceptable. Back in the heyday of Web 1.0 (i.e. the late 1990s), the <a href="http://webstandards.org/">The Web Standards Project</a> and numerous others were already spreading the message of better coding through validity, and thus hacks themselves had to validate as well. (Nevermind that many/most so-called "Web 2.0" sites can't be bothered to validate.  See above about the real professionals having to repeat the message).
+</li>
+<li>
+Target  <strong>ONLY</strong> older/frozen/abandoned versions of user
+agents / browsers.  When the Box Model Hack was introduced, we were already playing with betas of IE6/Windows (back when we expected there would be an IE6/Mac), and so we knew how to make sure it wasn't affected.  And now we're playing with betas of <a rel="tag" href="http://technorati.com/tag/ie7">IE7</a>.
+</li>
+<li>
+Be ugly. It's actually a  <strong>good thing</strong> that a hack be visually ugly from a coding aesthetic point of view in the hopes that the
+ugliness will be a reminder that the hack  <strong>is</strong> a hack, and should incite a tendency for people to a) minimize it's usage, and b) remove it's usage over time.  At it's core, browser switching is one of those things you really shouldn't, but must, do to get your job done.  Hacks' ugliness are like the equivalent of persistent warning tags, a reminder to dispose of them when no longer necessary.  
+</li>
+</ol>
+<h3>
+Explosion of CSS hacks and filters
+</h3>
+<p>
+But I didn't document those principles at the time.  Once said Pandora's Box was opened, it didn't take long for the notion that hacking CSS was a "good idea" to spread far and wide in the web design and development community (much further than I could have possibly expected, to the <a href="http://www.google.com/search?q=hack">#4 result for 'hack' on Google</a>, and even onto <a href="http://flickr.com/photos/jayallen/17325716/">t-shirts</a>!).  Of course once hacks for IE5.x/Windows had been discovered, and refined into the concept of "filtering" which browsers got to see whole style sheets, it was only a matter of time before hacks were developed and <a href="http://centricle.com/ref/css/filters/">documented  for nearly every browser</a>.  Nevermind that so many of the hacks violated the above-mentioned principles.  Those ideas spread and mutated without any such strings attached.
+</p>
+<p>
+At this point I can only strongly recommend that people evaluate these myriad hacks based on the above principles before using them.
+</p>
+<h3>
+IE7 Team Puts CSS Hacks On Notice
+</h3>
+<p>
+Now, about that <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">inciting</a> and <a href="http://dougal.gunters.org/blog/2005/10/13/css-hacks">hand-wringing</a> that took place last month.
+</p>
+<p>
+The irony is that I don't disagree with the details of <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">Marcus's MSDN post</a>.  Note that his "Call to action: Please check your pages" does not mention a single one of the CSS hacks I developed.  The one partial overlap is the use of the child "&gt;" selector, which was introduced as part of the Box Model Hack to "Be Nice To Opera" (Opera 5 in particular, which at this point is probably ignorable - anyone even hear of anyone that still uses Opera 5, even for testing purposes?).
+</p>
+<p>
+The sad thing is that most of the hand-wringing could have been avoided (as <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx#480266">noted in the comments</a>) if people would first try fully standards based cross-browser solutions before resorting to hacks.
+</p>
+<p>
+However, the undertone of that blog post (and what Markus and Chris Wilson have expressed to me and others in person) is that web developers must stop using CSS hacks altogether.
+</p>
+<p>
+I know that's perhaps a bit of a hyperbole, but that's the message that's been heard nonetheless.  However, such a message is, with all due respect, the impractical perspective of folks who are not a professional web designers / developers.  I know this, I was <a href="http://microsoft.com/ie/">there</a> once too.
+</p>
+<h3>
+Avoid Targeting Current Versions Of Browsers
+</h3>
+<p>
+To be specific, the problems with hacks have arisen because of hacks that are targeted at a <strong>current</strong> browser, namely, IE6/Windows.  E.g.
+</p>
+<pre><code>* html</code></pre>
+<h3>
+Using A CSS2 Feature Is NOT a Hack
+</h3>
+<p>
+And a misperception that the use of an implemented feature is a hack.
+</p>
+<p>
+E.g. people (ahem, starting with the <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">"BMH"</a> as noted) have used the child selector to send "valid CSS" to "compliant implementations", e.g. with
+</p>
+<pre><code>html&gt;body</code></pre>
+<p>
+That's not a hack.  It's not targeting a specific browser.  It's actually
+inclusive of all browsers who would support CSS2(.1) selectors.
+</p>
+<p>
+Sending valid CSS to compliant implementations is  <strong>proper behavior</strong>.
+</p>
+<h3>
+400 Tiny Violins For the Newcomer
+</h3>
+<p>(With <a href="http://www.voyager.cz/tos/epizody/47gamestersoftriskeliontrans.htm">apologies to Star Trek</a>)</p>
+<p>
+Does this make it harder for new/late implementations (like IE7) to come along and support that selector?
+</p>
+<p>
+Why yes it does.  This is no surprise.
+</p>
+<p>
+If you support the child selector, now all of a sudden you have to
+compliantly support all the other properties/values of <a href="http://w3.org/TR/css21">CSS2(.1)</a> that authors have been successfully using with the child selector.
+</p>
+<p>
+But given that  <strong>several</strong> other browsers do so (otherwise authors wouldn't be using the child selector), and thus the  <strong>market</strong> has demonstrated this is not a problem, this is a reasonable expectation.
+</p>
+<p>
+However, if a browser is somehow unable to do so, then the answer is simple.
+</p>
+<p>
+Don't implement that selector, until that browser <strong>is</strong> able to do so.  IE5/Mac did so, so can IE7, more than <em>five</em> years later...
+</p>
+<p>
+This may seem "unfair" that that these features (a CSS2(.1) selector and
+some CSS2(.1) properties/values) are now "tied" together in terms of
+requiring implementation support, but guess what?
+</p>
+<p>
+CSS2(.1) doesn't say you can implement  <strong>part</strong> of the spec.  You're supposed to implement the whole spec in the first place.
+</p>
+<h3>
+The Red Queen Problem
+</h3>
+<p>
+Obviously this was hard (in fact, impossible for self-contradicting and ambiguously written REC-CSS2 in 1998), and browser vendors (yours truly included) tried to do the next best thing, which is to implement logical "chunks" of <a rel="tag" href="http://technorati.com/tag/css21">CSS2(.1)</a>.
+</p>
+<p>
+Well it's been <strong>7 years</strong> since <a href="http://w3.org/TR/REC-CSS2/">REC-CSS2</a>, and those logical "chunks" have simply grown, more, chunky, as it were.  They've also been clarified down to previously unseen levels of details in <a href="http://w3.org/TR/CSS21">CSS2.1</a>
+</p>
+<p>
+You need to keep coding just to keep up.
+</p>
+<h3>
+Support CSS 2.1 NOW!
+</h3>
+<p>
+The bottom line: eventually what will happen (within a couple of years at most?) is that so many browsers will have implemented <strong>all</strong> of CSS2.1, and authors will be writing with that in mind, that <strong>any</strong> new browser that wants to support part of CSS2.1 will have to support all of it in order to support the style sheets in the wild.
+</p>
+<p>
+<abbr title="in my humble opinion">IMHO</abbr>, that's called progress.
+</p>
+<h3>For Now</h3>
+<p>
+But we don't have any fully compliant CSS 2.1 browsers yet.  And we still have obsolete/abandoned browsers with enough marketshare (or machine dependence) to warrant the incremental bit of effort to support them. So for now:
+</p>
+<ol>
+<li>First try to simply author <a href="http://webstandards.org/">standards-based</a> cross browser designs.</li>
+<li><a href="http://validator.w3.org/">Validate</a>, <a href="http://jigsaw.w3.org/css-validator/">validate</a>, <a href="http://validator.w3.org/feed/">validate</a>.</li>
+<li>Check any browser differences to see if your code is perhaps depending on an implicit browser default style sheet (like the example of the visible empty <code>&lt;legend&gt;</code> in IE6/Windows), and specify that styling <em>explicitly</em> instead of depending on the defaults.
+</li>
+<li>Use CSS hacks and filters sparingly (and only as needed) to get non-compliant obsolete/abandoned browsers to comply to your presentational wishes.</li>
+<li>And keep the pressure on the browser vendors to implement the web standards all of us web developers depend on to get our jobs done.</li>
+</ol>
+<p>
+If you've made it this far, you've been extraordinarily patient and have the attention span of a savant. I wish you a happy Thanksgiving holiday.
+</p>
+<p>[This <a href="http://tantek.com/log/2005/11.html#d26t1820">entry originally posted over here</a>.]
+</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2005_11.html#a000591">November 16, 2005</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/hmkoltz.html">hmkoltz</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000591" id="a000591">Beyond New Professionalism</a></h2>
+
+                                <p>In  Molly's recent WaSP buzz, <a href="http://webstandards.org/buzz/archive/2005_11.html#a000590">Web Standards and The New Professionalism</a> she offers:</p>
+
+<blockquote><p>Today, I want to express that I believe that this new professionalism means taking responsibility for the education of ourselves and each other, and ensuring that reversions like Disney Store UK never happen again.</p></blockquote>
+
+<p>As part of the <a title="The WaSP Education Task Force" href="http://www.webstandards.org/act/campaign/edutf/">WaSP Edu TF</a>, I am here to say that we need more effort in more areas, as a group, as a *New Professional*, as an individual. It is not enough to educate ourselves and each other, though it is a good plan and a start, and not all that new. We need to educate, promote, and advocate change to the educators, schools, and the programs or courses. The state of web related education is sub-standard in most cases. The degrees and training signify little in many cases. A lot of work needs to be done.</p> <p>Many of us, *Old Professionals* have been involved in mailing lists and online communities advocating standards, accessibility, guidelines as well as offering help, information, and resources for several years. We do it because we are passionate and believe in what we are doing. Advocating has not been easy, but it is rewarding and exciting to see change and understanding grow. We have been doing this since the mid to late 1990's, and much of the early advocacy and information exchanges were the groundwork for all the excellent information and resources that exist today. We need to look outside of our web community and start working in other areas, too.</p>  <p>It has been a long road and we know the learning is a never ending process. Our CSS and markup education and skills may have come from a variety of web site offerings and articles: <a href="http://css.nu/pointers/">The CSS Pointers Group</a>, <a href="http://www.westciv.com/style_master/house/">Westciv: House of Style</a>, <a href="http://www.richinstyle.com/">Rich in Style</a>, <a title="Bloobery: Index Dot HTML CSS." href="http://www.blooberry.com/">Brian Wilson</a>, <a href="http://www.htmlhelp.com/" title="HTML Help by the Web Design Group(WDG)">HTML help</a>, <a href="http://www.anybrowser.org/campaign/">AnyBrowser.org</a>, <a href="http://www.htmlgoodies.com/introduction/about/article.php/3482951">HTML Goodies</a>,  <a href="http://www.haughey.com/csshorrors/" title="The Little Shop of CSS Horrors">Matt Haughey</a>, <a href="http://style.cleverchimp.com/" title="Agitprop">Todd Fahrner</a>, <a title="Dave Baron: CSS Test" href="http://dbaron.org/css/test/">Dave Baron</a>, <a href="http://www.meyerweb.com/eric/css/references/">Eric Meyer</a>, <a href="http://zeldman.com/classics/">Jeffrey Zeldman</a>, and several notable others, including the <a title="The World Wide Web Consortium" href="http://w3.org/">W3C</a> and <a href="http://webstandards.org/">The Web Standards Project</a>. For many of us, our tools were text editors and the <a href="http://validator.w3.org/">W3C validators</a>, and the first validators were a challenge to use. For many of us, the text editor and validator are the same tools we use today. We have come a long way, <a href="http://www.zakon.org/robert/internet/timeline/">Hobbes' Internet Timeline (1950-2004)</a> and <a title="DejaVu.org: The web as we remember it. Emulators of early browsers and a time line." href="http://dejavu.org/">DejaVu.org</a>, but we have a long way to go, and a lot of work to do.</p>
+<p><strong>We need to increase our efforts and focus to Education.</strong> In the recent buzz by Molly, she offers a quote by Andy Clarke:</p>
+<blockquote><p>There are now so many web sites, blogs or publications
+devoted to helping people learn standards and accessible techniques
+that there are now no excuses not to work with semantic code or CSS.</p>
+</blockquote>
+<p>At the EduTF we realize there are no excuses and we also see many reasons why standards and accessible techniques are not being taught. Addressing these issues is part of the work we are involved with behind the scenes. And we have been very busy.</p>
+<p>Many schools are not teaching standards, guidelines, accessibility, and best practises. They are teaching the opposite. Just a few weeks ago a frustrated student in a web program contacted our EduTF and told us that he had to use table markup for layout on his final project even though he was aware of and knows how to use standards and CSS. If he did not use the table for layout, his grade would have been marked down. The student in the program is enrolled to get a degree so his work and skills are more recognized. There is something seriously wrong with this situation. What will that degree mean? Does it represent a quality education where needed skills are taught? No. The same student is keeping in touch with us and sent us information on his current course,  a web scripting course which offers up the advice of not to use CSS. It's not important to single this institution and program out, because there are many more out there. Many of us feel that this situation and others like it represent the majority of educational institutions. We need to address this issue.</p>
+
+<p>In a recent Interview of <a href="http://digital-web.com/articles/mark_trammell/">Mark Trammell</a> at Digital Web Magazine, Mark offers up several thoughts involving education. Here are a few of his words regarding web education in Universities.:</p>
+
+<blockquote><p>University Web design courses are an ideal time to start young developers thinking in terms of separation of content from aesthetics and behavior, but unfortunately, this is rarely the case. If the correspondence I receive from students in higher education Web design courses is a true barometer, academia is not keeping up with the Web's progression. Students often complain of being taught development practices circa 1998, at best. Photoshop slicing and table-based layouts rule the day in most courses and the Web suffers for it.</p></blockquote>
+
+<p>The EduTF knows there are several factors or challenges involving the poor educational situation and we are working behind the scenes with educators, web developers, students, and advocates.  The educators, staff, and administrators may not be aware of or are not teaching these skills to students. The courses offered by many institutions do not have strong guidelines, recommendations, and outlines of updated material to be taught. A course in web authoring or web design may not fit into any one department, the materials and learning fit into many departments: technical, art and design, communications, business, sociology and psychology. Web Design is about functionality, usability, and aesthetics. The students need to learn a lot and by the time of completion of their courses they should have a basic and solid foundation and skill set that includes standards, guidelines, accessibility, and separation. The students should also be aware of how to continue to update their skills or keep up with emerging technologies and change, by learning about how to network, how to find new information, and research skills. </p>
+<p>Standards, guidelines, accessibility, and separation skills need to be taught to developers and designers. We need better applications, software, and content management solutions. We need better ecommerce applications, better educational software, and coursewares. So developers in computer science departments need to know and learn these standards, too.</p>
+<p>The <a href="http://digital-web.com/articles/mark_trammell/">Trammell</a> interview also offers up some comments worth reading following the article. In particular, <a href="http://digital-web.com/articles/mark_trammell/comments/#comment2315">Richard Quaite states</a>:</p>
+<blockquote><p>I for one have spent years complaining about the lack of suitable 
+graduates, and suffered when trying to recruit-I'm sure I'm not alone.</p></blockquote>
+<p>Quaite worries that others trained and working in the field will get turned off by lack of support and opportunities. He gave some ideas in helping to support education. As employers, we could offer internships and experience for undergraduates. When there are conferences or events, we could extend invitations to undergraduates, educational institutions, and departments. As a WaSP EduTF member, to those offering internships or on the job experience opportunities to students, find out what the student knows or what is being taught and if it does not include standards, guidelines, accessibility, get involved with the institute and its program staff and let them know that they need to change or update their materials. Institutions teaching standards may have more internship and experience partnerships and may help increase post graduate placement and recruitment possibilities for its students. Educational institutes that make these partnerships and open up opportunities for its graduates may also attract more students to its programs. We need to get creative about promoting standards in many ways.</p>
+
+<p>Again, this is just some of what we can do to help promote, advocate, and change the situation of standards in our community, beyond our community, and for the future. We have a lot of work ahead and we need to get help and information out to those in Web Education. More institutions need to start teaching and producing web designers and developers as new professionals, too.</p>
+
+<p>[This <a href="http://robdickerson.com/blog/?p=9">entry cross-posted</a> to take your comments and trackbacks.]</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2005_11.html#a000590">November 15, 2005</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/mholzschlag.html">mholzschlag</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000590" id="a000590">Web Standards and The New Professionalism</a></h2>
+
+                                <p>With the aftermath  of the <a href="http://webstandards.org/buzz/archive/2005_11.html#a000589">Disney UK Store redesign fiasco</a> still ringing in our collective ears, I am coming to believe that we're in a process of defining a new professionalism for Web developers and designers.</p>
+
+<p>In an interview with Accessify's Ian Lloyd, <a href="http://accessify.com/2005/11/interview-with-andy-clarke-aka.php">Accessibility: The gloves come off</a>, my oft-colleague in the education and training of Web designers and developers, <a href="http://www.stuffandnonsense.co.uk/archives/accessibility_the_gloves_come_off.html">Andy Clarke</a>, delivers a strong message that needs to be heard:</p>
+
+<blockquote><p>"Those people still delivering nested table layout, spacer gifs or ignoring accessibility can no longer call themselves web professionals."
+</p></blockquote>
+
+<p>The heart of the issue is simple: <em>We must know our craft</em>! And what we don't know, we must be willing to say we don't know and be open to learning. As Clarke points out:</p>
+
+<blockquote><p>"There are now so many web sites, blogs or publications devoted to helping people learn standards and accessible techniques that there are now no excuses not to work with semantic code or CSS."</p></blockquote>
+
+<p>We also have each other. Between the blogs and various sites, lists, wikis, meetups, geek dinners, and conferences there simply is no excuse to not reach out and help each other understand the difficulties, nuances, and challenges of our craft.</p>
+
+<p>In another recent article, <a href="http://www.joesapt.net/archive/2005/11/14/22.43.36/">AT&amp;T: One Full Year with Web Standards</a>, Joe D'Andrea discusses his experiences bringing that monolith into the standards age. </p>
+
+<p>Joe writes:</p>
+
+<blockquote><p>"I'm incredibly pleased - and proud - to have helped www.att.com and others at AT&amp;T evolve from a hodgepodge of largely nutritionless mid '90s-era markup to their current leaner, healthier state."</p></blockquote>
+
+<p>Whatever we call it - Web 2.0, evangelism, religion, or simply the best way to do our jobs, I can't agree more with the strong yet very clear message that real-world Web professionals are sharing.  No doubt that getting to a highly skilled level isn't that easy. Believe me, I understand. I've been at it for the majority of my career and as the old adage goes, the more I learn, the less I realize I know. </p>
+
+<p>The essence of this new professionalism isn't about <em>being</em> perfect at what we do. It's being able to say: <q>Hey, I don't know that. Let me go find out!</q>  It isn't about knowing it all, because we surely never will. And, there will be shifts and changes. D'Andrea, for example, expresses that he's concerned how new senior management at AT&amp;T will deal with the site from here forward.</p>
+
+<p>We can save the discussion of consumer rights and our role in assisting consumers for another day. That, and the subtle fixes that Disney Store UK has made since the public outcry less than two weeks ago. Obviously, someone got the message, but it still isn't good enough. Again, more for another day.</p>
+
+<p>Today, I want to express that I believe that this new professionalism means taking responsibility for the education of ourselves and each other, and ensuring that reversions like Disney Store UK never happen again.</p>
+
+<p>[This <a href="http://www.molly.com/2005/11/14/web-standards-and-the-new-professionalism/">entry cross-posted</a> to take your comments and trackbacks.]</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2005_11.html#a000589">November 03, 2005</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/mholzschlag.html">mholzschlag</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000589" id="a000589">An Open Letter to Disney Store UK</a></h2>
+
+                                <p>Dear Disney Store UK,</p>
+
+<p>I would write this to you directly via your site feedback page but it is throwing Access database errors. The email appears to be down as well. So instead, I&#8217;m going to write my letter here in a public forum in the hopes that someone from your team sees it and takes heed.</p>
+
+<p>Your so-called redesign is a travesty, a tragedy, and an embarrassment. Your prior store was not only far more beautiful visually, but was a magnificent example of standards-based design. Perhaps more importantly, the site was also accessible under the UK&#8217;s <a href="http://www.direct.gov.uk/">Disability Discrimination Act</a> (DDA).</p>
+
+<p>You now have a site that regresses back to all the bad habits that have hurt the progress of Web development and design. Here&#8217;s what you can expect from what you&#8217;ve done to your site:</p>
+
+<ul>
+<li>Performance will become slower. Due to the overblown markup and inclusion of massive JavaScripts within each individual document, your site will slow down considerably. Not only that, but because of the table-based layout method, each page loaded has to not only redraw each of those tables (which takes two passes of a browser rather than one) it&#8217;s carrying both the presentational and behavioral baggage from page to page. I feel really sorry for your potential customers at large, and even more so for those who are on dialup. I really do.</li>
+<li>Your site will become significantly more difficult to manage. Want to change something in the visual presentation of the site? You now have to change it in <em>every single document</em>. So, instead of opening a style sheet, making a change in less than a minute, and having that change automatically distributed to all pages linked to that style sheet, you will have to search and replace. That adds a margin for critical errors, which can in turn make changes even more complicated. The same holds true of your scripts, which are embedded into each document. You&#8217;ve completely lost the ability to effectively manage your site, much less redesign it effectively when the time comes.</li>
+<li>Your site will become more expensive to maintain. Because of the document management issue, money and time will be spent every time a change is required. Your bandwidth costs are going to skyrocket, particularly now as we approach the holiday season as your traffic is likely to increase significantly during this time.</li>
+<li>The site may experience a drop in search rankings across all engines. Even if that doesn&#8217;t happen, apparently, according to Google, you are selling a product called <a href="http://www.stuffandnonsense.co.uk/archives/of_mice_and_men.html">spacer gif</a>.  What in the world are those?  Oh yeah, wait! I remember!  They&#8217;re an outdated, unnecessary method in today&#8217;s contemporary design and development approach. Spacer gifs, in case you don&#8217;t know  what you&#8217;re pimping to the world, are a means of keeping table based layouts from collapsing in on themselves. And now, as Google so clearly tells us, they are part of your catalog. I&#8217;m not convinced you&#8217;ll get much sales on spacer gifs, but you never know.</li>
+<li>The site is unusable for any blind person who might like to visit. But you know, blind people probably don&#8217;t want to buy Disney products for themselves, or their children and families anyway, right?</li>
+</ul>
+
+<p>For taking a beautiful design developed with all of today&#8217;s modern approaches that gave you so many benefits, made us proud of you, and provided a shining example of effective use of markup, CSS and accessibility features and re-doing it using outdated and inaccessible methods, I say <strong>shame on you</strong> and I repeat, this is a travesty, a tragedy, an embarrassment.</p>
+
+<p>Shame on you Disney.</p>
+
+<p>Molly E. Holzschlag,  Group Lead, Web Standards Project (WaSP)</p>
+
+<p>[Cross-posted to<a href="http://www.molly.com/2005/11/03/an-open-letter-to-disney-store-uk/"> take your comments</a>, and by all means, someone from Disney please do in fact comment, we&#8217;d love to hear your response.]</p>
+
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2005_11.html#a000588">November 03, 2005</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/dshea.html">dshea</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000588" id="a000588">IE7 Conditional Comments</a></h2>
+
+                                <p>In mid October, the <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">IE Blog</a> urged developers to stop using CSS hacks to workaround IE's problems, and start relying on Microsoft's proprietary conditional comments. I <a href="http://mezzoblue.com/archives/2005/10/13/bye_bye_tan_/">wrote up my thoughts about the new syntax</a>, and it seemed practical enough considering that <a href="http://meyerweb.com/eric/thoughts/2005/10/18/to-hack-with-it/">IE7 is looking to address most of the reasons you'd hack in the first place</a>.</p>
+
+<p>But <a href="http://mezzoblue.com/archives/2005/10/13/bye_bye_tan_/#readercomments">it was clear</a> that some of you have discovered non-trivial problems in working with conditional comments &#8212; for instance, they don't work in a one-PC, multiple-IE testing environment, and XSL doesn't peacefully co-exist with them. So when I heard <a href="http://www.molly.com/2005/11/02/microsoft-wasp-task-force-update-upcoming-products-xaml-acid2-sxsw-and-ie7-revealed/">certain WaSP members</a> would be meeting with the IE team, I compiled a few direct questions for them to pose. Here are the replies from Chris Wilson and Brian Goldfarb of Microsoft, as transcribed by <a href="http://www.molly.com/">Molly Holzschlag</a>.</p>
+
+<dl>
+
+<dt><strong>How do you propose we test sites relying on conditional comments across multiple versions of IE on a single PC? The current method we have of installing multiple versions of IE does not work with
+conditional comments.</strong></dt>
+
+<dd><p>Chris Wilson replies:</p>
+
+<blockquote><p>"This is a tough one. Best way of testing IE with multiple installs is using <a href="http://www.microsoft.com/windows/virtualpc/default.mspx">Virtual PC</a>.  There is a way on Windows itself, but IE installs its components into system directories. You can cheat the system - add the DLLs in a separate directory named <code>.local</code> rather than going to the windows system. However, this is not actually replacing all of IE, it doesn't maintain a separate set of registry info, and you might end up pulling that information from the new install.</p>
+
+<p>With VPC, you install multiple versions of Windows installs as you have disk space. It's basically best way to do testing on one machine, have a massive machine run VPC with multiple windows installs . . . Need a lot of disk
+space, and may find some oddities because it's running as a separate virtual
+machine.</p>
+
+<p>I've done it, used it, but am not an expert."</p></blockquote>
+</dd>
+
+
+
+<dt><strong>Why not implement conditional comments in CSS syntax, so we can move our filtering into external files and keep our markup clean?</strong></dt>
+
+<dd><p>Chris replies:</p>
+
+<blockquote><p>"I think it would be great if we provided a mechanism like conditional comments inside CSS.  We've [Microsoft] thought about it, we're not going to do it in IE7 because we want to do it in a sane, rational way.  You'll want conditional comments to be backward and forward compatible.  Tough to design that into CSS so that it will actually work."</p></blockquote></dd>
+
+
+
+<dt><strong>How do you propose we use XSL to transform documents that use conditional comments?</strong></dt>
+
+<dd><p>Molly says that Chris would like more background about this. So a few solid examples/test cases where the conflict is clearly outlined would be handy right about now. A further question from Chris:</p>
+
+<blockquote><p>"Not sure what the input is in the initial comments. Are you concerned with input or output? And what are you trying to use the comments to switch?"</p></blockquote></dd>
+
+
+
+
+<dt><strong>Unrelated, but prompted by this discussion: why did it take years and someone outside of Microsoft to discover that <a href="http://labs.insert-title.com/labs/Multiple-IEs-in-Windows_article795.aspx">it's possible to install multiple versions of IE</a>? Can you confirm we will be able to continue using this method in IE7 and onwards?</strong></dt>
+
+<dd><p>Chris responds:</p>
+<blockquote><p>"It didn't take someone outside of MS to discover it. We knew about it a long time, we'd used it in development. We don't do that much anymore. Two big reasons we do not publicize this as a good idea First, unless you copy ALL the DLLs that IE uses, you don't necessarily know which version you're really going to. It kinda works, and if really all you want to do is load some HTML and see how it works, it'll work. If you use JavaScript or
+networking libraries, timing could get weird and so on.</p>
+
+<p>The other reason is because we get in a lot of trouble in the support side
+if we tell people to do this - your computer breaks, the Web doesn't work,
+you call up your computer manufacturer, spend an hour on the phone with them before you tell them about the multiple installs, the tech's don't know what you're talking about, and it causes a customer service nightmare.</p>
+
+<p>You have to know what you're doing, and back it out after testing.  We are not to my knowledge disabling anything that would change this for IE7 currently, but can't guarantee it'll work on Vista."</p></blockquote>
+
+<p>Brian Goldfarb went onto say that they got really strong feedback that they shouldn't push people to do this because of the customer service problems. It's an unsupported process: "Non-supported scenario. This causes damage to support scenarios." It is therefore a practical business decision.</p></dd>
+
+</dl>
+
+
+<p>Big thanks to Chris and Brian for their answers, and to Molly for posing them. <a href="http://mezzoblue.com/archives/2005/11/03/ie7_conditio/">Cross-posted</a> to take your comments.</p>
+        
+    </div>
+        <div class="post">
+                                <div class="postMetaInfo">
+                                        <div class="postDate"><a href="2005_11.html#a000587">November 02, 2005</a></div>
+                                        <div class="postAuthor">Posted by <a href="../../about/bios/mholzschlag.html">mholzschlag</a></div>
+                                </div>
+                                <h2 class="postTitle"><a name="a000587" id="a000587">WaSP Microsoft  Task Force Update: Upcoming Products, XAML, Acid2, SXSW, and IE7 Revealed</a></h2>
+
+                                <p>The <a href="http://webstandards.org/press/releases/archive/2005/07/05/">WaSP Microsoft Task Force</a> held another face-to-face meeting with available members on Tuesday. We met in a Starbucks along the waterfront in rainy Seattle.  While the setting might have been a bit predictable, the conversation was unique and at times, very encouraging.</p>
+
+<p>WaSPs at the meeting were <a href="http://texturadesign.com/about/">DL Byron</a> and <a href="http://molly.com/">myself</a>. Microsoft was represented by a number of Web platform program managers such as the ever-amiable <a href="http://blogs.msdn.com/bgold/default.aspx">Brian Goldfarb</a>, Sam Spencer, <a href="http://blogs.msdn.com/rmauceri/">Rob Mauceri</a>, and the legendary <a href="http://blogs.msdn.com/cwilso/default.aspx">Chris Wilson</a>, the Group Program Manager for IE Platform and Security who has worked on IE since 1995.</p>
+
+<p>We discussed a number of issues including standards support in new software, the role of XAML and the Microsoft agenda, the <a href="http://www.webstandards.org/act/acid2/">Acid2 test</a>, <a href="http://sxsw.com/">SXSW</a>, and last but most decidedly not least, IE progress.</p>
+
+<h3>Standards Support in Upcoming Microsoft Products</h3>
+
+<p>There are three new tools at the ready for  Microsoft, each being developed with the designer and design workflow in mind. The product of most immediate interest to WaSP is code-named &#8220;Quartz.&#8221; Rob Mauceri gave Byron and I a demo of the software, which produces XHTML 1.0 Transitional out of the box and also supports other relevant DTDs. No tables for layout, all CSS, which is great news and worthy of a hearty round of applause.</p>
+
+<p>Drilling down into the markup and CSS, the tool is not without common problems we&#8217;ve seen with other designer environments. The XHTML and CSS generated are not as intuitive and useful as they could be, with lots of <code>span</code> elements, classes up the yin and out the yang, and a tendency toward presentational naming. Fortunately, a skilled CSS designer isn&#8217;t blocked by the tool and is in fact able to use it to create leaner, meaner markup and style in much the same way that familiar competitive tools provide. </p>
+
+<p>Not perfect by a long shot, but unquestionably a potential software addition for any Microsoft developer interested in improved workflow along with XHTML and CSS support.</p>
+
+<h3>XAML and the Microsoft Perspective</h3>
+
+<p>One of the most common questions I get asked when discussing the WaSP Microsoft Task force is &#8220;what about XAML!&#8221;  XAML, the <a href="http://www.xaml.net/">Extensible Application Markup Language</a>, is a Microsoft-specific language that many fear Microsoft will use to leverage its hold on the Web at large.</p>
+
+<p>XAML is at the core of the majority of Microsoft tools development, which does suggest that when in Microsoft, do as Microsoft does. There&#8217;s what might be described as a paradigm shift for Microsoft, though. Along with XAML-based applications, Microsoft is concurrently including a subset of XAML that would be more readily useful for cross-browser, cross-platform solutions. The <a href="http://www.microsoft.com/presspass/press/2005/sep05/09-13PDC05Day1PR.mspx">Windows Presentation Foundation Everywhere</a> (WPFE) will enable developers to work within the XAML subset. Sam Spencer describes XAML and its subset broadly as &#8220;Two different kettles of fish.&#8221;</p>
+
+<p>Chris Wilson digs a little deeper. He describes XAML as &#8220;a rich client experience,&#8221; and the Web itself as being a rich experience. In simpler terms, XAML provides a rich experience if you&#8217;re on Windows and developing for Windows. You&#8217;ve got &#8220;everything you need to build a Windows app.&#8221; According to Wilson, XAML isn&#8217;t intended to replace HTML. While it&#8217;s a Web language, it&#8217;s about platform. A developer would choose a situation and determine whether a XAML application is appropriate, or the WPFE subset, which relies on JavaScript, is more appropriate. &#8220;WPFE&#8221; he says, &#8220;gives you a migration path from a rich experience to a broader experience.&#8221;</p>
+
+<p>I can&#8217;t say I&#8217;m delighted with the approach, as conceptually any Web language that is platform-specific goes against the spirit and vision of the Web.  At least Microsoft is strategically providing <em>some</em> alternative that would be more conducive to interoperable ideologies, but only time will tell how this concern really does play out.</p>
+
+<h3>Want Some Acid2?</h3>
+
+<p>It was very interesting to be able to talk to Microsoft the day after Safari released the first distributed browser version to pass the Acid2 test. With Opera 9 only steps behind, and the KHTML browsers (such as Konqueror) already sporting an updated codebase, the KHTML browsers (such as Konqueror) already sporting an updated codebase, and the upcoming iCab browser already passing the test in its pre-release beta version, the question of Acid2 compliance and Microsoft is at the ready on many a tongue. </p>
+
+<p>WaSP has known for some time now that passing Acid2 wasn&#8217;t going to be a benchmark for IE&#8217;s development at this time, but Wilson, at least, has always been diplomatic about Acid2&#8217;s role. In fact, perhaps <a href="http://weblogs.mozillazine.org/roc/archives/2005/04/acid2.html">more diplomatic than the Firefox team</a>, who have stated that Acid2 came at a bad time and wasn&#8217;t really relevant for their development process, despite their interest in and support of Web standards. </p>
+
+<p>Maybe Firefox can take a lesson in diplomacy from Microsoft in this one. Wilson told me that he is well aware that Acid2 &#8220;tests a variety of features that Web developers would like to have.&#8221; He went on to say that he supports the goal, and complimented the <a href="http://www.webstandards.org/act/acid2/guide.html">Acid2 guide</a> for being well written and fully laying out for developers exactly what is being tested. He finished up his comments on Acid2 by assuring me that IE <em>will pass the Acid2 test</em> at some time in the future, but to not expect it by IE7&#8217;s release.</p>
+
+<h3>SXSW</h3>
+
+<p>We&#8217;ve not yet announced this information to the public, and more details will be forthcoming soon, but WaSP will be holding two important sessions during the <a href="http://2006.sxsw.com/">March 2006 SXSW Interactive Media Festival</a>. First, we&#8217;ll be holding a panel. </p>
+
+<p>WTF? Another panel you say? Well yes! This time it&#8217;s the WaSP Task Force panel, in which WaSP and leaders from our Task Forces will be present to discuss what we&#8217;ve all been up to in the past months. Expected panel members include myself as moderator, <a href="http://www.allinthehead.com/">Drew McLellan</a> for WaSP strategy; Chris Wilson (Microsoft) on the WaSP / Microsoft relationship; Jennifer Taylor (Product Manager, Macromedia Dreamweaver) on standards support progress in Dreamweaver and related products; <a href="http://www.dori.com/">Dori Smith</a>, co-lead for the DOM Scripting Task Force and long-time WaSP member on scripting progress; and <a href="http://www.bestkungfu.com/">Matt May</a>, Accessibility Task Force lead, on WaSP activities related to accessibility.</p>
+
+<p>If that doesn&#8217;t sound like an interesting panel, come watch WaSPs buzz in real-time. We&#8217;re very pleased to announce that our annual WaSP meeting will be held live and in public under the auspices of the SXSW crew. This will include every WaSP member who attends SXSW plus all task force participants, including significant representation from Microsoft and Macromedia.The first hour is our meeting, following rules of order but open for any member of the SXSW public to observe (we are also hoping to videocast it). The second hour will consist of questions we&#8217;ve collected in advance of the event from any interested individual (we&#8217;ll be setting up an email address, watch this spot for more information) and the final period will be available for open Q &amp; A from the audience.</p>
+
+<p>We look forward to your participation, whether you&#8217;re able to be present in Austin, or not. Again, more details will be forthcoming as the plans, participants, and locations are finalized.</p>
+
+<h3>IE Progress</h3>
+
+<p>Many readers here also follow the <a href="http://blogs.msdn.com/ie/">IEBlog</a> (a good practice for contemporary Web developers and designers). Expect significant repairs to most existing bugs, implementation of long-awaited CSS features such as fixed positioning, child selectors, and attribute selectors. Alpha transparency in PNGs? Yes! The XML declaration will now be available without disturbing the DOCTYPE switch, and <code>object</code> handling will be improved with proper fallback. </p>
+
+<p>However, some things simply won&#8217;t be there. Generated content? &#8220;Won&#8217;t make it&#8221; Wilson tells us. There&#8217;s an overflow problem that probably won&#8217;t be fixed, and <code>object</code> for images will most likely <em>not</em> be repaired in IE7.</p>
+
+<p>Wilson remains optimistic and philosophical however, wrapping our conversation up by saying that &#8220;I knew when we started IE7 was going to be a challenging release for us, we weren&#8217;t going to get as far as people wanted us to get.&#8221;  </p>
+
+<p>It&#8217;s been <a href="http://www.molly.com/2005/07/28/thats-why-its-called-beta/">my opinion all along</a> that Wilson&#8217;s perspective is not unreasonable in the least.  Anyone who expects immediate gratification for the support problems in  IE  is simply not  realistic.  Wilson sums this up himself, saying &#8220;I understand  we might be the worst offenders today, but hey - I remember back when we weren&#8217;t the worst offender.&#8221;</p>
+
+<p>And finally, a nod to his team and to the realities of IE&#8217;s future:</p>
+
+<p>&#8220;The team has done a tremendous amount of work, but we still have a long way to go.&#8221;</p>
+
+<h3>Good Coffee</h3>
+
+<p>The meeting went well, and I&#8217;m always impressed by the way that Microsoft interacts with us. Bridges have been built, and we at the hive are confident that we can continue to be an encouraging, supportive resource for Microsoft developers, no matter where their business strategy might lead.</p>
+
+<p>[This entry <a href="http://www.molly.com/2005/11/02/microsoft-wasp-task-force-update-upcoming-products-xaml-acid2-sxsw-and-ie7-revealed/">cross posted</a> to take your comments].</p>
+
+        
+    </div>
+    
+  </div>
+
+</div>
+
+        <div class="padder" id="footer">
+                <a href="../../legal/index.html">Legal</a>
+
+        </div>
+</div>
+
+<div id="SubNav">
+ <div class="padder">
+      <h2>Past Buzzings</h2>
+      <ul>
+                <li><a href="2006_02.html">February 2006</a></li>
+                <li><a href="2006_01.html">January 2006</a></li>
+                <li><a href="2005_12.html">December 2005</a></li>
+                <li><a href="2005_11.html">November 2005</a></li>
+                <li><a href="2005_10.html">October 2005</a></li>
+                <li><a href="2005_09.html">September 2005</a></li>
+                <li><a href="2005_08.html">August 2005</a></li>
+                <li><a href="2005_07.html">July 2005</a></li>
+                <li><a href="2005_06.html">June 2005</a></li>
+                <li><a href="2005_05.html">May 2005</a></li>
+                <li><a href="2005_04.html">April 2005</a></li>
+                <li><a href="2005_03.html">March 2005</a></li>
+                <li><a href="2005_02.html">February 2005</a></li>
+                <li><a href="2005_01.html">January 2005</a></li>
+                <li><a href="2004_12.html">December 2004</a></li>
+                <li><a href="2004_11.html">November 2004</a></li>
+                <li><a href="2004_10.html">October 2004</a></li>
+                <li><a href="2004_09.html">September 2004</a></li>
+                <li><a href="2004_08.html">August 2004</a></li>
+                <li><a href="2004_07.html">July 2004</a></li>
+                <li><a href="2004_06.html">June 2004</a></li>
+                <li><a href="2004_05.html">May 2004</a></li>
+                <li><a href="2004_04.html">April 2004</a></li>
+                <li><a href="2004_03.html">March 2004</a></li>
+                <li><a href="2004_02.html">February 2004</a></li>
+                <li><a href="2004_01.html">January 2004</a></li>
+                <li><a href="2003_12.html">December 2003</a></li>
+                <li><a href="2003_11.html">November 2003</a></li>
+                <li><a href="2003_10.html">October 2003</a></li>
+                <li><a href="2003_09.html">September 2003</a></li>
+                <li><a href="2003_08.html">August 2003</a></li>
+                <li><a href="2003_07.html">July 2003</a></li>
+                <li><a href="2003_06.html">June 2003</a></li>
+                <li><a href="2003_05.html">May 2003</a></li>
+                <li><a href="2003_04.html">April 2003</a></li>
+                <li><a href="2003_03.html">March 2003</a></li>
+                <li><a href="2003_02.html">February 2003</a></li>
+                <li><a href="2003_01.html">January 2003</a></li>
+                <li><a href="2002_12.html">December 2002</a></li>
+                <li><a href="2002_11.html">November 2002</a></li>
+                <li><a href="2002_10.html">October 2002</a></li>
+                <li><a href="2002_09.html">September 2002</a></li>
+                <li><a href="2002_08.html">August 2002</a></li>
+                <li><a href="2002_07.html">July 2002</a></li>
+                <li><a href="2002_06.html">June 2002</a></li>
+                <li><a href="2002_04.html">April 2002</a></li>
+                <li><a href="2002_03.html">March 2002</a></li>
+      
+      </ul>
+      <div>Also available in <a href="../index.xml" title="Buzz RSS Feed"><img src="../../img/xml_button.gif" alt="Buzz RSS feed" /></a></div>
+      <div>The Buzz Weblog is<br /><a href="http://www.movabletype.org/" title="Powered by Movable Type"><img src="../../img/powered.gif" width="128" height="22" alt="" /></a></div>
+  </div>
+        <div class="padder">
+                <!--
+<h3>CONTeXTUAL LINKS</h3><p><a href="">A hot link</a>Followed by a write up of what can be found at the other end of the "hot link".</p><p>/inc/nav/ buzz/contextual.inc</p>-->
+
+        </div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/buzz/archive/2005_11.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:11 GMT -->
+</html>

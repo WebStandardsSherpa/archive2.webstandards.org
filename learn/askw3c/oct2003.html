@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/oct2003.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : September 2003</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+.code	{
+	color: #930;
+	background:#f0f0f0;
+	font-family: monospace;
+	font-size: 95%;
+	line-height: 120%;
+}
+
+.blockquote	{
+	font-style: italic;
+	padding: 15px;
+	
+}
+
+</style>
+</head>
+<body>
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+	<div class="padder"> 
+	
+	<h1>WaSP Asks the W3C</h1>
+	
+<h2 class="sub">HTML Versus XHTML</h2>
+
+<h2>WaSP asks</h2>
+
+<p>Which should we use, HTML or XHTML, and why?</p>
+
+<h2>The W3C Responds</h2>
+
+<h3>First, a bit of history</h3>
+
+<p>The history of HTML at W3C starts with HTML 3.2, code named <q>Wilbur</q>, which was followed a few years later by HTML 4.0, then HTML 4.01. HTML 4.01 is the last version of HTML, and is also the final W3C specification to define the semantics of markup. From HTML 3.2 to HTML 4.01, the language has improved a great deal, focusing on such issues as:</p>
+
+<ul>
+<li>Separation of presentation from structure</li>
+<li>Improved accessibility features</li>
+<li>Improve internationalization features</li>
+<li>Improved document rendering</li>
+
+</ul>
+
+<p>XHTML 1.0 was created shortly after HTML 4.01 to help the transition of hypertext to a new generation of mark-up languages for text. XHTML 1.1 is an additional step toward a more flexible version of hypertext with the full benefits of XML architecture and integration of different technologies. Note that XHTML 1.1 has slighly improved the semantics of HTML 4.01 by including the Ruby module, used in particular languages like Japanese scripts (read the <a href="http://www.w3.org/TR/ruby">Ruby Specification</a> for more information). For practical purposes, the discussion here will focus on HTML 4.01 and XHTML 1.0.</p>
+
+<h3>The meaning of semantics</h3>
+
+<p>When we refer to the &ldquo;semantics&rdquo; of a language, we're referring to the meaning of a given tag. HTML 4.01 and XHTML 1.0 assign the same semantics to their elements and attributes. For example, an element <code>address</code> has exactly the same meaning in HTML 4.01 and XHTML 1.0: they're both used to mark up addresses. Only bits of the syntax varies between the two languages. For example :</p>
+
+<h3>HTML 4.01 example</h3>
+
+<pre style="width:22em; background-color: #f0f0f0; padding: 3px;">
+&lt;img alt="Portrait Murakami Haruki" 
+   src="/images/murakami.jpg"&gt;
+
+&lt;p <strong>lang="fr"</strong>&gt;Je 
+levai la t&ecirc;te pour regarder les 
+&eacute;toiles.  Leur vue apaisa peu 
+&agrave; peu les battements de mon 
+coeur.&lt;/p&gt;
+
+&lt;p&gt;&lt;cite class="title"&gt;Chroniques 
+de l'oiseau &agrave; ressort&lt;/cite&gt;
+ - &lt;cite class="author"&gt;Haruki 
+ Murakami&lt;/cite&gt;&lt;/p&gt;
+</pre>
+
+
+<h3>XHTML 1.0 example</h3>
+
+<pre style="width:22em; background-color: #f0f0f0; padding: 3px;">
+&lt;img alt="Portrait Murakami Haruki"
+   src="/images/murakami.jpg" <strong>/</strong>&gt;
+
+&lt;p <strong>xml:lang="fr"</strong>&gt;Je 
+levai la t&ecirc;te pour regarder les
+ &eacute;toiles. Leur vue apaisa peu 
+ &agrave; peu les battements de mon 
+ coeur.&lt;/p&gt;
+
+&lt;p&gt;&lt;cite class="title"&gt;Chroniques 
+de l'oiseau &agrave; ressort&lt;/cite&gt;
+ - &lt;cite class="author"&gt;Haruki 
+ Murakami&lt;/cite&gt;&lt;/p&gt;
+</pre>
+
+<p>The syntax in these examples are still very similar and there are only a few differences between them.</p>
+
+<p>Both languages come in three flavors: Frameset, Transitional and Strict. The "strict" version is strongly recommended by the W3C for regular documents. Using strict versions removes problematic elements as well as forcing a significant separation between the structure of your document and its presentation. Transitional versions allow deprecated elements to assist those implementers to upgrade smoothly their software or their content.</p>
+
+<h3>Using the right tool for the job</h3>
+
+<p>Is there any advantage to using HTML 4.01 over XHTML 1.0? There is no simple answer and the benefits you will gain are tied to how you're using the language in a given situation.</p>
+
+<p>Switching from HTML 4.01 to XHTML 1.0 brings almost no direct benefits for the visitors of your Web site; still, there are several good reasons for Web authors to make the switch:</p>
+
+<h4>XHTML is easier to maintain</h4>
+
+<p>XML syntax rules are far more rigorous than HTML. As a result, XHTML makes authors work more precisely, having to address issues such as:</p>
+
+<ul>
+<li>all elements and attribute names must appear in lower case</li>
+<li>all attribute values must be quoted</li>
+<li>non-Empty Elements require a closing tag</li>
+<li>empty elements are terminated using a space and a trailing slash</li>
+<li>no attribute minimization is allowed</li>
+<li>in strict XHTML, all inline elements <em>must</em> be contained in a block element</li>
+</ul>
+
+<p>In HTML, case, quotes, termination of many elements and uncontained elements are allowed and commonplace. The margin for errors in HTML is much broader than in XHTML, where the rules are very clear. As a result, XHTML is easier to author and to maintain, since the structure is more apparent and problem syntax is easier to spot.</p>
+
+<h4>XHTML is XSL ready</h4>
+
+<p>As you are probably aware by now, XHTML 1.0 is the reformulation of HTML 4.01 in XML. Therefore, XHTML documents are hypertext documents <strong>and</strong> XML documents. A powerful technology has been developed at W3C to manipulate and transform XML documents: the Extensible Style sheet Language Transformations (<acronym title="Extensible Style sheet Language Transformations">XSLT</acronym>). This technology is tremendously useful to create various new resources automatically from an XHTML document. For example</p>
+
+<ul>
+	<li>You can create a table of contents for a long document</li>
+	<li>Get a quick overview of a page by listing its languages and structural outlines! See the  <a href="http://www.w3.org/2000/06/webdata/xslt?xmlfile=http://cgi.w3.org/cgi-bin/tidy-if?docAddr=http://www.w3.org/QA/2003/09/html-xhtml.html&amp;xslfile=http://www.w3.org/2002/08/extract-semantic.xsl&amp;">Semantics extractor for this page</a>, created by W3C QA Working Group member <a href="http://www.w3.org/People/dom/">Dominique Hazaël-Massieux</a></li>
+	<li>You can provide a printable version of your documents by using the XSL-FO features of XSL</li>
+	<li>You can produce an RSS feed directly from your page, check out the <a href="http://www.w3.org/QA/Overview.rss">QA RSS feed</a> to see this in action</li>
+</ul>
+
+<h4>XHTML is easier to teach and to learn</h4>
+<p>The syntax rules defined by XML are far more consistent than those found in HTML and therefore easier to explain than the SGML rules on which HTML is based.</p>
+
+<h4>XHTML is ready for the future</h4>
+
+<p>When the new version of XHTML becomes a recommendation, XHTML 1.0 documents will be easily upgradable to this new version, to allow to take advantages of its exciting new features. It's likely that an XSLT style sheet will be available by then to help you move your XHTML 1.0 (strict) documents to XHTML 2.0 documents.</p>
+
+<h3>Well okay, so what?</h3>
+
+<p>Yes, HTML 4.01 is as valuable as XHTML 1.0 in a daily usage. The syntax proposed by XHTML 1.0 has several important benefits. The weight of these benefits has to be evaluated in the context of your project: Use the right tool for the right job.</p>
+
+<p>For a Web designer, starting to use XHTML 1.0 will be helpful in some circumstances and will certainly help you to smoothly negotiate the future. XHTML 1.0 gives a wonderful opportunity to learn about XML languages and their possibilities without having to learn new semantics because you're working with familiar tags and attributes. </p>
+
+<h3>Related reading on WaSP and the W3C</h3>
+
+<p>Please see the WaSP article <em><a title="read about the common ideas between HTML and XHTML" href="http://www.webstandards.org/learn/reference/common_ideas.html">Common ideas between HTML and XHTML
+</a></em>.</p>
+
+<p>You can read more about <a href="http://www.w3.org/QA/2003/09/xslt-xhtml">using XSLT and XHTML together</a> at the W3C's Web site.</p>
+
+<h3>Discussion</h3>
+
+<p>For clarification and discussion on this topic, please address your comments and questions to the W3C Web
+Standards Education list.</p>
+
+<p>To subscribe to the list, send an email to <a title="subscribe to the public evangelist list" href="mailto:public-evangelist-request@w3.org">public-evangelist-request@w3.org</a> with 
+	&#8220;Subject: subscribe&#8221;.  You can read archived posts at <a title="read list archives" href="http://lists.w3.org/Archives/Public/public-evangelist/">http://lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+</div>
+	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/oct2003.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+</html>
+<!-- $Id: oct2003.html,v 1.5 2003/10/28 08:45:17 molly Exp $ -->

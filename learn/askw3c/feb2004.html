@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/feb2004.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:57 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : February 2004</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+.code	{
+	color: #930;
+	background:#f0f0f0;
+	font-family: monospace;
+	font-size: 95%;
+	line-height: 120%;
+}
+
+.blockquote	{
+	font-style: italic;
+	padding: 15px;
+	
+}
+
+</style>
+</head>
+<body>
+<div id="Header">
+<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+	<div class="padder"> 
+	
+	<h1>WaSP Asks the W3C</h1>
+	
+<h2 class="sub">Introduction to Composite Capabilities / Preferences Profile (CC/PP)</h2>
+
+<p>The work we do on the Web today is reaching to devices far beyond the conventional computer. A range of technologies is emerging in an  effort to solve problems related to delivering content to a growing number of devices. One such technology that has been under study and development for some years is <em>Composite Capabilities/Preferences Profile</em> or CC/PP for short. This month, WaSP asks the W3C to explain more about CC/PP and how it relates to Web designers and developers.</p>
+
+<h2>WaSP Asks</h2>
+
+	<p>What is <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr>?</p>
+
+<h2>The W3C Responds</h2>
+
+<p>CC/PP stands for <a href="http://www.w3.org/2001/di/#ccppsvpr">Composite Capabilities/Preferences Profile</a>, and is a system for expressing device capabilities and user preferences.</p>
+
+<p>With <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr>, a user with a specific preference, or disability-related need can clarify that even though their browser handles millions of colours, they personally can only distinguish certain colours. Or, perhaps the user navigates exclusively with a keyboard or stylus.</p>
+
+<p>That's <em>what</em> <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> is, but the larger question is: Why do we need <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr>?</p>
+
+<p>With the growing popularity of ubiquitous Web devices spread across such a broad range of media and bandwidth, authoring for the Web can sometimes look like a very difficult equation to solve: how can a Web author provide cool multimedia Web content, while keeping that content small and simple enough for very basic devices?</p>
+
+<p>Managing multiple devices is not a new problem, and even though the rapid growth of Web appliances beyond the familiar Web browser makes the challenge especially acute, a few solutions have been developed over the years.</p>
+
+<p>Most of these solutions are based on content selection: the content is given in several equivalent variants, or has mechanisms to define alternative behaviour. Then, at the time the resource is served, either the server chooses which variant is most suitable, or the user agent decides what to do with the choices it is given.</p>
+
+<p>This is easily achieved because user agents identify themselves to servers and scripting languages, and through specific features included in Web document languages:</p>
+
+<ul>
+    <li>Server-driven content negotiation, as defined by <acronym title="the HyperText Transfer Protocol">HTTP</acronym>,</li>
+    <li>On-the-fly content selection and presentation based on user agent detection, using scripting 
+    languages,</li>
+    <li><acronym title="HyperText Markup Language">HTML</acronym> <code>object</code>
+    and <code>link</code> elements have mechanisms defining alternate behaviours,</li>
+    <li><acronym title="Synchronized Multimedia Integration Language">SMIL</acronym>
+    (pronounced "smile"), the multimedia language for audio/visual content, has a 
+    <code>switch</code> element defining alternate elements to chose from, 
+    and can be used, for example, to choose some content based on available bandwidth,</li>
+    <li><acronym title="Cascading Style Sheets">CSS</acronym> also has such a mechanism
+    called Media Queries for selecting appropriate style sheets.</li>
+</ul>
+
+<h3>Shortcomings of current methods</h3>
+
+<p>Even today, a combination of the methods detailed above can be used to serve content on a large range of devices with very good results. It remains, however, difficult to reach a perfect result:</p>
+
+<ul>
+<li>User agent sniffing is generally considered a very bad idea. Sniffing methods are bound to become obsolete, or result in a high level of maintenance to keep up with growth and change within the user agent market.</li>
+<li>In the case of server-side selection, only a very limited set of information is given by the user agent to the server. This limited information is used to select the right content or behaviour. But the user agent cannot specify, for example, at which resolution it is working in order to send images and other content at a proper size, or whether the agent in question is able to handle HTML frames.</li>
+<li>Selection will always be limited to a finite set of choices. Even by generating a very large number of variants or defining numerous alternate behaviors, there is no way selection will provide a way to define an infinite variety of content.</li>
+<li>Generating content to match need is very nice for the resulting user experience, but makes Web authoring a very tedious task.</li>
+</ul> 
+
+<h3>Why <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> is Better</h3>
+
+<p>When expressing device capabilities, the strength of <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> is that it has the flexibility HTTP content negotiation lacks. Far from simply defining a fixed set of preferences that would be used to build
+device profiles, the <a href="http://www.w3.org/RDF/">RDF</a>-based framework also allows the creation of whole vocabularies, making the expression of device and agent capability, as well as user preference, infinitely extensible.</p>
+
+<p>Using <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr>, creators of Web devices and user agents can easily define precise profiles for their products. Web servers and proxies can use these profiles to adapt, through fine-tuned content
+selection or transformation, the content they serve to the needs of the Web device.</p>
+
+<p>The following graph provides an example of how CC/PP can be used to describe user preference and agent capability.</p>
+
+<p><a href="ccpp.png"><img src="ccpp.gif" width="500" height="288" alt="graph of ccpp" /></a></p>
+
+<p>You can also view the graph in <a href="http://www.w3.org/QA/2004/01/ccpp.svg" title="Scalable Vector Graphics (SVG) version">SVG</a>, at the W3C QA site.</p>
+
+<p>It may look like <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> does not address the issue of having to create multiple instances of Web content. In fact, it seems even worse now than with the simple HTTP negotiation. Because profiles are much more flexible and precise about what the agent can do and wants, one could think that <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> encourages the creation of one variant of content for each type of user agent.</p>
+
+<h3><abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> Implementations, or how I learned to stop worrying and love XHTML</h3>
+
+<p><abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> itself does not define what behaviour should follow the exchange of a <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> profile. And while content selection, just as in the HTTP negotiation, is one option, there is another, much more interesting perspective.
+
+<abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> profiles could automatically trigger content transformation, allowing one source to be adapted to a broad range of devices and user agents.</p>
+
+<p>The transformation mechanisms are not formally defined, but many have been envisioned or implemented already, such as:</p>
+
+<ul>
+<li>Resizing images to fit the device's resolution. This can be done automatically by proxies based on the resolution information given by the  <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> profile. And of course, with <acronym title="Scalable Vector Graphics">SVG</acronym> it is even easier.</li>
+<li>XHTML is powerful because it is XML, or so we've been taught. And the power of XML is often demonstrated through the use of XSLT, the transformation language for XML. Combining the possibility to transform XHTML content through XSLT with the flexibility and accuracy provided by <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> makes it possible to transform hypertext content on-the-fly beyond what style sheets already allow. You can show tabular content in a linear fashion for agents that can't handle tables, transform a long XHTML document with many sections in an SVG slideshow and so on, with very few limitations.</li>
+<li>The Open Mobile Alliance (OMA) already implements <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> in their <abbr title="User Agent Profile">UAProf</abbr> technology for <acronym title="Wireless Application Protocol">WAP</acronym> devices. This technology is used to help proxies transform content for mobile use.</li>
+</ul>
+
+<p>It is of course unreasonable to think that <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> alone will  bring the promises of a Web that will be magically easy to author for any device. Servers may not be able to handle the necessary level of computation, and even if they do, there are cases, such as <abbr title="Peer to Peer">P2P</abbr> networks, where there are no servers at all. Still, server-side transformation of content triggered by <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> is an exciting development.</p> 
+
+<h3>What the future holds</h3>
+
+<p>The future is more likely to see the cooperation between existing methods and languages such as <acronym title="Synchronized Multimedia Integration Language">SMIL</acronym>'s <code>switch</code> and CSS media queries as well as with emerging methods and languages. All of these refined and orchestrated through the use of <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> profiles and preferences.</p>
+
+<p> The work on a <a href="http://www.w3.org/2001/di/">device independent</a> Web is not over yet. The protocols defining how profiles are exchanged, requested, or deduced by and between Web servers, proxies and agents are yet to be fully standardized, and so are the mechanisms regulating selection and transformation of content once a profile is set.</p>
+
+<p>But <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> already is a major brick in building this Web. Having gone through the  standardization process at W3C, <abbr title="Composite Capabilities/Preferences Profile">CC/PP</abbr> 
+is a mature, <a href="http://www.w3.org/Mobile/CCPP/#resources">well implemented</a> technology that has proven its usefulness and potential. It will be implemented by Web developers to achieve device-independence for years to come.</p> 
+
+<h3>References</h3>
+
+<ul>
+	<li><a href="http://www.w3.org/Mobile/CCPP/">CC/PP Home page at W3C</a></li>
+	<li> <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html">content negotiation</a> defined in the HTTP specification</li>
+	<li>CSS <a href="http://www.w3.org/TR/css3-mediaqueries">Media Queries</a> and
+	how <a href="http://www.w3.org/TR/css3-mediaqueries/#ccpp">they relate</a> to CC/PP</li>
+	<li><a href="http://www.w3.org/TR/REC-smil/">SMIL</a>'s 
+	<a href="http://www.w3.org/TR/REC-smil/#switch"><code>SWITCH</code> element</a></li>
+</ul>
+
+<h3>Discussion</h3>
+
+	<p>For clarification and discussion on this
+topic, please address your comments and questions to the W3C Web
+Standards Education list.</p>
+
+	<p>To subscribe to the list, send an email to <a title="subscribe to the public evangelist list" href="mailto:public-evangelist-request@w3.org">public-evangelist-request@w3.org</a> with 
+	&#8220;Subject: subscribe&#8221;.  You can read archived posts at <a title="read list archives" href="http://lists.w3.org/Archives/Public/public-evangelist/">http://lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+
+	</div>
+	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/feb2004.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:59 GMT -->
+</html>
+<!-- $Id: feb2004.html,v 1.14 2004/02/19 22:22:23 porter Exp $ -->

@@ -1,0 +1,19 @@
+/* $Id: print.css,v 1.3 2003/06/05 08:31:15 ian Exp $ */
+
+#Header, #SiteNav, #preferences, #SubNav	{
+	display: none;
+	}
+#MainText 	{
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	}
+#MainText .padder 	{
+	margin: 0 !important;
+	}
+.skipnav {
+	display:none;
+}

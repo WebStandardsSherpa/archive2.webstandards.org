@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/faq/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:29:05 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : FAQ</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+<!--
+#LangLinks {
+	border: 1px solid #999;
+	background-color: #eee;
+	color: #000;
+	padding: 3px 8px;
+}
+
+#LangLinks h4 {
+	margin: 0;
+	font-style: normal;
+}
+
+#LangLinks ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: smaller;
+	color: #999;
+}
+-->
+</style>
+</head>
+<body>
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+<div class="padder">
+<h1>FAQ</h1>
+
+<a name="top" id="top"></a>
+<h2>What are web standards and why should I use them?</h2>
+
+<p class="content">
+<strong>1 <a href="#p1">Introduction</a></strong></p>
+
+<p class="content">
+<strong>2 <a href="#p2">What are the standards?</a></strong><br />
+2.1 <a href="#p21">W3C Standards</a><br />
+2.1.1 <a href="#p211">What is the W3C</a><br />
+2.1.2 <a href="#p212">What does it do?</a><br />
+2.1.3 <a href="#p213">What are the W3C standards?</a><br />
+
+2.1.3.1 <a href="#p2131">HTML 4.0</a><br />
+2.1.3.2 <a href="#p2132">XML 1.0</a><br />
+2.1.3.3 <a href="#p2133">XHTML 1.0, 1.1, XHTML Modularization</a><br />
+2.1.3.4 <a href="#p2134">CSS - Cascading Stylesheets</a><br />
+2.1.3.5 <a href="#p2135">DOM</a><br />
+<!--2.1.3.6 <a href="#p2136">Emerging Standards</a><br />-->
+
+2.2 <a href="#p22">ECMA Standards</a><br />
+2.2.1 <a href="#p221">What is the ECMA?</a><br />
+2.2.2 <a href="#p222">What does it do?</a><br />
+2.2.3 <a href="#p223">What are the ECMA standards?</a><br />
+2.2.3.1 <a href="#p2231">ECMAScript</a></p>
+
+<p class="content">
+
+<strong>3 <a href="#p3">What are the advantages of using Standards?</a></strong><br />
+3.1 <a href="#p31">Accessibility</a><br />
+3.1.1 <a href="#p311">To software/machines</a><br />
+3.1.2 <a href="#p312">To people</a><br />
+3.2 <a href="#p32">Stability</a></p>
+
+<p class="content">
+
+<strong>4 <a href="#p4">Conclusions</a></strong><br />
+</p>
+
+<a name="p1"></a>
+<h2>1. Introduction</h2>
+<!--
+by Dane Weber and Laura Mollett
+Matthew Thomas[E]
+Bart Szyszka[E]; parts of paragraph 6 -->
+
+<p>Tim Berners-Lee&#8217;s dream for his invention, the World Wide Web, is a common space where users can share information to work together, to play, and to socialize (<a href="http://www.w3.org/People/Berners-Lee/ShortHistory">The World Wide Web, A very short personal history</a>). As web developers, creating business, social, and educational sites, we turn this dream into reality.</p>
+
+<p>But in this period of tremendous growth, the Web needs guidance to realize its full potential. Web standards are this guidance. These standards help ensure that everyone has access to the information we are providing, and also make web development faster and more enjoyable.</p>
+
+<p>Standards compliance makes it easier for people with special needs to use the Web. Blind people may have their computer read web pages to them. People with poor eyesight may have pages rearranged and magnified for easier reading. And people using hand-held devices can browse the Web just as easily as those using high-end workstations.</p>
+
+<p>As we will explain, there are also many <a href="#p3">practical reasons</a> for developers to be concerned with web standards. Search engines can do a better job of indexing sites, for example. Using browser-specific code often doubles or triples the work to create web pages, and leaves a lot to be desired when new media are introduced. This situation will only get worse without the sound direction of web standards.</p>
+
+<p>Some people fear that standards are limiting. In reality, they remove much of the tedious labour involved in web development, and give developers more time and more flexibility to be truly creative. They are both open to future improvement and mindful of past technology.</p>
+
+<p>Many uses of the Web, including some that are only dreamed of today,
+will not be possible, or will be more difficult, without widespread standards
+compliance. At the moment, there are systems and software that are very common, seemingly close to universal, but who knows what tomorrow will bring? 
+Tying ourselves to the control of any single company means limiting our
+future to the fortunes and misfortunes which that one company can or will
+provide. Maintaining universal standards will allow the Web to survive while encouraging innovation to continue at its current pace.</p>
+
+<p>Standards have so much to offer that we at <a href="http://www.webstandards.org/">The Web Standards Project</a> (WaSP) consider it necessary to help you learn more about them. This document is merely a starting point; it will give you a solid understanding of what standards exist, why they do, and why you should care about them. Every time we create a piece of the Web, we contribute to the common information space that is the Web. We can build it up, or we can add weight that will tear it apart. The choice belongs to us; the consequences belong to everyone.</p>
+
+<a name="p2"></a>
+<h2>2 What are the standards?</h2>
+<a name="p21"></a>
+<h3>2.1 W3C Standards</h3>
+
+<a name="p211"></a>
+<h4>2.1.1 What is the W3C?</h4>
+<!-- Matthew Thomas -->
+
+<p>The <a href="http://www.w3.org/">World Wide Web Consortium</a> (W3C) is an international industry consortium dedicated to "<a href="http://www.w3.org/Consortium/">leading the Web to its full potential</a>". It&#8217;s led by Tim Berners-Lee, the inventor of the Web. Founded in 1994, the W3C has more than 450 <a href="http://www.w3.org/Consortium/Member/List.html">member organizations</a> - including <a href="http://www.microsoft.com/">Microsoft</a>, <a href="http://aol.com/">America Online</a> (parent company of <a href="http://home.netscape.com/company/">Netscape Communications</a>), <a href="http://apple.com/">Apple Computer</a>, <a href="http://www.adobe.com/">Adobe</a>, <a href="http://www.macromedia.com/">Macromedia</a>, <a href="http://www.sun.com/">Sun Microsystems</a>, and a variety of other hardware and software manufacturers, content providers, academic institutions, and telecommunications companies. The Consortium is hosted by three research institutions - <a href="http://www.lcs.mit.edu/">MIT</a> in the US, <a href="http://www.inria.fr/">INRIA</a> in Europe, and <a href="http://www.keio.ac.jp/">Keio University</a> in Japan.</p>
+
+<a name="p212"></a>
+<h4>2.1.2 What does it do?</h4>
+<!-- Laura Mollett, Stephan Nedregaard, Peter Fleck, Juergen Steinwender[E], Kynn Bartlett -->
+
+<p>The W3C develops open specifications (de facto standards) to enhance the interoperability of web-related products. W3C Recommendations are developed by working groups consisting of Consortium members and invited experts. Working groups obtain general consensus from companies and other organizations involved in creating applications for the Web, and create Working Drafts and Proposed Recommendations. These are then submitted to the W3C membership and director, for formal approval as W3C Recommendations. More information regarding this process and the review stages can be obtained from the <a href="http://www.w3.org/">W3C website</a>.</p>
+
+
+<a name="p213"></a>
+<h4>2.1.3 What are the W3C standards?</h4>
+
+<a name="p2131"></a>
+
+<h5>2.1.3.1 HTML 4.0 - HyperText Markup Language</h5>
+<!-- Stephan Nedregaard -->
+
+<p>HyperText Markup Language (HTML) is widely used on the Web for adding structure to text documents. Browsers interpret these documents, representing the structure in media-specific ways to the user. For example, visual browsers typically display the <code>strong</code> element (<code>&lt;strong&gt;</code> ... <code>&lt;/strong&gt;</code>) as bold text, while text-to-speech readers might emphasize that text when pronouncing it.</p>
+
+<p>With the help of <a href="#p2133">Cascading Style Sheets</a> (CSS) the author may define how structural elements are to be represented, overriding the browser defaults.</p>
+
+
+<a name="p2132"></a>
+
+<h5>2.1.3.2 XML 1.0 - Extensible Markup Language</h5>
+<!-- Stephan Nedregaard -->
+
+<table style="float:right" cellspacing="0" cellpadding="5" class="sample">
+<tr><th class="gray">Example of part of an XML document</th></tr>
+<tr><td><pre>&lt;addressbook&gt;
+  &lt;entry&gt;
+    &lt;name&gt;Bill Gates&lt;/name&gt;
+
+    &lt;email&gt;bgates@microsoft.com&lt;/email&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;name&gt;Marc Andreesen&lt;/name&gt;
+    &lt;email&gt;marca@netscape.com&lt;/email&gt;
+
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;name&gt;Jon S. von Tetzchner&lt;/name&gt;
+    &lt;email&gt;jon@opera.com&lt;/email&gt;
+  &lt;/entry&gt;
+
+&lt;/addressbook&gt;</pre></td></tr></table>
+
+<p>Extensible Markup Language (XML) is a markup language like <a href="#p2131">HTML</a>, but instead of having a single, fixed set of elements, it allows you to define your own - or use a set made by someone else. It even allows using multiple sets within a single document - by using <a href="http://www.w3.org/TR/REC-xml-names/">XML namespaces</a>.</p>
+
+<p>Some applications of XML, such as <a href="http://www.w3.org/TR/xhtml1/">XHTML</a> and <a href="http://www.w3.org/TR/REC-MathML/">MathML</a>, have already become W3C Recommendations. Others are currently W3C Working Drafts.</p>
+
+<p>Style sheet standards, such 
+as CSS and XSL, offer a variety of options for specifying how XML 
+elements are to be rendered.  Standards-compliant support for direct 
+rendering of XML is spotty in browsers, so for presenting information to 
+humans, HTML (or XHTML) with CSS-driven styling is the way to go.  XML 
+is mostly used for machine-to-machine communication today.</p>
+
+<p>XML is more flexible than HTML, primarily because of the ability to add your own elements and make your own structural systems. This makes it an ideal format for the organization of large quantities of data - it is already in use in many databases and search engines.</p>
+
+<a name="p2133"></a>
+
+<h5>2.1.3.3 XHTML 1.0, 1.1, and Modularization</h5>
+<!--  Molly E. Holzschlag, Feb. 27, 2002 -->
+
+<p>XHTML 1.0 is a reformulation of HTML as an XML application. XHTML 1.0 can be seen as ideologically coming from HTML 4.01, and being technically stricter because of XML&#8217;s influence.</p>
+
+
+<p>XHTML will
+display in  your browser identically to the equivalent HTML.  You might
+want to use  XHTML if there is any chance you're going to need to
+reprocess your  content, for example to send it to a PDA; XML's
+stricter syntax rules  make automatic processing of XHTML much easier
+and cheaper than ordinary HTML.</p>
+
+<p>Ideologically, XHTML 1.0 inherits the following general concepts from HTML 4.01:</p>
+
+<ul>
+<li>That presentation and document formatting should be separated via style sheets</li>
+<li>That documents should be made accessible</li>
+<li>That documents should be internationalized</li>
+</ul>
+
+<p>XHTML 1.0 also uses the model of three DTDs: Strict, Transitional, and Frameset. This model originally emerged in HTML 4.0 and followed through to HTML 4.01. </p>
+
+<p>Some important technical practices from XML onto XHTML includes:</p>
+
+<ul>
+
+<li>That all document types are declared via the correct DOCTYPE declaration</li>
+<li>That the structure of a conforming document contain the DOCTYPE declaration, an html element with the XHTML namespace declared, a head element including the title element, and a body element</li>
+<li>That all elements and attribute names are written in lower case, and that all attribute values are quoted</li>
+<li>That all non-empty elements (e.g. p, li) are properly terminated with a closing tag</li>
+<li>That all empty elements (e.g. br, hr, img) are properly terminated with a trailing slash (&lt;br /&gt;)</li>
+<li>That documents validate against the DTD that is declared</li>
+</ul>
+
+<!--
+<p>For templates and tutorials on XHTML 1.0, please see <a title="go to learn section, tutorials and articles" href="index.html#tutorials">
+
+Learn &gt; Tutorials and Articles
+</a>.</p>
+-->
+<p>For templates, please see <a title="go to learn section, templates" href="../templates/index.html">Learn &gt; Templates</a></p>
+
+<p>XHTML 1.1 is made up of three primary parts:</p>
+
+<ul>
+<li>The XHTML 1.0 Strict DTD (with minor modifications)</li>
+<li>XHTML  Modularization</li>
+<li>The Ruby Annotation</li>
+</ul>
+
+<p>If you&#8217;d like to author documents in XHTML 1.1, you can do so in a couple of ways. The first is by using the public XHTML 1.1 DTD. By doing this, your work will be extremely structured because there are virtually no presentational attributes in XHTML 1.1. The separation of structure and presentation is complete here, and all of your presentation work will go in a style sheet.</p>
+
+<p>Another means of authoring documents in XHTML 1.1 is to tap into XHTML Modularization. This is the breakdown of familiar components of HTML and XHTML (such as text, tables, frames, forms) into discrete chunks. You can then write your own DTD and use only those components you require. This is extensibility in action, essentially giving you, the web author, the opportunity to customize your markup.</p>
+
+<p>The Ruby Annotation is a special means of dealing with certain Asian character annotations. Ruby falls under the work being done with Internationalization.</p>
+
+<a name="p2134"></a>
+<h5>2.1.3.4 CSS - Cascading Style Sheets</h5>
+<!-- Stephan Nedregaard -->
+
+<p>Cascading Style Sheets (CSS) is a mechanism for changing the appearance of <a href="#p2131">HTML</a> or <a href="#p2132">XML</a> elements, by assigning styles to element types, self-defined classes of elements or individual instances.</p>
+
+<p>Stylesheets can be used to consistently define the appearance of an entire site. Following the introduction of CSS, the W3C recommended that layout-specific features in HTML be phased out and replaced by stylesheets, creating a simpler and more structural World Wide Web.</p>
+
+
+<a name="p2135"></a>
+<h5>2.1.3.5 DOM 1 - Document Object Model Level 1</h5>
+<!-- Dane Weber, SC[E], Joe D. Williams(ex), Lewis A. Shadoff(ex/other-sgg) -->
+
+<p>
+The DOM allows the full power and interactivity of a scripting language (such as <a href="#p2231">ECMAScript</a>, the standardized version of JavaScript) to be exerted on a web page. (In programming terms, the Document Object Model (DOM) Level 1 is an Application Programming Interface (API) for interacting with web pages.) It gives the scripting language easy access to the structure, content, and presentation of a document which is written in such languages as <a href="#p2131">HTML</a> and <a href="#p2133">CSS</a>.</p>
+
+<p>The DOM is compatible with future improvements in technology; it will allow any scripting language to interact with whatever languages are being used in the document. This standard will not only make it easier to program dynamic HTML, but will also make adapting to future Internet technology much less painful.</p>
+
+<a name="p2136"></a>
+
+<!-- <h5>2.1.3.6 Emerging Standards</h5> -->
+<!-- Stephan Nedregaard, Kynn Bartlett[B] Matthew Thomas[E] -->
+<!--
+<p>The W3C is constantly at work on creating new standards; the most important of these right now are are XHTML and XSL. <a href="http://www.w3.org/TR/xhtml1/">XHTML</a>, Extensible Hypertext Markup Language, is a reformulation of <a href="#p2131">HTML 4.0</a> in <a href="#p2132">XML</a>; <a href="http://www.w3.org/TR/WD-XSLReq">XSL</a>, the Extensible Stylesheet Language, is a language for transforming and displaying XML documents, using an XML vocabulary.</p>
+-->
+
+<a name="p22"></a>
+<h3>2.2 ECMA Standards</h3>
+<a name="p221"></a>
+<h4>2.2.1 What is the ECMA?</h4>
+<!-- Bart Szyszka: -->
+
+<p>The <a href="http://www.ecma.ch/">European Computer Manufacturers Association</a> (ECMA) is an organization officially founded in 1961 in order to meet the need for standardizing computer operational formats, including programming languages and input/output codes.</p>
+
+<p>The ECMA is based in Geneva, Switzerland, near the headquarters of the <a href="http://www.iso.ch/">International Organization for Standardization</a> (ISO) and the <a href="http://www.iec.ch/">International Electrotechnical Commission</a> (IEC). In 1994, the organization&#8217;s name was changed to the ECMA - European Association for Standardizing Information and Communication Systems, in order to reflect its broader range of activities.</p>
+
+<a name="p222"></a>
+<h4>2.2.2 What does it do?</h4>
+<!-- Holger Maier, Stephan B. Nedregaard[E], Matthew Thomas[E] -->
+
+<p>The main role of the ECMA is to develop Standards and Technical Reports in the area of information and communication technology. As ECMA is an association of companies and not an official standardization institute, they often collaborate with official national or international institutes.</p>
+
+<p>ECMA Standards have been accepted as a base for international and European standards. So far more than <a href="http://www.ecma.ch/ecma1/PUBLICAT.HTM">270
+ECMA Standards and 70 Technical Reports</a> have been published.</p>
+<!-- updated URL 02-2002 skaiser -->
+
+<p>Of these standards 85 have been accepted as international standards by the <a href="http://www.iso.ch/">International Organization for Standardization</a> (ISO). In addition, 25 have been accepted as European standards by the <a href="http://www.etsi.org/">European Telecommunications Standards Institute</a> (ETSI).</p>
+
+<a name="p223"></a>
+<h4>2.2.3 What are the ECMA standards?</h4>
+
+<a name="p2231"></a>
+
+<h5>2.2.3.1 ECMAScript (standardized JavaScript)</h5>
+<!-- Matthew Thomas, Holger Maier
+Lewis A. Shadoff
+Nedregaard/Thomas[E], based on Th/Maier & Shadoff -->
+
+<p>ECMAScript is a standardized scripting language, based largely on <a href="http://home.netscape.com/company/">Netscape</a>&#8217;s
+<a href="http://developer.netscape.com/tech/javascript/">JavaScript</a> and <a href="http://microsoft.com/">Microsoft</a>&#8217;s <a href="http://msdn.microsoft.com/library/en-us/script56/html/js56jsoriJScript.asp">JScript</a>. The ECMAScript standard is defined by ECMA&#8217;s <a href="http://www.ecma.ch/ecma1/MEMENTO/tc39.htm">Technical Committee 39</a> (TC-39).</p>
+
+<p>The main use of ECMAScript, which is an object-based language, is to manipulate the objects in web pages which are specified by the <a href="#p2134">Document Object Model</a> (DOM). These objects (effectively, the elements which make up web pages, or the web pages as a wholes) can then be added to, deleted, moved, or have their properties changed. This lets web developers implement such effects as animated text, graphic roll-overs, and pages that change based on user input without having to be reloaded.</p>
+
+<p>The current ECMAScript specification is ECMA Standard ECMA-262,
+<a href="http://www.ecma-international.org/publications/standards/ECMA-262.HTM"><cite>ECMAScript Language Specification, 2nd edition</cite></a>.</p>
+<!-- updated URL 02-2003 mholzschlag -->
+
+<a name="p3"></a>
+<h2>3 What are the advantages of using web standards?</h2>
+<a name="p31"></a>
+
+<h3>3.1 Accessibility</h3>
+<a name="p311"></a>
+<h4>3.1.1 To software/machines</h4>
+<!-- Stephan Nedregaard, Matthew Thomas[E], Kynn Bartlett[E] -->
+
+<p>Complying with web standards can give your web pages greater visibility in web searches. The structural information present in compliant documents makes it easy for search engines to access and evaluate the information in those documents, and they get indexed more accurately.</p>
+
+<p>Because use of web standards makes it easier for server-side as well as client-side software to understand the structure of your document, adding a search engine to your own site becomes easier and gives better results.</p>
+
+<p>Standards are written so that old browsers will still understand the basic structure of your documents. Even if they can&#8217;t understand the newest and coolest additions to the standards, they&#8217;ll be able to display the content of your site. The same, of course, applies to robots - systems that collect information from your site on behalf of search engines and other indexers.</p>
+
+<p>Compliant code gives you the opportunity of validating your page with a validation service. Validators process your documents and present you with a list of errors. This makes finding and correcting errors a lot easier, and can save you a lot of time.</p>
+
+<p>Compliant documents can easily be converted to other formats, such as databases or Word documents. This allows for more versatile use of the information within documents on the World Wide Web, and simplified migration to new systems - hardware as well as software - including devices such as TVs and PDAs.</p>
+
+<a name="p312"></a>
+<h4>3.1.2 To people</h4>
+<!-- Matthew Thomas, Jens Edlund[B], Laura Mollett[B] -->
+
+<p><a href="http://www.w3.org/WAI/">Accessibility</a> is an important idea behind many web standards, especially HTML.</p>
+
+<p>Not only does this mean allowing the web to be used by people with disabilities, but also allowing web pages to be understood by people using browsers other than the usual ones - including voice browsers that read web pages aloud to people with sight impairments, Braille browsers that translate text into Braille, hand-held browsers with very little monitor space, teletext displays, and other unusual output devices.</p>
+
+<p>As the variety of web access methods increases, adjusting or duplicating websites to satisfy all needs will become increasingly difficult (indeed, some say it&#8217;s impossible even today). Following standards is a major step towards solving this problem. Making your sites standards-compliant will help ensure not only that traditional browsers, old and new, will all be able to present sites properly, but also that they will work with unusual browsers and media.</p>
+
+<p>Some consequences of ignoring standards are obvious: the most basic
+consequence is that you will restrict access to your site. How much business sense does it make to limit your audience to only a fraction of those who wish be a part of it? For a business site, denying access to even small portions of a target audience can make a big difference to your profit margin. For an educational site, it makes sense to allow access not only to
+affluent, able-bodied school-children with graphical browsers, but also to children in regions with poorly-developed infrastructure who are best served by text-only browsing, or disabled students using specialized browsers.</p>
+
+<p>The same principle applies to all types of websites &#8212; while straying
+from the standards and taking advantage of browser-specific features may
+be tempting, the increased accessibility which comes from
+standards-compliance will lead to far greater rewards in the long run.</p>
+
+<a name="p32"></a>
+
+<h3>3.2 Stability</h3>
+<!-- Matthew Thomas, Bart Szyszka[B], Jens Edlund[B], Stephan Nedregaard[B] -->
+
+<p>Most web standards are generally designed with forward- and backward-compatibility in mind &#8212; so that data using old versions of the standards will continue to work in new browsers, and data using new versions of the standards will "gracefully degrade" to produce an acceptable result in older browsers.</p>
+
+<p>Because a website may go through several teams of designers during its lifetime, it is important that those people are able to comprehend the code and to edit it easily.  
+Web standards offer a set of rules that every Web developer can follow,
+understand, and become familiar with: When one developer designs a site to
+the standards, another will be able to pick up where the former left off.</p>
+
+<a name="p4"></a>
+
+<h2>4. Conclusion</h2>
+<!-- Randy Piatt and Lewis A. Shadoff, Peter Fleck[B]
+Matthew Thomas -->
+
+<p>As web developers, we are constantly trying to address the problem of inconsistencies between the renderings of web pages by different browsers and browser versions. 
+This necessitates either time-consuming double/multiple coding, or coding
+for a single browser which makes it harder, if not impossible, for some of
+the public to use the site.  This situation will be made even worse with the advent of additional hardware and software which will be able to browse the Web, such as telephones, pagers, and PDAs.</p>
+
+<p>Web standards are not arcane laws decreed by ivory-tower organizations. <a href="#p2">As we have described</a>, the standards are for the most part decided by representatives of the same people who use them &#8212; browser makers, web developers, content providers, and other organizations.</p>
+
+<p>Writing web pages in accordance with the standards shortens site development time and makes pages easier to maintain. Debugging and troubleshooting become easier, because the code follows a standard. No longer do you have to worry about the coding and maintenance for several versions of code that are supposed to accomplish the same presentation. <em>One</em> version of your site, and that is it.</p>
+
+<p>The universal adoption of web standards is becoming of paramount importance. The mission of <a href="http://www.webstandards.org/">The Web Standards Project</a> is to make the Web a better place, for developers and for end-users, by encouraging browser and web page editor makers to follow the standards in their applications. This effort will be greatly helped when web developers <em>use</em> the standards as a matter of course, and insist that generators and renderers of their code comply with the standards.</p>
+
+<p>The <a href="#p3">reasons we have given</a> should give you, the web developer, plenty of incentive to begin using standards, and also plenty of ammunition with which you can encourage your place of business and fellow developers to use those standards.</p>
+
+    <p><a href="../../act/index.html">Help make the dream a reality.</a></p>
+    <div class="authors"> <cite><strong>Web Standards Project Developer Education 
+      Committee:</strong><br />
+      <script type="text/javascript">
+<!--
+document.write('<a href="mailto:&#115;&#116;&#101;&#112;&#104;&#97;&#110;&#64;&#111;&#112;&#101;&#114;&#97;&#46;&#99;&#111;&#109;" title="click here to email Stephan">Stephan Nedregaard<\/a>');
+// -->
+</script>
+      (coordinator), Kynn Bartlett, Gail T. Cohen, Jens Edlund, Nick Finck, Tomas 
+      Fjetland, Peter Fleck, Markus Gut, Holger Maier, Julian Missig, Laura Mollett, 
+      Randy Piatt, Lewis A. Shadoff, Juergen Steinwender, Bart Szyszka, Matthew 
+      Thomas, Dane Weber 
+      </cite> </div>
+      <p>Updated 02-27-2002 by Molly E. Holzschlag and Shirley E. Kaiser of WaSP 
+        LEARN Committee</p>
+	
+</div>
+<!-- Credits: by Molly Holzschlag -->	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+	<div id="LangLinks">
+		<ul>
+		<li>English (en)</li>
+		<li><a href="faq_fr.html">French (fr)</a></li>
+		<li><a href="faq_it.html">Italian (it)</a></li>
+		<li><a href="faq_jp.html">Japanese (ja)</a></li>
+		<li><a href="faq_nl.html">Dutch (nl)</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/faq/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:29:10 GMT -->
+</html>
+<!-- $Id: index.html,v 1.22 2005/09/12 10:43:15 bhenick Exp $ -->

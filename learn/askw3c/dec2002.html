@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/dec2002.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : December 2002</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+</head>
+<body>
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+	<div class="padder"> 
+	
+	<h1>WaSP Asks the W3C</h1>
+	
+	<h2 class="sub">Specifying Character Encoding</h2>
+	
+	<p>This month kicks off our new &#8220;WaSP Asks the W3C&#8221; Question and Answer project. 	
+	In this project, frequently asked questions posed to WaSP by Web authors and designers 
+	regarding standards are submitted by WaSP members to the <a title="go to W3C Quality Assurance Group page"  	
+	href="http://www.w3.org/QA/">W3C&#8217;s Quality Assurance Group</a> for 
+	information. The answers are published and archived both here and on the W3C Web Standards 
+	Education list, where follow-up discussion also takes place. Signup details can be found at 
+	the end of 	this article.</p>
+
+	<h3>WaSP asks</h3>
+	
+	<p> There are several ways of specifying the character encoding for a particular document. Which of 
+	the following methods (or combination thereof) does the W3C recommend, and why?</p>
+	
+	<ul>
+	<li>Have the server administrator set the proper encoding via the HTTP headers returned by the 		
+	Web server</li>
+	<li>Have the author add the encoding with a <code>meta</code> element</li>
+	<li>XHTML authors can add the character encoding using the XML declaration</li>
+	</ul>
+
+
+	<h3>The W3C responds</h3>
+	
+	<p>These three ways of providing the character encoding of a document are not equivalent. When 
+	trying to figure out the character encoding of a resource, user agents will try, in this
+	order:</p>
+
+		<ul>
+			<li>The HTTP <code>Content-Type</code> header sent by the server</li>
+			<li>The XML declaration (only for XHTML documents)</li>
+			<li>The HTML/XHTML <code>meta</code> element</li>
+			<li>Other ways. There are algorithms to guess the character encoding, for 
+			example</li>
+		</ul>
+
+	<p>Since the HTTP <code>Content-Type</code> header has precedence, and is also the easiest 
+	information to retrieve (user-agents do not have to parse the resource to get it), it is almost 
+	always the preferred way to provide the character encoding for an (X)HTML document.</p>
+
+	<p>However, in at least two cases, this is simply not possible:</p>
+
+		<ul>
+			<li>The document author does not have any way to configure the server to send the 	
+			proper HTTP <code>Content-Type</code> header</li>
+			<li>The document is not served via HTTP.</li>
+		</ul>
+		
+	<p>In these cases, an HTML document should provide the character encoding via a 
+	<code>meta</code> element, and an XML document can provide it via the XML
+	declaration. If the XML document uses one of the default encodings (UTF-8 or UTF-16) no declaration is needed to manage the 	
+	character encoding.</p>
+
+<h3>To sum it up</h3>
+
+    <ul>
+	<li><strong>Wrong</strong>. The webmaster sets a default character encoding to be sent by the 	
+	server but does not let the author override it or the info is not provided anywhere 
+	whatsoever</li>
+	<li><strong>Good</strong>. The character encoding is not set at the server level but properly 
+	declared through the HTML <code>meta</code> element (and/or the XML declaration for XHTML 
+	documents)</li>
+	<li><strong>Best</strong>. The character encoding is properly set at the server level, either 
+	with a default that authors can override or on a per-document basis, and is also available at 
+	the document level (both in the XML declaration if applicable and the meta element) for 
+	standalone use</li>
+	</ul>
+	
+<h3>Examples</h3>
+
+	<p>Example of an XHTML 1.0 document written in French with an ISO-8859-1 encoding:</p>
+	
+<div class="code">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"&gt;
+
+&lt;head&gt;
+&lt;title&gt;Exemple de document XHTML 1.0&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Portrait Intérieur&lt;/h1&gt;
+&lt;h2&gt;Rainer-Maria Rilke&lt;/h2&gt;
+&lt;p&gt;Ce ne sont pas des souvenirs&lt;br /&gt;
+qui, en moi, t'entretiennent ;&lt;br /&gt;
+tu n'es pas non plus mienne&lt;br /&gt;
+par la force d'un beau désir.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+
+	<p>Example of an HTML 4.01 document written in French with a UTF-8 encoding:</p>
+
+<div class="code">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+		 
+&lt;html lang="fr"&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;
+
+&lt;title&gt;Exemple de document HTML 4.01&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Portrait Intérieur&lt;/h1&gt;
+&lt;h2&gt;Rainer-Maria Rilke&lt;/h2&gt;
+
+&lt;p&gt;Ce ne sont pas des souvenirs&lt;br&gt;
+qui, en moi, t'entretiennent ;&lt;br&gt;
+tu n'es pas non plus mienne&lt;br&gt;
+par la force d'un beau désir.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+
+	<p>On the popular Apache Web server, the HTTP <code>Content-Type</code> header for a resource 
+	can be set up in the .htaccess file, as follows:</p>
+
+<div class="code">&lt;Files example.html&gt;
+ForceType text/html;charset=ISO-8859-1
+&lt;/Files&gt;
+</div>
+	
+	<p>This would force the file example.html to be served as ISO-8859-1 even if the server had a 
+	different global configuration.</p>
+
+<h3>WaSP comments</h3>
+
+	<p>WaSP and W3C member Tim Bray commented on this answer and said:</p>
+
+		<p class="blockquote">&#8220;If you know that the document you&#8217;re sending is going to get read by 
+		an XML 		processor, the server should get the charset right. If the server makes any mistake the 
+		rules say that the processor is supposed to do the wrong thing!  On the other hand, if the 
+		document is going to any kind of HTML reader, the server can usefully try to help and do 
+		what is suggested here.  So it turns out that it matters whether you serve it as html or 
+		xhtml+xml.&#8221;</p>
+
+	<p>How to serve HTML and XHTML will be discussed in the next issue of WaSP Asks the W3C.</p>
+
+<h3>References</h3>
+
+
+	<ul>
+		<li><a title="learn about charsets" 
+		href="http://www.w3.org/International/O-HTTP-charset">About Charset Parameters</a></li>
+		<li><a title="learn about character encodings"
+		href="http://www.w3.org/International/O-charset.html">About Character Encodings</a></li>
+		<li><a title="HTML 4 specification"
+	    href="http://www.w3.org/TR/html4/charset.html#h-5.2.2">HTML 4.0 specification on character 
+		encodings</a></li>
+		<li><a title="XHTML specification reference" 
+		href="http://www.w3.org/TR/xhtml1/#C_9">XHTML 1.0 specification on character 
+		encodings</a></li>
+		<li><a title="XML specification details" 		
+		href="http://www.w3.org/TR/REC-xml#charencoding">XML 1.0 specification on character encodings		
+		</a></li>
+	</ul>
+
+<h3>Discussion</h3>
+
+	<p>For clarification and discussion on this topic, please address your comments and questions to the W3C Web Standards Education list.</p>
+
+	<p>To subscribe to the list, send an email to <a title="subscribe to the public evangelist list"
+	href="mailto:public-evangelist-request@w3.org">public-evangelist-request@w3.org</a> with 
+	&#8220;Subject: subscribe&#8221;.  You can read archived posts at <a title="read list archives"
+	href="http://lists.w3.org/Archives/Public/public-evangelist/">http://lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+	</div>
+	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/dec2002.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+</html>
+<!-- $Id: dec2002.html,v 1.6 2003/02/05 18:09:57 porter Exp $ -->

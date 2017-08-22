@@ -1,0 +1,477 @@
+/* $Id: wsp.css,v 1.66 2005/09/08 11:19:15 bhenick Exp $ */
+
+/* The stylesheet is divided into 3 parts. Each part is a set of things that typically must be reviewed together. Constrain your changes to the proper part:
+
+ 1 colors, backgrounds, borders, link and emphasis indication
+ 2 font and text properties, exclusive of link indication, alignment, text-indent
+ 3 box properties (exclusive of borders), positioning, alignments, list types, text-indent
+
+*/
+
+/* colors, backgrounds, borders, link indication */
+body {
+	background: #fff;
+	color: #000;
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.blog .post {
+	border: 1px solid #EBD4C8;
+	background-color: #FCF7F4;
+}
+
+code {
+	color: #CC6600;
+}
+
+blockquote pre code {
+	color: #000;
+}
+
+a:link {
+	color: #930;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #622;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+	text-decoration: underline;
+}
+
+#SiteNav ul, #SiteNav li {
+	color: white;
+}
+
+div.example {
+	border: 1px solid black;
+}
+
+img, a.imgLink {
+	border: 0px solid white;
+	color: white;
+}
+
+#intro, #quote {
+	color: #333;
+}
+
+#quote {
+	border-width: 1px 0 0 0;
+	border-color: black;
+	border-style: solid;
+}
+
+#Header {
+	background-image: url(../../img/line.gif);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+img {
+	border-width: 0;
+}
+
+#SiteNav a, #SiteNav li.active li a, #SiteNav li.active li.active li a {
+	background-color: #fff;
+	color: #930;
+}
+
+#SiteNav a:hover, #SiteNav li.active li a:hover, #SiteNav li.active li.active li a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+
+#SiteNav li.active a, #SiteNav li.active li.active a, #SiteNav li.active li.active li.active a {
+	background-color: #eee;
+}
+
+div.postMetaInfo {
+	border: 1px solid #EBD4C8;
+	background-color: white;
+}
+
+div.code {
+	border: 1px solid #999;
+	color: #930;
+	background:#f0f0f0;
+}
+
+.update	{
+	color:#999999;
+	background:white;
+	margin-bottom:15px;
+}
+
+blockquote {
+	background: #fcf7f4 url(../../img/quotebg.gif);
+}
+
+/* font and text properties, exclusive of link indication, alignment, text-indent */
+.strike {
+	text-decoration: line-through;
+}
+
+body, code, pre {
+	font-family: Georgia, serif;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+}
+
+html>body, html>body code, html>body pre {
+	font-size: small;
+}
+
+div.postMetaInfo, .authors  {
+	font-family: Verdana, Helvetica, sans-serif;
+	line-height: 1.3em;
+	font-size: xx-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: x-small;
+}
+
+html>body div.postMetaInfo, html>body .authors {
+	font-size: x-small;
+}
+
+code, pre {
+ font-family: 'Andale Mono', Courier, monospace;
+ font-size:1em;
+}
+
+h1, h2, h3, #SiteNav, #SubNav {
+	font-family: "Trebuchet MS", serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: .2em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3, h4 {
+	font-size: 1em;
+}
+
+h3 {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+h4 {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.abbr, abbr {
+	font-size: .9em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+h2.sub {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 1.3em;
+}
+
+h2.postTitle, h3.postTitle {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	line-height: 120%;
+}
+
+div.code {
+	white-space: pre;
+  font-family: 'Andale Mono', Courier, monospace;
+	font-size: 95%;
+	line-height: 120%;
+}
+
+.update	{
+	font-size:85%;
+}
+
+p.skipnav a,p.skipnav a:link,p.skipnav a:visited,p.skipnav a:hover,p.skipnav a:active {
+	background:white;
+	color:white;
+	text-decoration:none;
+	font-size:1px;
+}
+
+.docMetaInfo {
+	font-style: italic;
+}
+
+/* box properties (exclusive of borders), positioning, alignments, list types, text-indent */
+body {
+	line-height: 1.8;
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+}
+
+p.skipnav {
+	height:1px;
+}
+
+.blog .post {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+div.example {
+	margin: .25em 0;
+	padding: 10px;
+}
+
+img.imgRight {
+	float: right;
+}
+
+#Header {
+	margin: 0 25px;
+	height: 130px;
+}
+
+#headerText {
+	position: absolute;
+	top: 20px;
+	left: 30%;
+	text-align: right;
+}
+
+#intro {
+	margin-bottom: 5px;
+}
+
+#quote {
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+
+#MainText {
+	position: absolute;
+	left: 0px;
+	top: 170px;
+	width: 75%;
+	z-index: 0;
+}
+
+#MainText div.padder {
+	margin-left: 210px;
+	margin-right: 25px;
+}
+
+#SiteNav {
+	position: absolute;
+	left: 25px;
+	top: 190px;
+	width: 160px;
+	z-index: 1;
+}
+
+#SubNav {
+	position: absolute;
+	left: 75%;
+	top: 170px;
+	z-index: 2;
+}
+
+#SubNav div.padder {
+	margin-right: 25px;
+}
+
+#footer {
+	text-align: center;
+	margin: 40px 0px;
+}
+
+address, blockquote, dd, dir, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, li, menu, ol, p, pre, table, ul {
+	margin: 0;
+	padding: 0;
+}
+
+#subnav p {
+	line-height: normal;
+}
+
+p+p, p+q+p {
+	text-indent: 1.8em;
+	margin-top: -.667em;
+}
+
+p.no-indent {
+	text-indent: 0em;
+	margin-top: -.667em;
+}
+
+dir, dl, fieldset, form, menu, ol, p, pre, ul {
+	margin: .67em 0;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol, ul {
+	margin: .33em 0;
+}
+
+h1, h2, h3, h4, h5, h6, dt, {
+	margin: 1.667em 0 0 0;
+	text-align: left;
+}
+
+h1 {
+	margin: 0 0 1em 0;
+}
+
+li {
+	margin: 0 0 0 1.8em;
+}
+
+dd {
+	margin: 0 0 .667em 1.8em;
+}
+
+blockquote {
+	/*margin: .667em 0 .667em 1.8em;*/
+	margin: .667em 0 .667em 0;
+	padding: 0.2em 0;
+}
+
+img.imgRight {
+	float: right;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+h2.sub {
+	margin-left: 1.5em;
+	margin-top: 0px;
+}
+
+#SiteNav ul, #SiteNav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#SiteNav ul ul {
+	padding: 0;
+	margin: 0px 0px 0px 10px;
+}
+
+#SiteNav a, #SiteNav li.active li a, #SiteNav li.active li.active li a, #SiteNav a:hover, #SiteNav li.active li a:hover, #SiteNav li.active li.active li a:hover, #SiteNav li.active a, #SiteNav li.active li.active a, #SiteNav li.active li.active li.active a {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+#SubNav p, #SubNav ul {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#headerText {
+	width: 67%;
+}
+
+div.post address, div.post blockquote, div.post dd, div.post dir, div.post dl, div.post dt, div.post fieldset, div.post form, div.post h1, div.post h2, div.post h3, div.post h4, div.post h5, div.post h6, div.post hr, div.post li, div.post menu, div.post ol, div.post p, div.post pre, div.post table, div.post ul {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.postMetaInfo {
+	float: right;
+	margin: 0 0 1em 1em;
+	position: relative;
+	top: -1px;
+	left: 1px;
+	padding: 0.667em 1.33em;
+	width: 170px;
+}
+
+h2.postTitle, h3.postTitle {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.code {
+	display: block;
+	overflow: auto;
+	width: 100%;
+}
+
+.alert {
+	background-color: #fc9;
+	border: 4px double #930;
+	color: #c00;
+	margin: 1em;
+	padding: 1em;
+}
+
+.pullquote {
+ width: 10em;
+ font-weight: bold;
+ font-size: 110%;
+ line-height: 140%;
+ padding: 1em;
+ margin: 1em;
+ background-color: #FCF7F4;
+ border: 1px solid #EBD4C8; 
+}
+
+.left {
+ float: left;
+ margin-left: 0;
+}
+.right {
+ float: right;
+ margin-right: 0;
+}
+.bio {
+ margin-top: 1em;
+ font-size: 90%;
+ font-style: italic;
+}
+
+#SubNav h2 {
+	font-size: small;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
+	letter-spacing: .2em;
+}
+
+#SubNav ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#SubNav ul li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+table {
+	border: 1px solid rgb(204,102,0);
+}
+
+td, th {
+	border: 1px solid rgb(204,102,0);
+}

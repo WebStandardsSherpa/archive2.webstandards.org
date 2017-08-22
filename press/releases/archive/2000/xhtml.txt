@@ -1,0 +1,86 @@
+For Immediate Release --
+
+THE WEB STANDARDS PROJECT APPLAUDS XHTML, REMINDS BROWSER VENDORS
+THAT CORE STANDARDS COME FIRST
+
+http://www.webstandards.org -- 1 February 2000 -- Furthering its
+mission to promote the adoption of standards for the Web, the Web
+Standards Project (WaSP) today announced its support for the W3C
+Recommendation for XHTML, and reiterated its message to browser
+makers that delivering complete support for existing standards --
+including XML, CSS, ECMAScript, DOM and HTML -- remains Job #1.
+
+"We congratulate the W3C for its leadership in developing
+standards for the Web. But our endorsement of XHTML should not be
+misinterpreted as an abandonment of our core issue," said Jeffrey
+Zeldman, Group Leader of The Web Standards Project. "Until all
+Web browsers deliver 100% support for the core standards outlined
+in our mission statement, the Web will continue to fragment, site
+development will continue to be excessively costly, and people
+who use the Web will continue to be frustrated and excluded."
+
+XHTML -- the Extensible Hypertext Markup Language -- combines the
+traditional virtues of HTML with the flexibility and
+database-oriented functionality of XML, thus wrapping text and
+other data types in a single, extensible standard that embraces
+the needs of both content and commerce.
+
+"W3C's Recommendation for XHTML provides the critical and
+immediate link between HTML and XML," said Sally Khudairi, a
+member of the WaSP Steering Committee. "With its extensible core
+architecture, XHTML enables site builders to develop more
+flexible Web pages and applications, as well as enhanced
+eCommerce functionality."
+
+Simon St. Laurent, another member of the WaSP Steering Committee,
+added, "XML's strict rules for conformance give XHTML a backbone
+that HTML has never had, and promise to open up new possibilities
+for XHTML processing, storage, and creation as the standard
+spreads. It's a big step forward."
+
+However, WaSP Steering Committee member Tim Bray cautions, "the
+important benefits of XHTML are unachievable without proper and
+complete implementations of CSS, XML, and the Document Object
+Model."
+
+"Some of these standards are five years old, and all of them were
+developed with the cooperation of the browser makers, who pledged
+to implement the standards they had helped to create. Web
+builders and Web users need these companies to keep their
+promise," explained Zeldman. "The good news is, the browser
+companies have begun to fully implement some of these standards.
+We encourage them to continue, and not to become side-tracked by
+the promise of XHTML...which could end up yet another unfulfilled
+promise, if the original core standards are not supported first."
+
+
+Further information on XHTML is available at the W3C Website at
+http://www.w3.org/TR/xhtml1/
+
+
+ABOUT THE WEB STANDARDS PROJECT [WaSP]
+
+The Web Standards Project is an international grassroots
+coalition of Web developers and users fighting for standards on
+the Web, by calling attention to browser incompatibilities that
+fragment the medium, prevent many people from using the Web, and
+add 25% to the cost of developing all sites. The WaSP urges all
+browser manufacturers to support existing standards before
+incorporating proprietary innovations, and is working to educate
+Web authors and Web-related software developers so that we may
+create a Web that works for everyone. For more information on
+WaSP, please see http://www.webstandards.org/
+
+
+Contact:
+
+Jeffrey Zeldman Group Leader jeffrey@zeldman.com +1.212.725.0847
+
+Tim Bray tbray@textuality.com +1.604.708.9592
+
+Sally Khudairi sk@zotgroup.com +1.617.818.0177
+
+
+###
+
+

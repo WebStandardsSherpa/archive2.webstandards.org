@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/object-tests.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:10 GMT -->
+<head> 
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : May 2005</title> 
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+ 
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+ 
+
+<style type="text/css">
+	blockquote p, blockquote pre {
+		padding: 10px;
+	}
+	
+	.note {
+		background-color: yellow;
+	}
+	
+	.strike {
+		text-decoration: line-through;
+	}
+</style>
+
+</head>
+<body> 
+<div id="Header"> 
+<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+ 
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText"> <div class="padder">
+
+<h1>WaSP Asks the W3C</h1>
+
+<h2 class="sub">Adding Multimedia in Web Documents (part 2) </h2>
+
+
+<h3 id="testing">Testing the Browsers for <code>object</code> element</h3>
+
+<h4 id="reporting">Test Reporting Template</h4>
+
+<p>We have created a few tests to help you to establish the level of implementation of the <code>object</code> element in each user agent. You are welcome to report the results to the <a href="mailto:www-archive@w3.org?Subject=[object] Test Report - ([User Agent Name] and [version])">www-archive@w3.org</a> mailing list (<a href="http://lists.w3.org/Archives/Public/www-archive/">publicly archived</a>). Use the email subject of "[object] Test Report - (User Agent Name and version)" where "User Agent Name" and "version" is the browser and its version you have tested with. When reporting implementation results, ensure that <strong>all requested information is included</strong>. Without this information the test will be useless. You might want to use the following template:</p>
+
+<pre>
+Date: 
+OS Version: (Name and version)
+User Agent: (Name and version)
+
+Test URI: 
+Result: Y, N, B
+Comments: 
+</pre>
+
+<ul>
+	<li>Y: Yes, the test has passed as expected.</li>
+	<li>N: No, the test has failed.</li>
+	<li>B: Buggy, the test has passed somehow, but the tester has noticed a kind of anormal behavior.</li>
+</ul>
+
+<p>It is <strong>very important to give reasons</strong> in the comments section, especially when the test has failed or is considered buggy.</p>
+
+<h4 id="list-test">List of Tests</h4>
+<h5 id="html-ts">HTML 4.01 Official Test Suite</h5>
+
+<ul>
+	<li><a href="http://www.w3.org/MarkUp/Test/HTML401/20030123/tests/sec13_3-BF-01">classid and codetype attribute</a></li>
+	<li><a href="http://www.w3.org/MarkUp/Test/HTML401/20030123/tests/sec13_5-BF-01">Invalid data attribute - Fallback Mechanism</a></li>
+</ul>
+<h5 id="qa-ts">HTML 4.01 QA Test Suite</h5>
+
+<ul>
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-001">Intrinsic size</a></li>
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-002">Resizing an object element with pixels</a></li>
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-003">Resizing an object element with percentage</a></li>
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-004">Including a text  with object</a></li>
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-006">Including a piece of program with object</a></li>
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-007">Including a piece of html source code with object</a></li>
+
+	<li><a href="http://www.w3.org/QA/2004/02/object/test-case-008">"data:" scheme in data attribute</a></li>
+</ul>
+
+
+<h4 id="test-report">Test Report</h4>
+
+<p>Here we provide a short test report for some user agents and some platforms. This test report is not complete and doesn't cover all the possible cases. It may contain errors depending how testers have interpreted the test results. We will continue to collect the <a href="http://esw.w3.org/topic/ObjectTestResults">test results for (X)HTML object implementation</a>.</p>
+
+<table class="interop" id="impl-object">
+<caption>Implementation Table for object Element</caption>
+
+	<tr>
+		<td style="width:15em;"></th> <th>UA1</th> <th>UA2</th>
+	</tr>
+	<tr>
+		<th>classid and codetype attribute</th> <td class="n">N</td> <td class="n">N</td>
+
+	</tr>
+	<tr>
+		<th>Invalid data attribute - Fallback Mechanism</th> <td class="y">Y</td> <td class="n">N</td>
+	</tr>
+	<tr>
+		<th>Intrinsic size</th> <td class="y">Y</td> <td class="n">N</td>
+
+	</tr>
+	<tr>
+		<th>Resizing an object element with pixels</th> <td class="y">Y</td> <td class="y">Y</td>
+	</tr>
+	<tr>
+		<th>Resizing an object element with percentage</th> <td class="y">Y</td> <td class="y">Y</td>
+
+	</tr>
+	<tr>
+		<th>Including a text  with object</th> <td class="y">Y</td> <td class="y">Y</td>
+	</tr>
+	<tr>
+		<th>Including a piece of program with object</th> <td class="n">N</td> <td class="y">Y</td>
+
+	</tr>
+	<tr>
+		<th>Including a piece of html source code with object</th> <td class="y">Y</td> <td class="n">N</td>
+	</tr>
+	<tr>
+		<th>"data:" scheme in data attribute</th> <td class="y">Y</td> <td class="y">Y</td>
+
+	</tr>
+	<tr><td class="comment" colspan="3">
+	UA1 = Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.5) Gecko/20041107<br/>
+	UA2 = Safari 1.2.4 (v125.12)
+	</td></tr>
+</table>
+
+
+
+
+</div>
+
+<div class="padder" id="footer"> 
+<a href="../../legal/index.html">Legal</a>
+ 
+</div> 
+
+</div>
+
+<div id="SubNav"> 
+<div class="padder"> 
+ 
+</div> 
+</div>
+</body> 
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/object-tests.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:10 GMT -->
+</html> 

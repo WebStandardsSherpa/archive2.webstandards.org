@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/tutorials/accessible-forms/03-accessible-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:53 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>Learn : Accessible Forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+	@import "../../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+<!--
+code {
+	background-color: #FFFFCC;
+}
+img {border:1px solid gray;}
+img#logo {border: 0;}
+-->
+</style>
+</head>
+
+<body>
+<div id="Header">
+	<a href="../../../index.html" class="imgLink"><img id="logo" src="../../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../../index.html">home</a></li>
+	<li><a href="../../../about/index.html">about</a></li>
+	<li><a href="../../../act/index.html">act!</a></li>
+	<li class="active"><a href="../../index.html">learn</a>
+		<ul>
+		<li><a href="../../faq/index.html">faq</a></li>
+		<li><a href="../../glossary/index.html">glossary</a></li>
+		<li><a href="../../orgs/index.html">orgs</a></li>
+		<li><a href="../../reference/index.html">reference</a></li>
+		<li><a href="../../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../../opinion/index.html">opinion</a></li>
+	<li><a href="../../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+<div class="padder">
+<h1>Accessible HTML/XHTML Forms</h1>
+<div class="update">Created: May 2004 | Author: <a href="../../../about/bios/illoyd.html">Ian 
+      Lloyd</a></div>
+<p><a href="01-accessible-forms.html">Beginning Level</a> | <a href="02-accessible-forms.html">Intermediate</a> | Advanced</p>
+
+<p>You've covered the <a href="01-accessible-forms.html">basics of form layout</a>, 
+  you've read about some of the <a href="02-accessible-forms.html">lesser-known 
+  XHTML tags</a> at your disposal and you're ready to take on the world. Your 
+  forms are accessible and you, truly, are invincible. Well, the reality is that 
+  you can always go that extra mile, and even when you do there may be a few things 
+  that can bite you on the bum if you're not looking. In this section we'll try 
+  to cover off these aspects in as timely a fashion as possible.</p>
+<h2>Where Am I Now?</h2>
+<p>Using a mouse it's invariably quite easy to see where you are in a web page. 
+  With a bigger mouse cursor and mouse trails switched on (if this is available 
+  to you) it becomes even easier. However, if you are sighted but cannot use a 
+  mouse for whatever reason, you will be forced to use the keyboard to navigate 
+  around and will not have the audio prompts that blind users would receive from 
+  a screen reader. Sometimes, it can be difficult to see where the point of focus 
+  is on screen. Browsers may employ a dotted line around the form element that 
+  is currently in focus, but you can make it even easier ...</p>
+<p>In Cascading Style Sheets Level 2 (CSS2), there is a pseudo property <code>focus</code> 
+  that can be applied to any HTML element but is particularly effective with forms. 
+  It is not universally supported in the current range of web browsers, but does 
+  work in Mozilla-based browsers. Using the following:</p>
+<p><code>input:focus, select:focus, textarea:focus {<br />
+  background:red;<br />
+  color:white; <br />
+  }</code></p>
+<p>... would result in a very eye-catching indicator when you tab through a form, 
+  making your form much easier to use/interact with for anyone with motor deficiencies:</p>
+<p><img src="images/field-in-focus.gif" alt="Field in focus is clearly visible" width="366" height="61" /></p>
+<h2>Accesskeys in Inputs and Labels</h2>
+<p>An accesskey is potentially a very useful accessibility tool that you can put 
+  to good use on any web site. Sadly, though, the theory and the practice could 
+  not be further apart.The theory is simple - associate a keystroke of your choosing 
+  to any given element on a page, making it very easy to access that element quickly. 
+  For example, a search field that appears on the top of every page might be assigned 
+  an accesskey of 's'. </p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;txtsearch&quot; accesskey=&quot;s&quot; 
+  /&gt;</code></p>
+<p>In practice, all the best keystroke/activity mappings are already claimed by 
+  the various browsers and assistive devices out there (in many different languages 
+  too). Consequently, if you want to use <code>accesskey=&quot;f&quot;</code> 
+  when referring to, say, the first name in a form that captures personal details, 
+  you may come unstuck. Why? Because pressing alt + f (alt being the modifier 
+  key that is normally used to trigger the accesskey) is more likely to bring 
+  up the browser's file menu.</p>
+<p>Note, though, that you can just as easily apply an accesskey to a <code>&lt;label&gt;</code> 
+  element as you can to the <code>&lt;input&gt;</code>. The problem is that there 
+  is no easy way of alerting to the user what the accesskey being used is (only 
+  iCab gives any hint to users of the acceskey available). One suggested way is 
+  to use the underline method that is used in Windows-based applications, sometimes 
+  called accelerator keys:</p>
+<p><code>&lt;label for=&quot;txtsearch&quot; accesskey=&quot;S&quot;&gt;&lt;span 
+  class=&quot;accelerator&quot;&gt;S&lt;/span&gt;earch:&lt;/label&gt; &lt;input 
+  type=&quot;text&quot; name=&quot;txtsearch&quot; id=&quot;txtsearch&quot; /&gt;</code></p>
+<p>You would need to specify that the class of accelerator gives an underline 
+  effect (don't simply use a <code>&lt;u&gt;</code> tag instead!).</p>
+<p><code>.accelerator {text-decoration:underline;}</code></p>
+<h2>Error reporting</h2>
+<p>When you or I make a mistake when filling out a form, there are a number of 
+  different ways that this can be handled. </p>
+<ol>
+  <li>One way is to use client-side scripting (JavaScript) that stops the form 
+    being submitted if any details are incorrect. Of course, if JavaScript is 
+    disabled - and to ensure your web pages are accessible you need to bear this 
+    in mind - this alerting may not be of any use. Therefore ...</li>
+  <li>You use the other method as a backup, that being server-side validation 
+    and subsequent error reporting.</li>
+</ol>
+<h3>Client-side Error Reporting</h3>
+<p>Let us assume that the browser has Javascript enabled (otherwise, you can just 
+  skip on to the next section heading, Server-side Error Reporting). This being 
+  the case, there are so many different ways to do the scripting but that's not 
+  within the scope of this article. However, there are some ways that will be 
+  more accessible than others which we can look at.</p>
+<p>Often, when JavaScript form validation is used, all the errors are collected 
+  in one go and displayed in bulk to the user in one giant alert like this:</p>
+<p><img src="images/big-alert.jpg" alt="Big alert box containing lots of information." width="404" height="177" /></p>
+<p>Now, at the risk of harping on about blind users, just imagine getting this 
+  information read out (or perhaps even more errors?) in one go. Irritating isn't 
+  it? But then what do you do?</p>
+<p>A better method might be to alert the first error encountered and take the 
+  user back to that field to be corrected, and so on until all are covered. If 
+  you know that JavaScript is enabled, well then you can use JavaScript to set 
+  the focus back to the offending field, and perhaps add in some default text 
+  to that field <em>and</em> select the text too:</p>
+<p><img src="images/small-alert.jpg" alt="A smaller alert that is easier to take in, react to.\" width="404" height="139" /></p>
+<p><code>document.forms['&quot;personaldetails&quot;].fullname.value=&quot;Please 
+  enter your full name&quot;;<br />
+  document.forms['&quot;personaldetails&quot;].fullname.select();</code></p>
+<p>You could also use JavaScript to highlight the field in some other manner for 
+  people who are sighted but could still benefit from some pointers. Maybe a bold 
+  border around the field? Perhaps an eye-catching background color?</p>
+<p>Some people will be screaming at the screen at this point saying that this 
+  method above is repetitive and awkward where a number of errors are present. 
+  Granted, for some users this may seem a pain, but at this point you have to 
+  make a judgement call about whether the strive for accessibility is working 
+  against the usability of the web site/page for the greater majority.</p>
+<h3>Server-side Error Reporting</h3>
+<p>Once a form is processed, and errors are found, the usual method is to present 
+  a summary of the faults at the top of the page and highlight those parts of 
+  the form in error visually. This seems OK, but if we take the idea of someone 
+  using a screen reader, that information may not be immediately obvious (&quot;Well, 
+  I've sent this form and I've got back to the same page ... what's going on?&quot;).</p>
+<p>A simple trick - alert the problem in the <code>&lt;title&gt;</code> field 
+  (normally the first part of the page that a screen reader will announce if left 
+  uninterrupted), and also in the main page heading.</p>
+<p><code>&lt;title&gt;There was some missing date in the form you submitted: Personal 
+  details&lt;/title&gt;</code></p>
+<p>In the summary note at the top of your page, provide a link to the offending 
+  form field that needs correcting. This will stop the person having to tab through 
+  the entire form to find the field at fault.</p>
+<p>&quot;Aha,&quot; I hear you cry, &quot;what if there are five errors? If they 
+  follow the first link to correct the first one at fault, what about all the 
+  others?&quot;</p>
+<p>The last thing you want is for people to be going backwards and forwards all 
+  over the place, and I don't want to suggest adding a 'back to top' link all 
+  the way through the form. However, a little to-ing and fro-ing may be necessary. 
+  You can make this a little less painless by informing the user how many errors 
+  need correcting:</p>
+<p><img src="images/five-errors.gif" alt="5 errors listed for the user" width="435" height="158" /></p>
+<p>But maybe there's something more radical that you could do? Instead of sending 
+  the same page back to the user with some completed fields, and some that are 
+  broken/empty, you could try:</p>
+<ul>
+  <li>capturing the good data and storing it safely</li>
+  <li>presenting <em>only</em> the incorrectly completed fields back to the user 
+    to be completed</li>
+</ul>
+<p>Instead of forcing the user to wade through the entire form and picking out 
+  the fields in error, you simply display a subset to them with no other distraction.</p>
+<h2>Summary</h2>
+<p>There are so many little - and not so little - tricks that one can employ using 
+  a mixture of CSS and JavaScript to improve form accessibility that this article 
+  could stretch for pages and pages. So, I'll just draw a line at this point and 
+  leave the rest of the innovation up to you, dear reader.</p>
+  </div>
+<!-- Credits: by Molly Holzschlag -->	
+	<div class="padder" id="footer">
+		<a href="../../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		<!-- contextual nav -->
+<!-- $Id: contextual.inc,v 1.1 2002/06/14 16:24:51 schampeo Exp $ -->
+
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/tutorials/accessible-forms/03-accessible-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:57 GMT -->
+</html>

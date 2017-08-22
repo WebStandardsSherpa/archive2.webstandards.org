@@ -1,0 +1,912 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+<!-- Mirrored from archive2.webstandards.org/act/acid2/guide.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:22 GMT -->
+<head>
+<title>WaSP : About : Acid2: The Guided Tour</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print">
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+
+<style type="text/css">
+
+#MainText {
+  width: auto;
+}
+
+table {
+  margin: 1px;
+  border-collapse: collapse;
+  border: thin solid gray;
+}
+
+td, th {
+  text-align: left;
+  border: thin solid black;
+  padding: 0.1em 0.4em;
+  white-space: normal;
+  vertical-align: top;
+}
+
+td.shade {
+  background: #eee;
+}
+
+table td:first-child, td[rowspan] + td {
+  font-family: monospace;
+  white-space: pre;
+  vertical-align: top;
+}
+
+pre {
+  margin: 1px;
+}
+
+pre, code {
+  font-family: "Lucida Console", monospace;
+}
+
+code.element {
+  background: #eee;
+}
+
+div#face-fragment {
+  font-size: 12px; 
+  height: 1em; 
+  width: 175px;
+  background-image: url(reference.png);
+  background-repeat: no-repeat;
+  border: thin solid black;
+  margin: 25px 10px 5px 0;
+}
+
+div.face-fragment {
+  float: left;
+  clear: both;
+  font-size: 12px; 
+  height: 11px; 
+  width: 168px; 
+  background-image: url(reference.png); 
+  background-repeat: no-repeat;
+  border: thin solid black;
+  margin: 5px 10px 5px -200px;
+}
+
+.reference { 
+  float: right;
+  margin: 0 1em;
+}
+
+div.sidebox {
+  clear: both;
+  margin: 0.2em 0.5em 0.5em -200px;
+  padding: 0.3em;
+  background: silver;
+  float: left;
+  width: 175px;
+}
+
+div.hello-world {
+  border: thin solid gray; 
+  padding: 1em 0;  
+  margin-left: -200px;
+  text-align: center; 
+  width: 175px; 
+  float: left; 
+  clear: both; 
+  font: 24px/24px sans-serif; 
+  color: navy;
+}
+
+div.first-figure {
+  float: left; 
+  width: 180px;
+}
+
+div.first-figure div {
+  font: 24px/24px sans-serif; 
+  color: navy;
+  padding: 1em 0;  
+}
+
+ol.history {
+}
+
+ol.history li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+ol.history ul li {
+	margin-left: 2.5em;
+	list-style-type: disc;
+}
+
+</style>
+</head>
+<body>
+
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo"></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li class="active"><a href="../index.html">act!</a>
+		<ul>
+		<li class="active"><a href="index.html">acid 2</a></li>
+		<li><a href="../bug/index.html">bug</a></li>
+		<li><a href="../campaign/index.html">campaign</a></li>
+		<!-- <li><a href="/act/lobby/">lobby</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../learn/index.html">learn</a></li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<div id="preferences"></div>
+<div id="linkPreferences"></div>
+
+</div>
+
+<div id="MainText">
+	<div class="padder"> 
+
+		<h1>Acid2: the guided tour</h1>
+		
+		<div class="first-figure">
+		<div>Hello&nbsp;World!</div>
+		<img src="reference.png" alt="Acidman smiley face"></div>
+
+		<p><a href="test.html">Acid2</a> is a test page for web browsers published by <a href="http://www.webstandards.org/">The Web Standards Project (WaSP)</a>. It has been written to help browser vendors make sure their products correctly support features that web designers would like to use. These features are part of existing standards but haven't been interoperably supported by major browsers. Acid2 tries to change this by challenging browsers to render Acid2 correctly before shipping.
+		
+		<p>Acid2 is a complex web page. It uses features that are not in common use yet, because of lack of support, and it crams many tests into one page. The aim has been to make it simple for developers and users to check if a browser passes the test. If it does, the smiley face on the left will appear. If something is wrong, the face will be distorted and/or shown partly in red.
+		
+		<p>The purpose of this document is to explain how Acid2 works. The markup behind Acid2 is peculiar in that it attempts, on one single page, to test many different features. We do not envision or recommend that normal Web pages should be written this way, but it is appropriate for a test page. At first sight, the source code is hard to understand, but the guided tour offered in this document will explain it in some detail. The guide assumes a technical understanding of HTML, CSS and PNG.
+		
+		  <p><em><strong>Note:</strong> <a href="test.html">Acid2</a> uses <a
+		  href="http://www.ietf.org/rfc/rfc2397">data URLs</a> extensively. To
+		  allow vendors that not yet support data URLs to test with Acid2, a <a
+		  href="http://hixie.ch/tests/evil/acid/002-no-data/">version without
+		  data URLs</a> has been published.</em></p>
+		
+		<h2>What are we testing?</h2>
+		
+		<p>Acid2 tests features that web designers have been requesting. Everything that Acid2 tests is specified in a Web standard, but not all Web standards are tested. Acid2 does not guarantee conformance with any specification. After careful consideration, we have selected and are testing the features we consider most important for the future of the web. Although Acid2 was inspired by Microsoft's announcement of IE7, it is not targeted at a specific browser. We believe Acid2 will highlight problems in all current browsers.
+		
+		<p>Acid2 assumes basic support for <a href="http://www.w3.org/TR/html4/">HTML4</a>, <a href="http://www.w3.org/TR/REC-CSS1">CSS1</a>, <a href="http://www.w3.org/TR/PNG/">PNG</a>, and <a href="http://www.ietf.org/rfc/rfc2397">Data URLs</a>. The first three items on the list are included for obvious reasons: they form the backbone of web content standards. Data URLs are <a href="http://www.w3.org/TR/html4/struct/objects.html#h-13.3.1">described in</a> HTML4 but is less used due to lack of support. We believe data URLs are convenient and useful for web designers, and easy to add in browsers. Further, Acid2 assumes that the browser uses a default style sheet with common values. For example, it is assumed that all 'div' elements have 'display: block'. Finally, the test assumes a pixel density of 96 ppi, as per the CSS 2.1 Last Call Working Draft. For user agents that support font zooming, it also assumes a zoom factor of 100%. The list below gives an overview of the most important additional features that are tested:
+		
+		<ul>
+		
+		<li>Transparent PNGs &mdash; The eyes are encoded as transparent PNGs. 
+		
+		<li>The <a href="http://www.w3.org/TR/html4/struct/objects.html#edef-OBJECT"><code>object</code></a> element  &mdash; The eyes of the face are attached to an <code>object</code> element. Being able to use <code>object</code> (which can have alternative content) is one of the oldest requests from web designers. 
+		
+		<li>Absolute, relative and fixed positioning  &mdash; Being able to position elements accurately is important for advanced page layouts. 
+		
+		<li>Box model &mdash; The <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/sec5526c.htm">original Acid test</a> focused on the CSS box model. Acid2 continues in this fine tradition by testing 'height', 'width', 'max-width', 'min-width', 'max-height' and 'min-height'.
+		
+		<li>CSS tables &mdash; There is nothing wrong with table layouts. It is a
+		powerful layout model which makes sense on bigger screens. However,
+		the table <em>markup</em> is troublesome as it ties the content to these
+		screens. Therefore, being able to specify table layouts in CSS is
+		important. 
+		
+		<li>Margins &mdash; CSS defines accurate algorithms for how margins around elements should be calculated. 
+		
+		<li>Generated content &mdash; The ability to add decorations and annotations to Web pages without modifying the markup has long been requested by authors.
+		
+		<li>CSS parsing &mdash; Acid2 includes a number of illegal CSS statements that should be ignored by a compliant browser.
+		
+		<li>Paint order &mdash; We test that overlapping content is painted in the right order. This is not a feature in itself, but a requirement for other features to work correctly. 
+		
+		<li>Line heights &mdash; The Acid2 test checks a few key parts of the CSS inline box model, upon which any standards-compliant Web page depends.
+
+		<li>Hovering effects &mdash; One of the elements in the face changes color when you <q>hover</q> over it. Which one?
+
+		</ul>
+		
+		<p>It should be noted that Acid2 is rendered in <em>standards mode</em>. That is, the test page includes a <em>DOCTYPE</em> which signals that the browser should treat the page according to standards. Vendors that are reluctant to make changes in how they render legacy documents can continue their current behavior in what is known as <em>quirks mode</em>.
+		
+		
+		<h2>What should appear</h2>
+		
+		<P>Acid2, when rendered correctly, consists of one line of text
+		(<q>Hello World</q>) and a 14x14 grid of squares inside a containing
+		block where a smiley face can be seen. Each square is 12px high and
+		12px wide. The face has a yellow background with a black facial
+		outline around it. In this section, we will explain how all of this is
+		created.
+		
+		<h3>The text</h3>
+		
+		<div class="hello-world">Hello&nbsp;World!</div>
+		
+		<p>The string "Hello World!" marks the start of Acid2. It tests basic CSS1 properties. In the source code, it is marked up as an <code>h2</code> element:</p>
+		
+		<pre>
+  &lt;h2 id="top">Hello World!&lt;/h2>
+		</pre>
+		
+		<p>These CSS declarations apply to the <code class="element">top</code> element:</p>
+		
+		<div class=sidebox>In this guide, elements are referred to by their type (e.g., <code class="element">h2</code>), their class (e.g., <code class="element">nose</code>), or their id (e.g., <code class="element">top</code>). To simplify the language, it isn't always clear from the prose whether a name is a type, class or id. However, we have chosen class names and id values to avoid ambiguities, and all references to a specific element is given a background color.</div>
+		
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=6>&lt;h2 id="top"><td>margin: 100em 3em 0<td>Sets the margins around the string. The large top margin separates the test itself from the introductory text on the top of the page. (The sample rendering of the string on the left side does not show the right spacing around the string.)
+		
+		
+		<tr><td>padding: 2em 0 0 .5em<td>Sets some vertical padding around the
+		element so that there is some white space above and below the string.
+		The padding above the element has to be accurately set in order for
+		the scalp of the face to appear in the right position. 
+		
+		<tr><td>text-align: left<td>Overrides any default style sheet.
+		
+		<tr><td>font: 2em/24px sans-serif<td>Sets the font to be double the
+		size of its parent element. The parent element has a font size of
+		12px, so the font height of the string is 24px. The line height of the
+		string is also set to '24px'. This will ensure that the
+		distance from the string to the face is the same in all browsers and 
+		is required for the scalp to appear in the correct position. Also, a
+		'sans-serif' font is set in this declaration.
+		
+		<tr><td>color: navy<td>Selects a 'navy' color for the string.
+		
+		<tr><td>white-space: pre<td>Indicates that the string should not be split over several lines, even if the window is very narrow.
+		
+		</table>
+		
+		<P>These declarations are written in CSS1 and most browsers will have
+		no problems rendering this code. 
+		
+		<h3>The containing block</h3>
+		
+		<p>The picture of a face appears inside a containing block. It tests a basic part of <a href="http://www.w3.org/TR/CSS21/visuren.html#absolute-positioning">absolute positioning</a>. In the markup, the containing block is started by this tag:
+		
+		<pre>
+  &lt;div class="picture">
+		</pre>
+		
+		<p>And these declarations apply:</p>
+
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=3>&lt;div class="picture"><td>position: relative<td>Turns the element into a containing block.
+		<tr><td>border: 1em solid transparent<td>Adds a border around the containing block. However, the border is transparent and therefore not visible, except for the space it takes up.
+		<tr><td>margin: 0 0 100em 3em<td>Sets the margins around the containing block. The large bottom margin should leave enough room at the bottom of the page for the test to appear at the top of the window.
+		
+		</table>
+		
+		<h3 id="row-1">Row 1</h3>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 0em"></div>
+		
+		<p>This row is the scalp of the face and it tests <a href="http://www.w3.org/TR/CSS21/visuren.html#fixed-positioning">fixed positioning</a>, <a href="http://www.w3.org/TR/CSS21/visudet.html#min-max-heights">minimum and maximum heights</a>, and <a href="http://www.w3.org/TR/CSS21/visudet.html#min-max-widths">minimum and maximum widths</a>. In the markup, the row is represented by a <code class="element">p</code> element which is fixed to the window rather than the scrollable canvas. If the Acid2 page is scrolled, the scalp will stay fixed in place, becoming unstuck from the rest of the face, which will scroll.</p>
+
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		
+		<tr><td rowspan=12>&lt;p><td>position: fixed<td>Positions the element relative to the viewport.
+		
+		<tr><td>margin: 0<td rowspan=3>Overrides any default style sheet.
+		
+		<tr><td>padding: 0</td>
+		
+		<tr><td>border: 0</td>
+		
+		<tr><td>top: 9em<td>Sets the vertical position of the element relative to the window.
+		
+		<tr><td>left: 11em<td>Sets the horizontal position of the element relative to the window.
+		
+		
+		<tr><td>width: 140%<td rowspan=2>Percentage values on width refer to the width of the containing block, which is big. The width would therefore be large, but max-width limits it to 4em.
+		
+		<tr><td>max-width: 4em</td>
+		
+		<tr><td>height: 8px<td>Sets the height of the element. This is later overridden by settings on max-height and, finally, min-height.
+		
+		<tr><td>min-height: 1em<td rowspan=2>When min-height is larger than max-height, min-height will win (CSS 2.1, section 10.7). For most devices, 12px (1em) will be bigger than 2mm, and the height of the element is therefore 1em.
+		
+		
+		<tr><td>max-height: 2mm</td>
+		
+		<tr><td>background: black<td>The element has no content and the box will therefore appear black.
+		
+		</table>
+
+		<p>In order for row 1 to be positioned correctly, we assume that
+		fragment identifiers cause scrolling to occur up to the top padding
+		edge (or maybe top border edge, that isn't tested) of the element, and
+		not its top margin edge or top content edge. This is a common
+		convention, but is not described in a specification.
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 0em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		
+		
+		
+		
+		<h3 id="row-2">Row 2</h3>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -1em"></div>
+		
+		<P>This row tests <a href="http://www.w3.org/TR/CSS21/selector.html#attribute-selectors">attribute selectors</a>, <a href="http://www.w3.org/TR/CSS21/selector.html#class-html">class selectors</a>, <a href="http://www.w3.org/TR/CSS21/visuren.html#absolute-positioning">absolute positioning</a>, and <a href="http://www.w3.org/TR/CSS21/visuren.html#floats">floating elements</a>.  The second row of the face has two black boxes with a yellow box in
+		between.  The effect is created by a <code class="element">blockquote</code> element that has an
+		<code class="element">address</code> element inside it:
+		
+		<pre>
+  &lt;blockquote class="first one">
+    &lt;address class="second two">&lt;/address>
+  &lt;/blockquote>
+		</pre>
+		
+		<p>Each of the two elements have class attributes with two values in them. The first element (<code class="element">blockquote</code>) is matched by this selector:
+		
+		<pre>
+  [class~=one].first.one 
+		</pre>
+		
+		<p>The selector has three parts: one attribute selector (<code>[class~=one]</code>) and two class selectors (<code>.first</code> and <code>.one</code>). All parts of the selector match and the following declarations therefore apply:</p>
+
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=6>&lt;blockquote&nbsp;...<td>position: absolute<td>Makes the element an absolutely positioned element.
+		<tr><td>top: 0<td>Aligns the margin edge of the box to the top edge of the box's containing block.
+		<tr><td>margin: 36px 0 0 60px<td>Sets the top margin to 36px, which moves the squares down into the second row. Also, it sets the left margin to be 60px which pushes the leftmost black squares into their correct position.
+		<tr><td>padding: 0<td>Overrides any default style sheet.
+		<tr><td>border: black 2em<td>The border makes up the black squares in this row. This declaration sets the color and width of the border.
+		<tr><td>border-style: none solid<td>Turns off top and bottom borders, and sets the left and right borders to be solid.
+		</table>
+
+<P>The width of the blockquote element is not set explicitly and is
+therefore 'auto'. CSS 2.1 section <a href="http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width">10.3.7</a> (rule 3) specifies that the width of the element should be determined by the <a
+href="http://www.w3.org/TR/CSS21/visudet.html#q8">shrink-to-fit</a> algorithm. As a result, the width of the element is determined by its content: the
+<code class="element">address</code> element. 
+		
+		
+		<p>The innermost element (<code class="element">address</code>) is matched by this selector:
+		
+		<pre>
+  [class~=one][class~=first] [class=second\ two][class="second two"] 
+		</pre>
+		
+		<P>This selectors has two main part with several sub-parts. The first
+		main part (<code>[class~=one][class~=first]</code> matches the
+		<code class="element">blockquote</code> element, and the second main part
+		(<code>class=second\ two][class="second two"]</code>) matches the
+		<code class="element">address</code> element. Therefore, these properties apply to the
+		<code class="element">address</code> element:</p>
+		
+		<div class=sidebox>The <q>square</q> is not an official length unit, but is convenient to use in this document as the face is laid out as squares in a 14x14 grid. One <q>square</q> is therefore equal to 12px. On most elements in Acid2, the font size is 12px, so that 1em is equal to one square.</div>
+		
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		
+		<tr><td rowspan=6>&lt;address ...<td>float: right<td>Makes the element floating. However, this has no visible effect as the position of the element is determined by the <a
+		href="http://www.w3.org/TR/CSS21/visudet.html#q8">shrink-to-fit</a> algorithm.
+		
+		<tr><td>width: 48px<td>Sets the width of the element to 4 squares.
+		<tr><td>height: 12px<td>Sets the height of the element to 1 square.
+		<tr><td>background: yellow<td>Sets the yellow color of the face.
+		<tr><td>margin: 0<td>Overrides any default style sheet.
+		<tr><td>padding: 0<td>Overrides any default style sheet.
+		</table>
+
+		<div class=face-fragment style="height: 1em; background-position: 0 -1em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		
+		
+		<h3 id="row-3">Row 3</h3>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -2em"></div>
+		
+		<p>This row tests <a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-width">width</a>, <a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a>, the <a href="http://www.w3.org/TR/CSS21/selector.html#universal-selector">universal selector</a>, and <a href="http://www.ietf.org/rfc/rfc2397">data URLs</a>. The row consists of two nested elements. The outer element generates the two black squares of the third line, and the inner element generates the yellow box between the two black squares. The elements are represented by this markup:
+		
+		<pre>
+  &lt;div class="forehead">
+    &lt;div>&amp;nbsp;&amp;nbsp;....&lt;/div>
+  &lt;/div>
+		</pre>
+		
+		<P>Note that the only content in the inner element is
+		<code>&amp;nbsp;</code> entities (not all are reproduced above) and
+		the content will therefore be displayed on a single line.
+		
+		<P>The outer <code class="element">div</code> element has these declarations attached to it:</p>
+
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		
+		<tr><td rowspan=5>&lt;div class="forehead"><td>margin: 4em<td>Sets the horizontal and vertical position of the left black square. The dimension is relative to the containing block since this is the first row that has elements in the normal flow.
+		
+		<tr><td>width: 8em<td>Sets the width of the outer element. The inner element is constrained by this width.
+		
+		<tr><td>border-left: solid black 1em<td>Generates the left black square.
+		
+		<tr><td>border-right: solid black 1em<td>Generates the right black square.
+		<tr><td>background: red <br>url(data:image/png;base64,...)<td>The background is set to a color name ('red') and a data url. The data url (not reprinted in full) represents a single-pixel yellow PNG image. The PNG image will always be available, and the red background should therefore not be seen.
+		</table>
+
+		<p>The inner <code class="element">div</code> element is matched by this selector:
+		
+		<pre>
+  .forehead *
+		</pre>
+		
+		<P>The above selector would match any element within the outer <code class="element">div</code>, but on this page there is only one element; namely, the inner <code class="element">div</code> element which has these declarations attached to it:</p>
+
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=2>&lt;div><td>width: 12em<td>The width of the element is set to be wider that the parent. However, this should not influence the size of the parent in any way. 
+		
+		<tr><td>line-height: 1em<td>Sets the height of the row to 12px.
+		
+		</table>
+
+		<div class=face-fragment style="height: 1em; background-position: 0 -2em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		
+		<h3 id="row-4-5">Row 4-5</h3>
+		
+		<div class=face-fragment style="height: 2em; background-position: 0 -3em"></div>
+		
+		<p>These rows constitute one unit. They test paint order and fixed backgrounds. The rows depict a pair of eyes along with the familiar black outline of the yellow face. 
+		<P>In the markup, these rows are represented by a set of nested <code class="element">div</code> and <code class="element">object</code> elements. Here is an outline of the element structure:
+
+		<pre>
+  &lt;div class="eyes">
+    &lt;div id="eyes-a">
+      &lt;object data="data:application/x-unknown,ERROR">
+        &lt;object data="http://www.webstandards.org/404/" type="text/html">
+          &lt;object type="image/png" data="data:image/png;...">ERROR&lt;/object>
+        &lt;/object>
+      &lt;/object>
+    &lt;/div>
+    &lt;div id="eyes-b">&lt;/div>
+    &lt;div id="eyes-c">&lt;/div>
+  &lt;/div>
+		</pre>
+
+		<P>The eyes appear in the inner <code class="element">object</code> element. The two ancestor <code class="element">object</code> elements should both display their fallback contents &mdash; which is the inner <code class="element">object</code> element. The fallback content of the inner <code class="element">object</code> element should not be displayed as the <code>data</code> attribute returns a valid PNG image (depicting the eyes).
+		
+		
+		<P>The table below shows which declarations apply the elements in the structure:</p>
+		
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=6>&lt;div class="eyes"><td>position: absolute<td rowspan=3>Positions the element absolutely on row 4.
+		<tr><td>top: 5em</td>
+		<tr><td>left: 3em</td>
+		<tr><td>margin: 0<td rowspan=2>Overrides any default style sheet.
+		<tr><td>padding: 0</td>
+		<tr><td>background: red<td>One purpose of the child elements is to hide this color.
+		
+		<tr><td rowspan=3>  &lt;div id="eyes-a"><td>height: 0<td>The height is zero so that the element will not take up any space. (Its content will still be visible due to the initial 'visible' value on the 'overflow' property.) As a result, the next sibling element (<code class="element">eyes-b</code>) will overlap with this element.
+		<tr><td>line-height: 2em<td>Ensures the right vertical size for inline content.
+		<tr><td>text-align: right<td>Causes the objects to be aligned to the right of the block, so that they 
+		overlap the right hand side of the float (which is red) and not the left 
+		hand side (which is the left black bit).
+		
+		<tr><td rowspan=2> &lt;object ...><td>display: inline<td>Inline
+		content should be <a href="http://www.w3.org/TR/CSS21/zindex.html">painted on top</a>.
+		<tr><td>vertical-align: bottom<td>Set to avoid baseline alignment issues.
+		
+		<tr><td rowspan=2>   &lt;object ...><td>width: 7.5em<td rowspan=2>Should have no effect since the object is inline ('height'/'width' don't apply to inlines).
+		<tr><td>height: 2.5em</td>
+		
+		
+		<tr><td rowspan=3>      &lt;object ...><td>border-right: solid 1em black<td>Sets the right facial outline for these rows. The border will be painted on top since they are set on inline content. 
+		<tr><td>padding: 0 12px 0 11px<td>Sets some space to the left and right of the eyes. 
+		<tr><td>background: <br>url(data:image/png;base64,...) <br>1px 0 fixed<td>Sets the background to a semi-transparent yellow checkerboard image. The background image is fixed and, and offset by one pixel to &mdash; along with the element below &mdash; form a solid yellow background.
+		
+		<tr><td rowspan=6>  &lt;div id="eyes-b"><td>float: left<td>Tests that floats are painted under inlines but over blocks. Also, makes it possible for the next block element (<code class="element">eyes-c</code>) to be overlapping this element.
+		<tr><td>width: 10em<td rowspan=2>Sets the height and width of the yellow area on these rows.
+		<tr><td>height: 2em</td>
+		<tr><td>background: fixed <br>url(data:image/png;base64,...)<td>This background image is identical to the one on the innermost <code>object</code> element. Also, it is fixed to the element. It is, however, not offset by one pixel so that the two background images together form a solid yellow background. 
+		
+		<tr><td>border-left: solid 1em black</td>
+		
+		<tr><td>border-right: solid 1em red</td>
+		
+		<tr><td rowspan=5>  &lt;div id="eyes-c"><td>display: block<td>Block elements are painted first when elements are overlapping. 
+		<tr><td>background: red<td>The red background should not be visible, as floating and inline elements are painted on top.
+		<tr><td>border-left: 2em solid yellow<td>Provide the familiar yellow for the left edge of the row.</td>
+		<tr><td>width: 10em<td rowspan=2>Sets the dimensions.
+		<tr><td>height: 2em</td>
+		
+		</table>
+
+		<div class=face-fragment style="height: 2em; background-position: 0 -3em"></div>
+		
+		<P>The resulting face fragment can be seen on the left.
+		
+		
+		<h3 id="row-6-9">Row 6-9</h3>
+		
+		<div class=face-fragment style="height: 4em; background-position: 0 -5em"></div>
+		
+		<P>These rows constitute the center part of the face, including the
+		nose. They test <a href="http://www.w3.org/TR/CSS21/generate.html">generated content</a> and <a href="http://www.w3.org/TR/CSS21/selector.html#child-selectors">child selectors</a>.
+		
+		<P>The element structure is quite simple with three <code class="element">div</code> elements inside each other:
+
+		<pre>
+  &lt;div class="nose">&lt;div>&lt;div>&lt;/div>&lt;/div>&lt;/div>
+		</pre>
+
+		<P>These properties apply to the <code class="element">nose</code> element:</p>
+		
+		<table>
+		<tr>
+		<th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=9>&lt;div class="nose"><td>float: left<td>Floats the element to the left. This does not change the position of the element itself, but it has effects on subsequent elements. 
+		<tr><td>margin: -2em 2em -1em<td>The top margin is set to '-2em', the left and right margin to 2em, and the bottom margin to -1em. The left margin makes sure this element is in its right horizontal position.
+		<tr><td>border: solid 1em black<td>Sets a solid 1em border on all four sides of the element. The width of the top border is reset in the next declaration, though.
+		<tr><td>border-top: 0<td>Resets the width of the top border to zero.
+		<tr><td>min-height: 80%<td rowspan="3">Percentage values on these properties become 'auto' (as per CSS 2.1 <a href="http://www.w3.org/TR/CSS21/visudet.html#the-height-property">section 10.5</a> and <a href="http://www.w3.org/TR/CSS21/visudet.html#min-max-heights">section 10.7</a>). The intrinsic height is more than 3em, so the height of the element is 3em (a.k.a. 3 squares).
+		
+		<tr><td>height: 60%<tr><td>max-height: 3em<tr><td>padding: 0<td>Overrides any default style sheet.
+		<tr><td>width: 12em<td>Sets the width to 12 squares. It is inside this area the descendants will roam.
+		
+		
+		
+		<tr><td rowspan=3>div<td>padding: 1em 1em 3em<td rowspan=2>The 3em bottom padding alone ensures that the intrinsic size of the parent element is at least 3em. With the 1em top padding and zero height, the height of the yellow area is 4 squares.
+		<tr><td>height: 0<tr><td>background: yellow<td>A familiar color.
+		
+		<tr><td rowspan=4>div<td>width: 2em<td rowspan=2>The red background color of this element will not be visible even if the height and width has been set explicitly. This is due to the generated content using up all the available space. 
+		<tr><td>height: 2em<tr><td>background: red<td>Should not be visible.
+		<tr><td>margin: auto<td>This declaration ensures that the nose is centered within the <code class="element">nose</code> element. 
+		</table>
+
+		<P>The inner <code class="element">div</code> element has generated content before and after it. The generated content constitutes the diamond-shaped nose of the face. 
+		
+		<P>The generated content before the element constitutes the upper half of the nose. These declarations apply:</p>
+		
+		<table>
+		<tr>
+		<th>Declaration<th>Effect
+		<tr><td>display: block<td>This declaration has two important effects: it makes the 'height' apply to the generated content, and the two pseudo-elements are stacked vertically.</tr>
+		<tr><td>border-style: none solid solid<td rowspan=3>The 1em border is solid on the  right, bottom and left sides. However, the border color is identical to the surroundings (i.e., it's yellow) on the left and right side, so only a black triangle (the bottom border) can be discerned. The top border is set to 'none' and should therefore not be visible at all.
+		<tr><td>border-color: red yellow black yellow<tr><td>border-width: 1em<tr><td>content: ''<td>Ensures that the pseudo-element is generated, but that no content is shown.
+		<tr><td>height: 0<td>Prevents the line box generated by the 'content' property from having any effect.
+		</table>
+
+		<P>The declarations set on the <code>:after</code> pseudo-element are identical, except that the bottom border has been swapped with the top border. 
+		
+		<div class=face-fragment style="height: 4em; background-position: 0 -5em"></div>
+		
+		<P>The result of stacking two black triangles, one over the other, is that a diamond-shaped nose occurs in the face.
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		<h3 id="between-row-9-10">Between row 9 and 10</h3>
+		
+		<P>Between row 9 and 10 are several elements with different vertical
+		margins. When positioning the <code class="element">smile</code>
+		element of row 10, it is necessary to calculate how the margins collapse. 
+		
+		<P>Vertical margin collapsing takes place between block-level elements
+		in the normal flow. The table below lists the relevant elements along with their vertical margins. 
+
+		<table>
+		<tr><td>element<td>forehead</td></tr>
+		<tr><td>margin-bottom<td class=shade>4em</td></tr>
+		
+		<tr><td>margin-top<td class=shade>6.25em<td class=shade>0</td></tr>
+		<tr><td>element<td>empty<td>div</td></tr>
+		<tr><td>margin-bottom<td class=shade>6.25em<td class=shade>-6em</td></tr>
+		<tr><td>margin-top<td class=shade>5em</td></tr>
+		<tr><td>element<td>smile</td></tr>
+		</table>
+
+		<P>The height of the <code class="element">empty</code> element and it child is zero. Therefore, all values with a shaded background in the above table will collapse. The resulting margin between <code class="element">forehead</code> to the top of the <code class="element">smile</code> is 0.25em. 
+		
+		<P>However, there is also a floating element between <code
+		class="element">forehead</code> to the top of the <code
+		class="element">smile</code>. Floats do not enter the collapsing
+		margin calculations, but in this case it will effectively override the
+		margins; The top border edge of the <code class="element">smile</code>
+		element is placed flush with the bottom margin edge of the floating
+		<code class="element">nose</code> element.
+		
+		<h3 id="row-10-11">Row 10-11</h3>
+		
+		<div class=face-fragment style="height: 2em; background-position: 0 -9em"></div>
+		
+		<P>These rows constitute the smile in the face and test <a
+		href="http://www.w3.org/TR/CSS21/box.html#collapsing-margins">collapsing
+		margins</a>. Also, the 'inherit' keyword and nested
+		floating elements are tested. These rows are represented by this
+		structure, along with a short textual description of each element:
+
+		<pre>
+  &lt;div class="smile">    absolutely positions the two rows
+    &lt;div>                paints the black facial outline
+      &lt;div>              paints the yellow background
+        &lt;span>           paints, in part, the upper half of the smile itself
+          &lt;em>           paints, in part, the lower and upper half of the smile
+            &lt;strong>     gives the smile its width
+            &lt;/strong>
+          &lt;/em>
+        &lt;/span>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+		</pre>
+
+		<P>The table below details which CSS declarations apply to which elements:</p>
+
+		<table>
+		<tr><th>Element<th>Declaration<th>Effect
+		
+		<tr><td rowspan=2>&lt;div class="smile"><td>margin: 5em 3em<td>The vertical margin ('5em') collapses with the earlier margins of the <code class="element">forehead</code> and empty elements. The horizontal margin (<code>3em</code>) positions the row in the right place.
+		<tr><td>clear: both<td>Ensures that the element is moved down from any floating elements (i.e., the <code class=element>nose</code> element).
+		
+		<tr><td rowspan=5>  &lt;div><td>margin-top: 1em<td>This has no effect as it collapses with the top margin of the <code class="element">smile</code> element.
+		<tr><td>background: black<td>The back background of this element makes up the facial outline of the face.
+		<tr><td>width: 12em<td>The smile is 12 squares wide, including the facial outline.
+		<tr><td>height: 2em<td>The smile covers 2 rows.
+		<tr><td>position: relative<td>Makes this element a containing block.
+		
+		
+		<tr><td rowspan=7>    &lt;div><td>position: absolute<td>
+		<tr><td>top: 0<td>Aligns the top of this element with the top of the containing block.
+		<tr><td>right: 1em<td>Positions the element one square from the right edge of the containing block.
+		<tr><td>width: auto<td>The width of the element is determined by its descendants.
+		<tr><td>height: 0<td>Sets the height to zero. The borders of the element will still be visible, though.
+		<tr><td>margin: 0<td>Overrides any default style sheet.
+		<tr><td>border: yellow solid 1em<td>This border constitutes the yellow area of these two rows.
+		
+		<tr><td rowspan=7>      &lt;span><td>display: inline<td>
+		
+		<tr><td>border: solid 1em transparent<td rowspan=2>There is a 1em transparent left and right border on this element. There is no top or bottom border.
+		<tr><td>border-style: none solid</td>
+		<tr><td>float: right<td rowspan=2>The element floats to the right, and is pulled 1 square up by a negative margin. 
+		<tr><td>margin: -1em 0 0 0</td>
+		<tr><td>background: black<td rowspan=2>The element has a black background and is 1 square high. It forms a black bar of 8 squares, of which the 6 middle squares are overpainted by the top border of the child element.
+		<tr><td>height: 1em</td>
+		
+		<tr><td rowspan=3>        &lt;em><td>float: inherit<td>
+		<tr><td>border-top: solid yellow 1em<td>
+		<tr><td>border-bottom: solid black 1em<td>This border forms the base of the smile. 
+		The width comes from the child element.
+		
+		<tr><td rowspan=3>          &lt;strong><td>width: 6em<td>Sets the width of the smile in row 11.
+		<tr><td>display: block<td>So that 'margin-bottom' will apply.
+		<tr><td>margin-bottom: -1em<td>This declaration has no effect. The parent element has top and bottom borders so the negative margin set here will not collapse with other margins. 
+		
+		</table>
+
+		<div class=face-fragment style="height: 2em; background-position: 0 -9em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		
+		<h3 id="row-12">Row 12</h3>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -11em"></div>
+		
+		<P>This row tests the <a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-line-height">line-height</a> property. In the markup, the row is represented by two nested <code class="element">div</code> elements:
+		
+		<pre>
+  &lt;div class="chin">
+    &lt;div>&amp;nbsp;&lt;/div>
+  &lt;/div>
+		</pre>
+		
+		<P>These declarations apply to the outer <code class="element">div</code> element:</p>
+		
+		<table>
+		<tr>
+		<th>Declaration<th>Effect
+		<tr><td>margin: -5em 4em 0<td>Sets the vertical and horizontal position. The top -5em margin collapses with the bottom 5em margin of the <code class="element">smile</code> element, leaving zero gap between this element and the previous one.
+		
+		<tr><td>width: 8em<td>Sets the width of the chin, not including the borders, to 8 squares.
+		
+		<tr><td>line-height: 1em<td>Makes the inline box of the element 12px high. This also becomes the height of the row as the only other inline box on the line is fully enclosed by this inline box. Section <a href="http://www.w3.org/TR/CSS21/visudet.html#line-height">10.8</a> of CSS 2.1 describes this in detail. 
+		
+		<tr><td>border-left: solid 1em black<td>Makes the left border a square black box.
+		<tr><td>border-right: solid 1em black<td>Makes the right border a square black box.
+		<tr><td>background: yellow<br>url(data:image/png;base64,...)<br>no-repeat fixed<td>The background of the element is set to 'yellow'. Also, there is a 64px by 64px red box in the background (represented by the PNG image in the data url, not reprinted in full). The red box is not visible as the background-attachment is set to 'fixed' which puts the red box outside of view.
+		
+		</table>
+
+		<P>These declarations apply to the inner <code class="element">div</code> element:</p>
+		
+		<table>
+		<tr>
+		<th>Declaration<th>Effect
+		<tr><td>display: inline<td>
+		<tr><td>font: 2px/4px serif<td>Makes the font-size and line-height small to ensure that the inline box is fully enclosed by the inline box of the parent element. 
+		</table>
+
+		<div class=face-fragment style="height: 1em; background-position: 0 -11em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		
+		<h3 id="row-13">Row 13</h3>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -12em"></div>
+		
+		<P>This row tests the parser, cascading mechanism and selectors. After removing some dubious comments, the remaining markup should be like:
+		
+		<pre>
+  &lt;div class="parser-container">
+    &lt;div class="parser">&lt;/div>
+  &lt;/div> 
+		</pre>
+		
+		<p>The challenge for browsers is figuring out which declarations applies to the <code class="element">parser</code> element. These declarations do:</p>
+		
+		<table>
+		<tr>
+		<th>Declaration<th>Effect
+		<tr><td>color: maroon<td>Sets the color and implies a border-color, which is later overridden.
+		<tr><td>border: solid<td>Sets a solid border of 'medium' width. The border color is set later.
+		<tr><td>color: orange<td>Sets the color and implies a border-color, which is later overridden. Note that 'orange' is a valid <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">color name</a> in CSS 2.1.
+		<tr><td>border-color: black<td>Overrides (implied) border-color on previous line.
+		<tr><td>border-width: 0 2em<td>Overrides (implied) declaration on earlier line.
+		<tr><td>margin: 0 5em 1em<td>Positions the element. 
+		<tr><td>padding: 0 1em<td rowspan=2>These two declarations make the yellow area 4 squares wide.
+		<tr><td>width: 2em</td>
+		<tr><td>height: 1em<td>Sets the height to 1 square.
+		<tr><td>background: yellow<td>Sets the background.
+		</table>
+
+		<P>This row also tests that the parser correctly ignores parts of the style sheet according to the <a href="http://www.w3.org/TR/CSS21/syndata.html">specification</a>. The table below describes what should be ignored and why:</p>
+		
+		<table>
+		<tr><th>CSS code<th>What should be ignored and why
+		<tr><td>.parser { /* ... \*/ }<td>The backslash should have no effect.
+		<tr><td>.parser { error: \}; background: yellow }<td><q>error</q> is not a valid property in CSS. It's important that the parser picks up again after the semicolon, though; the background should be yellow.
+		<tr><td>* html .parser {  background: gray; }<td><code class="element">html</code> is the root element, so the selector will not match anything.
+		<tr><td>\.parser { padding: 2m; }<td>Testing that there is no element of type <q>.parser</q> (as opposed to one with the class <q>parser</q>).
+		<tr><td>.parser { m\argin: 2em; }<td>Testing that there is no property called <q>m(U+000A)rgin</q> (as opposed to one called <q>margin</q>).
+		<tr><td>;<br>.parser { height: 3em; }<td>The selector includes the semicolon from the previous line and therefore does not match anything.
+		<tr><td>.parser { width: 200; }<td>Unit is lacking.
+		<tr><td>.parser { border: 5em solid red ! error; }<td><q>error</q> is not allowed after the exclamation mark.
+		<tr><td>.parser { background: red pink; }<td>Only one color name is allowed.
+		</table>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -12em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		
+		<h3 id="row-14">Row 14</h3>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -13em"></div>
+		
+		<P>This row tests <a href="http://www.w3.org/TR/CSS21/tables.html">CSS tables</a>. The structure is a simple list:
+
+		<pre>
+  &lt;ul>
+    &lt;li class="first-part">&lt;/li>
+    &lt;li class="second-part">&lt;/li>
+    &lt;li class="third-part">&lt;/li>
+    &lt;li class="fourth-part">&lt;/li>
+  &lt;/ul>
+		</pre>
+
+		<P>The style sheet associated with these elements turns it into a table with one row and four cells. Each cell is equal to one square. Here are the elements shown alongside their respective declarations:</p>
+		
+		<table>
+		<tr><th>Element<th>Declaration<th>Effect
+		<tr><td rowspan=4>&lt;ul><td>display: table<td>Presents the list using table formatting.<tr><td>padding: 0<td>Overrides any default style sheet.<tr><td>margin: -1em 7em 0<td>Positions the element horizontally and vertically.<tr><td>background: red<td>The background of this element should be fully covered by its children.
+		
+		<tr><td rowspan=6>  &lt;li class="first-part"><td>padding: 0<td rowspan=2>Overrides any default style sheet.<tr><td>margin: 0<tr><td>display: table-cell<td>Turns the element explicitly into a table cell.<tr><td>height: 1em<td rowspan=2>1 square.<tr><td>width: 1em<tr><td>background: black<td>The color we want to see.
+		<tr><td rowspan=6>  &lt;li class="second-part"><td>padding: 0<td rowspan=2>Overrides any default style sheet.<tr><td>margin: 0<tr><td>display: table<td>This element is turned into a table of its own. An <a href="http://www.w3.org/TR/CSS21/tables.html#anonymous-boxes">anonymous</a> table cell will be created around it. The anonymous table cell should not take up any space, and the width and height of the element should therefore be honored.<tr><td>height: 1em<td rowspan=2>1 square.<tr><td>width: 1em<tr><td>background: black<td>Indeed.
+		<tr><td rowspan=6>  &lt;li class="third-part"><td>padding: 0<td rowspan=2>Overrides any default style sheet.<tr><td>margin: 0<tr><td>display: table-cell<td>Makes the element a separate table cell.<tr><td>height: 0.5em<td rowspan=2>All cells in this row have the same height, so this cell will also be 1 square.<tr><td>width: 1em<tr><td>background: black<td>Black.
+		<tr><td rowspan=6>  &lt;li class="fourth-part"><td>padding: 0<td rowspan=2>Overrides any default style sheet.<tr><td>margin: 0<tr><td>list-style: none<td>removes the list-style marker<tr><td>height: 1em<td rowspan=2>1 square.<tr><td>width: 1em<tr><td>background: black<td>The last square of the face is black.</td>
+		
+		</table>
+		
+		<div class=face-fragment style="height: 1em; background-position: 0 -13em"></div>
+		
+		<P>The resulting face fragment can be seen on the left. 
+		
+		<h3 id="post-row-14">After row 14</h3>
+		
+		<P>After row 14 comes some elements that should not cause anything
+		visible to be generated. What is being tested here is that table cells honor the <a href="http://www.w3.org/TR/CSS21/visudet.html#line-height">line-height</a> property. Here are the elements:
+
+		<pre>
+  &lt;div class="image-height-test">
+    &lt;table>
+      &lt;tr>
+        &lt;td>
+          &lt;img src="data:image/png;base64,..." alt="">
+        &lt;/td>
+      &lt;/tr>
+    &lt;/table>
+  &lt;/div>
+		</pre>
+
+		<p>The image referenced from the <code class="element">img</code> element is a 64x64 red PNG image. It should never be visible due to these declarations:</p>
+
+		<table>
+		<tr><td rowspan=3>&lt;div class="image-height-test"><td>height: 10px<td>Sets the height of the element to a miniscule 10px.<tr><td>overflow: hidden<td>Hides overflow content, including the image.<tr><td>font: 20em serif<td>Sets a huge font size which results in an equally big line height. Even if there is no textual content in a cell, it must honor the <a href="http://www.w3.org/TR/CSS21/visudet.html#line-height">line height calculations</a>.
+		</table>
+
+		<P>As a result of honoring the big line-height value, the image is pushed far down. As only the top 10px of the element is visible, the image will be hidden.
+		
+		<h2>Revision history</h2>
+		
+		<ol class="history">
+			<li>
+				<h3><a href="test_1-1.html">Version 1.1</a></h3>
+				<ul>
+					<li>Changed top margin and added relative position value for <code class="element">bottom:</code> to .<code class="element">smile div</code> to compensate for margin collapsing</li>
+					<li>Changed top margin on <code class="element">.chin</code> to compensate for margin collapsing</li>
+				</ul>
+			</li>
+			<li>
+				<h3><a href="test_1-0.html">Version 1.0</a></h3>
+				<ul>
+					<li>Original test</li>
+				</ul>
+			</li>
+		</ol>
+
+		<h2>Contact</h2>
+		
+		<p>Every effort has been made to ensure that Acid2 is correct and that
+		it tests the features in greatest demand. If you find errors in it,
+		think it unfair for any reason, or have other comments, please <a href="mailto:acid2Feedback@webstandards.org">let us 
+		know</a>. 
+	</div>
+	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/act/acid2/guide.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:25 GMT -->
+</html>

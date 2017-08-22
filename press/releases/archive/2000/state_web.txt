@@ -1,0 +1,181 @@
+FOR IMMEDIATE RELEASE:
+
+Contact:
+Chris Carrico                                     George Olsen
+Urge Public Relations                             2-Lane Media
+chris@urgepr.com                                  golsen@2lm.com 
+213-848-8743                                      310-473-3706 x2225
+
+THE STATE OF THE WEB: BROWSER INCOMPABILITIES UNDERMINE WEB'S
+FOUNDATIONS
+
+As the Web grows far beyond the dreams of the people who created
+it 10 years ago, its foundations are becoming increasingly shaky
+due to browser incompatibilities, The Web Standards Project
+announced in a "State of the Web" report today.
+
+"Imagine if every brand of TV set required a different kind of
+signal to receive your favorite show," said WSP Project Leader
+George Olsen. "It sounds ridiculous, but that's close to the
+situation on the Web because browser makers have failed to
+implement a common set of standards."
+
+Though the World Wide Web Consortium (W3C) has been a standards
+body since the Web's inception, key Web standards remain
+incompletely (or incompatibly) implemented. As a result, the
+people who build the web have to choose between excluding large
+portions of their potential audience, or engaging in costly
+workarounds. In fact, nearly two-thirds of top 100 consumer Web
+sites are now built in multiple versions, according to a recent
+report by Jupiter Communications. Working around browser
+incompatibilities adds at least 25 percent to the cost of Web
+sites.
+
+"The sad thing is that the browser makers who helped W3C develop
+the standards are the very ones who've repeatedly failed to
+implement these standards -- some of which are more than two
+years old now," Olsen said.
+
+"These standards are crucial to building a solid foundation for
+the future development of the Web," Olsen said. "Unfortunately,
+each new browser release without full support for these standards
+means the Web's foundation becomes increasingly jerry-rigged --
+and creates needless expenses for anyone doing business on the
+Web."
+
+"Web-based content is creeping into every aspect of our lives. If
+this lack of support for the Web's foundations continues, the
+effect will not be felt only by Web developers, but by anyone
+vested in the new, networked economy of the next century," Olsen
+said. "The impact on e-commerce alone will be staggering, and it
+will delay our being able to do truly wonderful things that will
+carry the Web forward, and make it accessible to all."
+
+The Jupiter study found that 85 percent of the top 100 commercial
+sites have "no immediate plans" this year to support new browser
+technologies - a decision which WSP believes is based on these
+developers' difficulties in working around browser
+incompatibilities.
+
+While both Microsoft's Internet Explorer and Netscape's Navigator
+browsers have been making improvements, it's been at a pace that
+fails to meet the needs of the Web.
+
+Internet Explorer 5.0 did make marked improvements in its support
+for core Web standards over version 4.0, but unfortunately it
+still falls short of fully supporting them.
+
+It comes close to supporting HTML 4.0 and XML 1.0, although it
+has some remaining problems with each. But it has serious
+problems with Cascading Style Sheets 1.0 & 2.0 that make it
+difficult to use -- especially when trying to use CSS to display
+XML data. Most seriously, Internet Explorer's implementation of
+the Document Object Model (DOM) 1.0 is spotty at best, which
+means Web developers will continue to have to develop multiple
+versions of Web pages to work around it.
+
+Instead of putting all its efforts into attempting to fully
+support these standards, Microsoft  put considerable effort into
+partially supporting the still-experimental Extensible Stylesheet
+Language (XSL). Unfortunately, since XSL is still under
+development by W3C, Microsoft runs the risk of Internet Explorer
+5.0 being incompatible with the actual XSL standard when it is
+finished.
+
+Meanwhile, Netscape has focused its releases last year on its 4.x
+version of Netscape, which even the company itself admits falls 
+far short of support for key Web standards.
+
+Navigator 4.x offers limited support for CSS 1.0 and little
+support for these other key Web standards, although Navigator
+does offer good support for ECMAScript (ne JavaScript).
+
+Netscape has promised to fix these problems and achieve 100
+percent compliance with these standards in Netscape 5.0 by using
+its new Gecko (ne NGLayout) rendering engine - which converts
+HTML and other code into what users see on-screen.
+
+Although Gecko, currently in a "developer preview" release, shows
+potential, it's not expected to be released as a working browser
+until the end of the year -- though the delay is in part due to
+Netscape's decision to switch to its new rendering engine.
+
+While there are other browsers, some of which have focused on
+standards support, they are used by so few people that their
+impact is negligible. For example, two browsers that have some of
+the best support for CSS - Opera and the Macintosh version of
+Internet Explorer 4.5 - only accounted for 1.5 percent of HotBot
+traffic during March, 1999.
+
+"The reality is that Internet Explorer and Navigator dominate the
+market, therefore it's crucial for them to actually achieve
+support for Web standards -- and not just talk about doing so,"
+Olsen said.
+
+ABOUT WEB STANDARDS Cascading Style Sheet 1.0 & 2.0 - Provide
+precise control over the appearance of the typography and layout
+of a page.
+
+Document Object Model 1.0 -- Enables developers to use scripting
+languages such as ECMAScript (ne JavaScript) to manipulate text,
+images and other parts of Web pages.
+
+HTML 4.0 - Provides basic structure to a Web page.
+
+XML 1.0 -- A "super" markup language that helps share information
+about the data within a Web page.
+
+ABOUT THE WEB STANDARDS PROJECT WSP is an international coalition
+of Web developers and Web experts who are urging browser makers
+to fully support Cascading Style Sheet Level 1 (CSS-1), the
+Document Object Model (DOM) and XML in their browsers. Its effort
+to bring attention to the existing and potential problems
+involved with browser incompatibility does not mean that WSP is
+opposed to innovations  by browser manufacturers. The coalition
+merely urges browser manufacturers to use open standards for
+enhancements and support existing ones before adding new
+features.
+
+________________________________________________________________________________
+
+An Open Letter to Browser Makers
+
+
+Dear Microsoft, Netscape, Opera and other browser makers,
+
+As a Web developer who spends far too much time working around
+browser incompata bilities, I'm here to tell you that it's time
+for browsers to fully supporting the standards the Web depends
+on-standards that browsers makers and other vendors helped
+create.
+
+While the Web has become grown beyond anyone's imagining, it's
+foundations have grown increasingly jerry-rigged. As someone who
+actually is building the Web, I can tell you how difficult it is
+to develop sites that meet the needs of today's (and tomorrow's)
+Web when we're stuck with yesterday's antiquated standards.
+
+Now the thing is, more capable standards exist that should allow
+us to use your browsers to do truly wonderful and useful things.
+These include:
+
+Cascading Style Sheets 1.0 and 2.0 XML 1.0 HTML 4.0 Document
+Object Model (DOM) 1.0
+
+Browser makers helped the World Wide Web Consortium (W3C) develop
+these standards, some of which are more than two years old now.
+But so far, browsers have repeatedly failed to implement 100
+percent of these standards. And we're all suffering for it.
+
+So I need to know when you will be supporting these W3C standards
+completely so developers can begin to build pages that will work
+in any browser and are accessible to all. If you don't plan to
+ever support 100 percent of these standards, then I need to know
+that too. It's my future -- and the Web's future -- at stake.
+
+________________________________________________________________________________
+
+
+George Olsen mailto:golsen@2lm.com Design Director/Web Architect
+http://www.2lm.com 2-Lane Media tel: 310/473-3706 x2225
+

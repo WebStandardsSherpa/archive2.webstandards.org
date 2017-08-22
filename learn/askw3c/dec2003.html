@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/dec2003.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:30:59 GMT -->
+<head>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<title>WaSP : Learn : Ask the W3C : December 2003</title>
+<style type="text/css">
+	@import "../../inc/css/wsp.css";
+</style>
+<link rel="stylesheet" type="text/css" href="../../inc/css/print.css" media="print" />
+
+<script type="text/javascript" src="../../inc/js/wsp.js"></script>
+<!--
+<script type="text/javascript" src="/inc/js/textResizer.js"></script>
+<script type="text/javascript" src="/inc/js/linkChanger.js"></script>
+-->
+
+<style type="text/css">
+.code	{
+	color: #930;
+	background:#f0f0f0;
+	font-family: monospace;
+	font-size: 95%;
+	line-height: 120%;
+}
+
+.blockquote	{
+	font-style: italic;
+	padding: 15px;
+	
+}
+
+
+</style>
+</head>
+<body>
+<div id="Header">
+	<a href="../../index.html" class="imgLink"><img id="logo" src="../../img/logo.gif" height="100" width="103" alt="Web Standards Project logo" /></a>
+<div id="headerText">
+	<div id="intro"><a href="../../index.html" id="logoLink">The Web Standards Project</a> is
+	a grassroots coalition fighting for <a href="../../about/index.html">standards</a>
+	that ensure simple, affordable access to web technologies
+	for all.</div>
+</div>
+
+</div>
+
+<div id="SiteNav">
+	<ul>
+	<li><a href="../../index.html">home</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+	<li><a href="../../act/index.html">act!</a></li>
+	<li class="active"><a href="../index.html">learn</a>
+		<ul>
+		<li><a href="../faq/index.html">faq</a></li>
+		<li><a href="../glossary/index.html">glossary</a></li>
+		<li><a href="../orgs/index.html">orgs</a></li>
+		<li><a href="../reference/index.html">reference</a></li>
+		<li><a href="../resources/index.html">resources</a></li>
+		 <!-- <li><a href="/learn/snippets/">snippets</a></li> --> 
+		 <!-- <li><a href="/learn/standards/">standards</a></li> -->
+		 <!-- <li><a href="/learn/technology/">technology</a></li> -->
+		<li><a href="../templates/index.html">templates</a></li> 
+		<!-- <li><a href="/learn/tools/">tools</a></li> -->
+		</ul>
+	</li>
+	<li><a href="../../opinion/index.html">opinion</a></li>
+	<li><a href="../../press/index.html">press</a></li>
+	</ul>
+	
+	<!--#include virtual="/inc/nav/primary.inc" -->
+</div>
+
+
+<div id="MainText">
+	<div class="padder"> 
+	
+	<h1>WaSP Asks the W3C</h1>
+	
+<h2 class="sub">The Benefits of XHTML modularization</h2>
+
+
+<p>
+Back in <a href="oct2003.html">October</a>, we compared <acronym title="HyperText Markup Language">HTML</acronym> and <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>. In this issue of &#8220;<a href="index-2.html">WaSP Asks W3C</a>&#8221;, we have asked the <a href="http://www.w3.org/QA/">W3C&#8217;s Quality Assurance Group </a> to explain the mysteries of XHTML Modularization &mdash; how is it useful to us?
+</p>
+
+
+<h2>WaSP asks</h2>
+	
+<p>What benefits do we get from XHTML Modularization?</p>
+
+<h2>The W3C Responds</h2>
+
+<p>As a markup language, XHTML 1.0 is very suitable for most purposes on the Web. 
+Being fairly flexible, it provides a way to separate content from presentation and allows authors to include multimedia objects in their Web documents &mdash; XHTML 1.0 fits the needs of most Web authors. Most, of course, but not all.</p>
+
+<p>XHTML 1.0 may be flexible, but it does not allow content managers to
+add their own elements to the language. Albeit reasonably simple,
+it is still too large and complicated for some very simple Web devices.
+In other words, XHTML 1.0 may have many advantages, but it would be even better
+if there was a mechanism to allow the creation of language subsets and the addition of extensions. </p>
+
+
+<p>This is where the 
+<a href="http://www.w3.org/TR/xhtml-modularization/">Modularization of XHTML</a> enters the picture.</p>
+
+<p>The Modularization of XHTML
+(or XHTML m12n, for short) is a framework defining basically two mechanisms:</p>
+<ul>
+	<li>how to group elements and attributes (of a markup language such as XHTML) 
+	with similar functionality into "modules",</li>
+	<li>how to plug these modules together to create new markup languages.</li>
+</ul>
+
+<p>The resulting languages, called conformant "XHTML Host Languages", are adapted to the 
+particular needs of a specific task or client, but are still based on the familiar 
+XHTML structure.</p>
+
+
+<p>One significant example of XHTML Host Language is XHTML 1.1.</p>
+
+<p>Created by <a href="dec2003-XHTML-Modularization.png" title="see an image of how XHTML Modularization works: Core module, Custom modules, XHTNL Host languages">splitting the mono-block XHTML 1.0</a> into logical groups of 
+elements and attributes (such as "text", "lists", "image", "scripting"), 
+making modules out of these groups and tying them back together, 
+XHTML 1.1 is almost exactly similar in its use as XHTML 1.0.</p>
+
+<p>The XHTML Modularization framework is not solely about re-creating XHTML 1.0 in a different form.
+There are quite a lot of other exciting uses for this framework, among them, the ability to:</p>
+
+<ul>
+	<li>
+	<p>define profiles based on XHTML (such as <a href="http://www.w3.org/TR/xhtml-basic/">XHTML 
+	Basic</a>, which is  essentially a simple subset of XHTML 1.0 designed for mobile devices.)</p>
+	</li> 
+	<li>
+	<p>create subsets of and extend XHTML for specific tasks, thus bringing one 
+	of the promises of XML to life by allowing the creation of semantically 
+	rich markup languages for specific content-management needs, which makes 
+	XHTML m12n especially beneficial for content providers.</p>
+  	<p>Imagine, for instance, that a group wants to define a markup language specifically
+	adapted to mathematics on the Web. The group can decide to use XML and create 
+	an XML namespace for the elements and attributes that are needed, <em>or</em> they can decide
+	to make their work easily exportable and re-usable, and create a module according to the the XHTML m12n framework. You have just envisioned
+	<a href="http://www.w3.org/TR/MathML2/appendixa.html#parsing.module">XHTML 1.1 plus MathML</a>.</p>
+
+  	</li>
+</ul>
+
+<h3 id="m12nbenefits">Who benefits from the Modularization of XHTML?</h3>
+
+<p>The Modularization of XHTML is mainly useful for three groups of people:</p>
+<ul>
+	<li><p>Web authors benefit from a new generation of consistent XML-based languages that are easy to get familiar with.</p></li>
+
+	<li>
+	<p>Creators of Web devices and agents, who gain from the ability to define 
+	profiles, or use profiles more adapted to their product than the "vanilla" 
+	XHTML 1.1 or XHTML Basic. For example, the Mobile Profile <acronym title="XHTML Mobile Profile">XHTML-MP</acronym> was created by extending XHTML Basic.</p>
+
+	</li>
+	<li>
+	<p>Content providers, who now have the opportunity to create XML languages for their specific purposes; by using the XHTML m12n framework, they get the additional benefit of being able to re-use common parts, and in turn, producing re-usable components themselves.</p>
+	</li>
+</ul>
+
+
+<h3 id="authorbenefits">How does all this benefit us?</h3>
+ 
+
+<p>The main advantage of XHTML m12n for Web authors comes from the fact that every XHTML language built according to the modularization framework has to include a set of required modules, therefore guaranteeing that all such languages share a common base. This means the learning curve for XHTML Basic, XHTML 1.1 plus MathML &mdash; or indeed, any other language belonging to the XHTML family &mdash; is smooth and easily surmountable.</p>
+
+<p>Creation of new XHTML languages or modules is only necessary in
+very specific cases, so in general, the Web author does not need a 
+very extensive knowledge of the module creation process, and can 
+leave that to the creators of Web devices or specialized content 
+providers.</p>
+
+<p>However, it is definitely beneficial for a Web author to understand 
+<a href="http://www.w3.org/MarkUp/modularization">the basic principles 
+of the modularization</a>, in order to be able to use modules or languages
+designed by others.</p>
+
+
+<h3>Related Readings</h3>
+<ol>
+<li><a href="http://www.w3.org/MarkUp/modularization">XHTML Modularization - an Overview</a>,
+for a better understanding of the XHTML m12n in general.</li>
+<li><a href="http://www.w3.org/MarkUp/Guide/xhtml-m12n-tutorial/">How to create XHTML Family 
+modules and markup languages for fun and profit</a>, a tutorial on creating XHTML modules using
+XML DTDs.</li>
+<li><a href="http://www.w3.org/TR/xhtml11/">XHTML 1.1</a> and 
+<a href="http://www.w3.org/TR/xhtml-basic/">XHTML Basic</a>, two major languages built using
+XHTML m12n.</li>
+</ol>
+
+
+
+<h3>Discussion</h3>
+
+	<p>For clarification and discussion on this
+topic, please address your comments and questions to the W3C Web
+Standards Education list.</p>
+
+	<p>To subscribe to the list, send an email to <a title="subscribe to the public evangelist list" href="mailto:public-evangelist-request@w3.org">public-evangelist-request@w3.org</a> with 
+	&#8220;Subject: subscribe&#8221;.  You can read archived posts at <a title="read list archives" href="http://lists.w3.org/Archives/Public/public-evangelist/">http://lists.w3.org/Archives/Public/public-evangelist/</a>. </p>
+
+
+	</div>
+	
+	<div class="padder" id="footer">
+		<a href="../../legal/index.html">Legal</a>
+
+	</div>
+</div>
+
+<div id="SubNav"> 
+	<div class="padder">
+		
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from archive2.webstandards.org/learn/askw3c/dec2003.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Aug 2017 20:31:00 GMT -->
+</html>
+
